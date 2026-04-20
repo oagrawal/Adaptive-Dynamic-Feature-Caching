@@ -1,0 +1,68 @@
+# ── other-stuff ───────────────────────────────────────────────────────────────
+# College side-projects unrelated to this research; never track.
+/other-stuff/
+
+# ── model weights ─────────────────────────────────────────────────────────────
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.gguf
+ckpts/
+checkpoints/
+Wan2.1-T2V-1.3B/
+Wan2.1-T2V-14B/
+Wan2.1-I2V-14B-480P/
+Wan2.1-I2V-14B-720P/
+
+# ── shared VBench model weights ───────────────────────────────────────────────
+# Directory stays on disk (referenced by eval scripts) but binaries not tracked.
+/vbench_models/
+
+# ── generated media ───────────────────────────────────────────────────────────
+*.mp4
+*.mov
+*.avi
+*.webm
+*.gif
+*.MOV
+
+# ── Python artifacts ──────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.ruff_cache/
+
+# ── virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+.venv_test/
+env/
+uv.lock
+
+# ── logs ──────────────────────────────────────────────────────────────────────
+*.log
+*.err
+*.out
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.DS_Store
+*DS_Store
+.idea/
+.vscode/
+.cursor/
+
+# ── misc large / sensitive ────────────────────────────────────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.whl
+wandb/
+storage/
+google/
