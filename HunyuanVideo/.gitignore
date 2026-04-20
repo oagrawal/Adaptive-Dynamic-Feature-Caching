@@ -16,13 +16,11 @@ env/
 *.bin
 hunyuanvideo_backup.tar
 
-# Generated output files
+# Generated output files (videos excluded by *.mp4 etc. above; keeping dirs trackable for logs)
 teacache_results/
 vbench_evaluation/vbench_results/
 vbench_evaluation_old/
-vbench_eval/videos/
 vbench_eval/vbench_scores/
-vbench_eval/fidelity_metrics/
 vbench_eval/all_comparison_results.json
 vbench_eval/*_table.csv
 

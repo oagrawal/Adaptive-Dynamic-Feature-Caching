@@ -1,0 +1,21 @@
+{
+  "runs": [
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "hunyuan_baseline",
+      "dimensions": [
+        "subject_consistency",
+        "dynamic_degree",
+        "motion_smoothness"
+      ],
+      "time_seconds": 1352.9,
+      "video_path": "vbench_eval/videos/hunyuan_baseline/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-02-09T02:59:18.326530",
+      "prompt_index": 0
+    }
+  ],
+  "completed_keys": [
+    "hunyuan_baseline|a person swimming in ocean|0"
+  ]
+}
