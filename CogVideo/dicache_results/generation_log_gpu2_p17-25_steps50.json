@@ -1,0 +1,271 @@
+{
+  "gpu": "2",
+  "start_idx": 17,
+  "end_idx": 25,
+  "model_id": "THUDM/CogVideoX1.5-5B",
+  "steps": 50,
+  "guidance_scale": 6.0,
+  "seed": 0,
+  "height": 768,
+  "width": 1360,
+  "num_frames": 81,
+  "fps": 16,
+  "runs": [
+    {
+      "prompt_idx": 17,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 342.15,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 17,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.99,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 17,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.81,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 17,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.74,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 18,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 341.85,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 18,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.88,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 18,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.64,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 18,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 227.55,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 19,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 341.72,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 19,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.9,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 19,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.78,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 19,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.85,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 20,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 341.82,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 20,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 285.01,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 20,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.91,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 20,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.94,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 21,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 361.56,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/a red bicycle-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 21,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 266.34,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/a red bicycle-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 21,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 266.27,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/a red bicycle-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 21,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 247.17,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/a red bicycle-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 22,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 361.45,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/a green bicycle-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 22,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 266.29,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/a green bicycle-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 22,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 247.12,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/a green bicycle-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 22,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 247.16,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/a green bicycle-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 23,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 361.54,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/a blue bicycle-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 23,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 266.25,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/a blue bicycle-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 23,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 266.3,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/a blue bicycle-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 23,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 247.19,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/a blue bicycle-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 24,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 361.48,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/a bicycle on the left of a car, front view-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 24,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 266.24,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/a bicycle on the left of a car, front view-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 24,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 266.32,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/a bicycle on the left of a car, front view-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 24,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 247.28,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/a bicycle on the left of a car, front view-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    }
+  ]
+}

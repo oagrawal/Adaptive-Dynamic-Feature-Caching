@@ -1,0 +1,303 @@
+{
+  "gpu": "0",
+  "start_idx": 0,
+  "end_idx": 9,
+  "model_id": "THUDM/CogVideoX1.5-5B",
+  "steps": 50,
+  "guidance_scale": 6.0,
+  "seed": 0,
+  "height": 768,
+  "width": 1360,
+  "num_frames": 81,
+  "fps": 16,
+  "runs": [
+    {
+      "prompt_idx": 0,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 378.84,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/a person swimming in ocean-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 0,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.01,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/a person swimming in ocean-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 0,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 245.97,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/a person swimming in ocean-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 0,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.02,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/a person swimming in ocean-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 1,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 360.34,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/a person giving a presentation to a room full of colleagues-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 1,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.63,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/a person giving a presentation to a room full of colleagues-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 1,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 265.56,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/a person giving a presentation to a room full of colleagues-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 1,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.56,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/a person giving a presentation to a room full of colleagues-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 2,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 360.26,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/a person washing the dishes-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 2,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.56,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/a person washing the dishes-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 2,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.42,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/a person washing the dishes-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 2,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.44,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/a person washing the dishes-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 3,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 360.14,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/Close up of grapes on a rotating table.-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 3,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.28,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/Close up of grapes on a rotating table.-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 3,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 265.42,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/Close up of grapes on a rotating table.-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 3,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.32,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/Close up of grapes on a rotating table.-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 4,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 378.56,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/Turtle swimming in ocean.-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 4,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.07,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/Turtle swimming in ocean.-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 4,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.05,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/Turtle swimming in ocean.-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 4,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 245.98,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/Turtle swimming in ocean.-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 5,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 340.77,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/A storm trooper vacuuming the beach.-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 5,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.27,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/A storm trooper vacuuming the beach.-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 5,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 265.25,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/A storm trooper vacuuming the beach.-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 5,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.17,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/A storm trooper vacuuming the beach.-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 6,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 360.13,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/alley-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 6,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 265.25,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/alley-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 6,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.18,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/alley-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 6,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.26,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/alley-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 7,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 360.2,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/amusement park-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 7,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 284.29,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/amusement park-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 7,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 246.19,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/amusement park-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 7,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 246.22,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/amusement park-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 8,
+      "mode": "cog_dc_fixed_0.40",
+      "time_seconds": 359.89,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.40/aquarium-0.mp4",
+      "rel_l1_thresh": 0.4,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 8,
+      "mode": "cog_dc_fixed_0.50",
+      "time_seconds": 286.77,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.50/aquarium-0.mp4",
+      "rel_l1_thresh": 0.5,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 8,
+      "mode": "cog_dc_fixed_0.60",
+      "time_seconds": 250.23,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.60/aquarium-0.mp4",
+      "rel_l1_thresh": 0.6,
+      "probe_depth": 1
+    },
+    {
+      "prompt_idx": 8,
+      "mode": "cog_dc_fixed_0.70",
+      "time_seconds": 250.34,
+      "video_path": "/workspace/cogvideo/dicache_results/videos/cog_dc_fixed_0.70/aquarium-0.mp4",
+      "rel_l1_thresh": 0.7,
+      "probe_depth": 1
+    }
+  ]
+}
