@@ -1,0 +1,50 @@
+{
+  "runs": [
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2077.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-18T18:17:45.396814"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1669.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-18T18:45:35.069254"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 766.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-18T18:58:21.856473"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1227.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-18T19:18:49.634010"
+    }
+  ],
+  "completed_keys": [
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0"
+  ]
+}

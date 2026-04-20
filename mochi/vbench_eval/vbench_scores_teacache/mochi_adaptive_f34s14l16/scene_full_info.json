@@ -1,0 +1,53 @@
+[
+    {
+        "prompt_en": "alley",
+        "dimension": [
+            "scene",
+            "background_consistency"
+        ],
+        "auxiliary_info": {
+            "scene": {
+                "scene": {
+                    "scene": "alley"
+                }
+            }
+        },
+        "video_list": [
+            "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/alley-0.mp4"
+        ]
+    },
+    {
+        "prompt_en": "amusement park",
+        "dimension": [
+            "scene",
+            "background_consistency"
+        ],
+        "auxiliary_info": {
+            "scene": {
+                "scene": {
+                    "scene": "amusement park"
+                }
+            }
+        },
+        "video_list": [
+            "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/amusement park-0.mp4"
+        ]
+    },
+    {
+        "prompt_en": "aquarium",
+        "dimension": [
+            "scene",
+            "background_consistency"
+        ],
+        "auxiliary_info": {
+            "scene": {
+                "scene": {
+                    "scene": "aquarium"
+                }
+            }
+        },
+        "video_list": [
+            "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/aquarium-0.mp4"
+        ]
+    }
+]

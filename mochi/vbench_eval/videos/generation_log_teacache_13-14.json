@@ -1,0 +1,47 @@
+{
+  "runs": [
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 1998.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A person is marching-0.mp4",
+      "timestamp": "2026-02-18T18:16:12.360747"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1537.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A person is marching-0.mp4",
+      "timestamp": "2026-02-18T20:06:54.811020"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 745.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A person is marching-0.mp4",
+      "timestamp": "2026-02-18T20:19:20.243188"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1205.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A person is marching-0.mp4",
+      "timestamp": "2026-02-18T20:39:25.686983"
+    }
+  ],
+  "completed_keys": [
+    "mochi_diff_baseline|A person is marching|0",
+    "mochi_diff_baseline|A person is marching|0",
+    "mochi_fixed_0.04|A person is marching|0",
+    "mochi_fixed_0.12|A person is marching|0",
+    "mochi_adaptive_0.12_0.04|A person is marching|0"
+  ]
+}

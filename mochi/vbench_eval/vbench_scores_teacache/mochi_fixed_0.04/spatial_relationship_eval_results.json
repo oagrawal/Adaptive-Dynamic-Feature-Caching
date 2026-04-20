@@ -1,0 +1,73 @@
+{
+    "spatial_relationship": [
+        0.5962035325595669,
+        [
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_fixed_0.04/a bicycle on the left of a car, front view-0.mp4",
+                "video_results": 0.7074523969443067,
+                "frame_results": [
+                    1,
+                    0.40775929203539824,
+                    0,
+                    1,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0.9833643410852714,
+                    1,
+                    1,
+                    0,
+                    1,
+                    0.41947274267959705,
+                    0.508641975308642,
+                    1
+                ]
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_fixed_0.04/a car on the right of a motorcycle, front view-0.mp4",
+                "video_results": 0.3936582007343941,
+                "frame_results": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0.298531211750306
+                ]
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_fixed_0.04/a motorcycle on the left of a bus, front view-0.mp4",
+                "video_results": 0.6875,
+                "frame_results": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    ]
+}

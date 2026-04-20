@@ -1,0 +1,96 @@
+{
+  "runs": [
+    {
+      "prompt": "a person swimming in ocean",
+      "prompt_index": 0,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1034.5,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-02-27T17:08:41.170309"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "prompt_index": 1,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 2176.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-02-27T17:44:57.138419"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "prompt_index": 2,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1020.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a person washing the dishes-0.mp4",
+      "timestamp": "2026-02-27T18:01:58.007127"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "prompt_index": 3,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 956.9,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-02-27T18:17:54.950128"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "prompt_index": 4,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 959.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-02-27T18:33:54.567489"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "prompt_index": 5,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 986.3,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-02-27T18:50:20.853428"
+    },
+    {
+      "prompt": "alley",
+      "prompt_index": 6,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 970.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/alley-0.mp4",
+      "timestamp": "2026-02-27T19:06:30.917659"
+    },
+    {
+      "prompt": "amusement park",
+      "prompt_index": 7,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 994.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/amusement park-0.mp4",
+      "timestamp": "2026-02-27T19:23:05.791225"
+    },
+    {
+      "prompt": "aquarium",
+      "prompt_index": 8,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 973.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/aquarium-0.mp4",
+      "timestamp": "2026-02-27T19:39:19.631423"
+    }
+  ],
+  "completed_keys": [
+    "mochi_adaptive_f34s14l16|a person swimming in ocean|0",
+    "mochi_adaptive_f34s14l16|a person giving a presentation to a room full of colleagues|0",
+    "mochi_adaptive_f34s14l16|a person washing the dishes|0",
+    "mochi_adaptive_f34s14l16|Close up of grapes on a rotating table.|0",
+    "mochi_adaptive_f34s14l16|Turtle swimming in ocean.|0",
+    "mochi_adaptive_f34s14l16|A storm trooper vacuuming the beach.|0",
+    "mochi_adaptive_f34s14l16|alley|0",
+    "mochi_adaptive_f34s14l16|amusement park|0",
+    "mochi_adaptive_f34s14l16|aquarium|0"
+  ]
+}

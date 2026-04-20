@@ -1,0 +1,73 @@
+{
+    "spatial_relationship": [
+        0.9748062841572768,
+        [
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.05/a bicycle on the left of a car, front view-0.mp4",
+                "video_results": 0.974115255853102,
+                "frame_results": [
+                    1,
+                    0.9269558065230458,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0.8678014184397164,
+                    1,
+                    1,
+                    0.7910868686868688,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.05/a car on the right of a motorcycle, front view-0.mp4",
+                "video_results": 1.0,
+                "frame_results": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.05/a motorcycle on the left of a bus, front view-0.mp4",
+                "video_results": 0.950303596618728,
+                "frame_results": [
+                    0.7902200193423597,
+                    0.72353515625,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0.8373095238095238,
+                    0.8537928464977645,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    ]
+}

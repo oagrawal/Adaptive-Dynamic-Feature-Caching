@@ -1,0 +1,16 @@
+Experiment Results
+============================================================
+
+=== Experiment Config ===
+TeaCache mode: fixed
+Fixed threshold: 0.1
+
+=== Timing ===
+End-to-end generation time: 876.20 seconds
+Inference steps: 50
+
+=== Prompt ===
+A jazz quartet plays intensely on a smoky stage - saxophone, upright bass, drums, and piano - spotlights catching the gleam of brass instruments.
+
+=== Seed ===
+1846

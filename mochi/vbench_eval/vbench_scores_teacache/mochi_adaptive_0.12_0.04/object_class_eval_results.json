@@ -1,0 +1,25 @@
+{
+    "object_class": [
+        0.8333333333333334,
+        [
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a person-0.mp4",
+                "video_results": 0.9375,
+                "success_frame_count": 15,
+                "frame_count": 16
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a bicycle-0.mp4",
+                "video_results": 0.5625,
+                "success_frame_count": 9,
+                "frame_count": 16
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a car-0.mp4",
+                "video_results": 1.0,
+                "success_frame_count": 16,
+                "frame_count": 16
+            }
+        ]
+    ]
+}

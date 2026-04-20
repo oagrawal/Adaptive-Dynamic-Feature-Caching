@@ -1,0 +1,97 @@
+{
+  "runs": [
+    {
+      "prompt": "In a still frame, a stop sign",
+      "prompt_index": 9,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1024.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-27T17:08:30.731492"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "prompt_index": 10,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 964.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-27T19:39:45.343604"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "prompt_index": 11,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 966.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-27T19:55:51.615033"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "prompt_index": 12,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1003.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-27T20:12:35.448353"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 963.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A person is marching-0.mp4",
+      "timestamp": "2026-02-27T20:28:38.494540"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 984.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-27T20:45:03.318850"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 955.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-27T21:00:59.123019"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 986.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-27T21:17:25.976458"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 992.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-02-27T21:33:58.203467"
+    }
+  ],
+  "completed_keys": [
+    "mochi_adaptive_f34s14l16|In a still frame, a stop sign|0",
+    "mochi_adaptive_f34s14l16|In a still frame, a stop sign|0",
+    "mochi_adaptive_f34s14l16|a toilet, frozen in time|0",
+    "mochi_adaptive_f34s14l16|a laptop, frozen in time|0",
+    "mochi_adaptive_f34s14l16|A person is riding a bike|0",
+    "mochi_adaptive_f34s14l16|A person is marching|0",
+    "mochi_adaptive_f34s14l16|A person is roller skating|0",
+    "mochi_adaptive_f34s14l16|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "mochi_adaptive_f34s14l16|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_adaptive_f34s14l16|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0"
+  ]
+}

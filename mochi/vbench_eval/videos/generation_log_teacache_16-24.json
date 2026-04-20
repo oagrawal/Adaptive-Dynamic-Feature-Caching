@@ -1,0 +1,358 @@
+{
+  "runs": [
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2036.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-17T15:36:25.160295"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 3178.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-17T16:29:23.846198"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 815.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-17T16:42:59.261411"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1217.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-17T17:03:16.927919"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2033.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-02-17T17:37:10.204823"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1536.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-02-17T18:02:46.842509"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 755.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-02-17T18:15:21.888102"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1208.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-02-17T18:35:30.150110"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2025.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-02-17T19:09:15.326156"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1549.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-02-17T19:35:04.940225"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 750.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-02-17T19:47:35.414406"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1210.9,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-02-17T20:07:46.343508"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2033.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-02-17T20:41:40.069069"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1580.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-02-17T21:08:00.908794"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 754.9,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-02-17T21:20:35.845239"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1220.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-02-17T21:40:56.551437"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2034.3,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-02-17T22:14:50.936798"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1636.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-02-17T22:42:07.351120"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 749.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-02-17T22:54:36.834039"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 4351.5,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-02-18T00:07:08.341194"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2060.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/a red bicycle-0.mp4",
+      "timestamp": "2026-02-18T00:41:28.589012"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1590.5,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/a red bicycle-0.mp4",
+      "timestamp": "2026-02-18T01:07:59.085524"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 759.5,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/a red bicycle-0.mp4",
+      "timestamp": "2026-02-18T01:20:38.666279"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1220.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a red bicycle-0.mp4",
+      "timestamp": "2026-02-18T01:40:58.939926"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2051.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/a green bicycle-0.mp4",
+      "timestamp": "2026-02-18T02:15:10.822128"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1597.3,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/a green bicycle-0.mp4",
+      "timestamp": "2026-02-18T02:41:48.148969"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 768.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/a green bicycle-0.mp4",
+      "timestamp": "2026-02-18T02:54:36.329419"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1203.5,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a green bicycle-0.mp4",
+      "timestamp": "2026-02-18T03:14:39.822475"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2260.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/a blue bicycle-0.mp4",
+      "timestamp": "2026-02-18T03:52:20.494781"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1598.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/a blue bicycle-0.mp4",
+      "timestamp": "2026-02-18T04:18:58.551339"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 756.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/a blue bicycle-0.mp4",
+      "timestamp": "2026-02-18T04:31:35.266839"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 2325.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a blue bicycle-0.mp4",
+      "timestamp": "2026-02-18T05:10:20.894535"
+    }
+  ],
+  "completed_keys": [
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_diff_baseline|a red bicycle|0",
+    "mochi_fixed_0.04|a red bicycle|0",
+    "mochi_fixed_0.12|a red bicycle|0",
+    "mochi_adaptive_0.12_0.04|a red bicycle|0",
+    "mochi_diff_baseline|a green bicycle|0",
+    "mochi_fixed_0.04|a green bicycle|0",
+    "mochi_fixed_0.12|a green bicycle|0",
+    "mochi_adaptive_0.12_0.04|a green bicycle|0",
+    "mochi_diff_baseline|a blue bicycle|0",
+    "mochi_fixed_0.04|a blue bicycle|0",
+    "mochi_fixed_0.12|a blue bicycle|0",
+    "mochi_adaptive_0.12_0.04|a blue bicycle|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_diff_baseline|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_fixed_0.04|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_fixed_0.12|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_adaptive_0.12_0.04|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_diff_baseline|a red bicycle|0",
+    "mochi_fixed_0.04|a red bicycle|0",
+    "mochi_fixed_0.12|a red bicycle|0",
+    "mochi_adaptive_0.12_0.04|a red bicycle|0",
+    "mochi_diff_baseline|a green bicycle|0",
+    "mochi_fixed_0.04|a green bicycle|0",
+    "mochi_fixed_0.12|a green bicycle|0",
+    "mochi_adaptive_0.12_0.04|a green bicycle|0",
+    "mochi_diff_baseline|a blue bicycle|0",
+    "mochi_fixed_0.04|a blue bicycle|0",
+    "mochi_fixed_0.12|a blue bicycle|0",
+    "mochi_adaptive_0.12_0.04|a blue bicycle|0"
+  ]
+}

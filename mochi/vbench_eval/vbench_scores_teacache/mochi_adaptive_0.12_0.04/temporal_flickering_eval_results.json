@@ -1,0 +1,19 @@
+{
+    "temporal_flickering": [
+        0.9963125797658186,
+        [
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/In a still frame, a stop sign-0.mp4",
+                "video_results": 0.9924413166794123
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a toilet, frozen in time-0.mp4",
+                "video_results": 0.9991860307899176
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a laptop, frozen in time-0.mp4",
+                "video_results": 0.9973103918281256
+            }
+        ]
+    ]
+}

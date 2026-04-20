@@ -1,0 +1,19 @@
+{
+    "temporal_style": [
+        0.212460458278656,
+        [
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_baseline/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+                "video_results": 0.18134954571723938
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_baseline/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+                "video_results": 0.23247981071472168
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_baseline/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+                "video_results": 0.22355201840400696
+            }
+        ]
+    ]
+}

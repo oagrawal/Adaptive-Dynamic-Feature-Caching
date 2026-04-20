@@ -1,0 +1,16 @@
+Experiment Results
+============================================================
+
+=== Experiment Config ===
+TeaCache mode: fixed
+Fixed threshold: 0.3
+
+=== Timing ===
+End-to-end generation time: 435.05 seconds
+Inference steps: 50
+
+=== Prompt ===
+A cheetah sprints across the golden savanna chasing a leaping gazelle, dust clouds swirling in the afternoon light.
+
+=== Seed ===
+27356

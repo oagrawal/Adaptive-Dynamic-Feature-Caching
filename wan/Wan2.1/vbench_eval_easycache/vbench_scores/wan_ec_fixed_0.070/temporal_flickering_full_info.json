@@ -1,0 +1,29 @@
+[
+    {
+        "prompt_en": "In a still frame, a stop sign",
+        "dimension": [
+            "temporal_flickering"
+        ],
+        "video_list": [
+            "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_fixed_0.070/In a still frame, a stop sign-0.mp4"
+        ]
+    },
+    {
+        "prompt_en": "a toilet, frozen in time",
+        "dimension": [
+            "temporal_flickering"
+        ],
+        "video_list": [
+            "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_fixed_0.070/a toilet, frozen in time-0.mp4"
+        ]
+    },
+    {
+        "prompt_en": "a laptop, frozen in time",
+        "dimension": [
+            "temporal_flickering"
+        ],
+        "video_list": [
+            "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_fixed_0.070/a laptop, frozen in time-0.mp4"
+        ]
+    }
+]

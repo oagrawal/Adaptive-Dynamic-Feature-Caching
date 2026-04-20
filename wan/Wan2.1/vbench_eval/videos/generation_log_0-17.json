@@ -1,0 +1,774 @@
+{
+  "runs": [
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 294.0,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-02-12T01:53:37.855989",
+      "prompt_index": 0
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 190.96,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-02-12T01:56:48.846463",
+      "prompt_index": 0
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 160.67,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-02-12T01:59:29.553383",
+      "prompt_index": 0
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 168.03,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-02-12T04:17:45.551643",
+      "prompt_index": 0
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 295.92,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-02-12T04:22:41.509070",
+      "prompt_index": 1
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 188.85,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-02-12T04:25:50.393950",
+      "prompt_index": 1
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 149.06,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-02-12T04:28:19.486594",
+      "prompt_index": 1
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 167.42,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-02-12T04:31:06.941324",
+      "prompt_index": 1
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 294.21,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/a person washing the dishes-0.mp4",
+      "timestamp": "2026-02-12T04:36:01.230238",
+      "prompt_index": 2
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 190.43,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/a person washing the dishes-0.mp4",
+      "timestamp": "2026-02-12T04:39:11.688232",
+      "prompt_index": 2
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 151.06,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/a person washing the dishes-0.mp4",
+      "timestamp": "2026-02-12T04:41:42.782516",
+      "prompt_index": 2
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 168.57,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/a person washing the dishes-0.mp4",
+      "timestamp": "2026-02-12T04:44:31.384351",
+      "prompt_index": 2
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 298.43,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-02-12T04:49:29.851559",
+      "prompt_index": 3
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 188.39,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-02-12T04:52:38.282091",
+      "prompt_index": 3
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 154.7,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-02-12T04:55:13.021103",
+      "prompt_index": 3
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 167.34,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-02-12T04:58:00.393576",
+      "prompt_index": 3
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 296.88,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-02-12T05:02:57.306769",
+      "prompt_index": 4
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 190.86,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-02-12T05:06:08.200007",
+      "prompt_index": 4
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 157.74,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-02-12T05:08:45.970786",
+      "prompt_index": 4
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 167.27,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-02-12T05:11:33.245516",
+      "prompt_index": 4
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 292.98,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-02-12T05:16:26.262445",
+      "prompt_index": 5
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 190.82,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-02-12T05:19:37.121441",
+      "prompt_index": 5
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 150.54,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-02-12T05:22:07.686058",
+      "prompt_index": 5
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 168.29,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-02-12T05:24:55.974712",
+      "prompt_index": 5
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 939239 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 6,
+      "timestamp": "2026-02-12T05:26:11.429954"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 939656 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 6,
+      "timestamp": "2026-02-12T05:27:33.136531"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 939858 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 6,
+      "timestamp": "2026-02-12T05:28:53.190050"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 940012 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 6,
+      "timestamp": "2026-02-12T05:30:09.379922"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 940160 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 7,
+      "timestamp": "2026-02-12T05:31:26.133372"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 940410 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 7,
+      "timestamp": "2026-02-12T05:32:45.638368"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 940595 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 7,
+      "timestamp": "2026-02-12T05:34:07.564490"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 940829 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 7,
+      "timestamp": "2026-02-12T05:35:26.059222"
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 941047 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 8,
+      "timestamp": "2026-02-12T05:36:42.652808"
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 942, in generate\n    wan_t2v = wan.WanT2V(\n              ^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/wan/text2video.py\", line 245, in __init__\n    self.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/diffusers/models/modeling_utils.py\", line 1435, in to\n    return super().to(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 1 more time]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 19.31 MiB is free. Process 938763 has 73.16 GiB memory in use. Process 941279 has 6.06 GiB memory in use. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 305.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 8,
+      "timestamp": "2026-02-12T05:37:59.346476"
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 151.58,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/aquarium-0.mp4",
+      "timestamp": "2026-02-12T05:40:30.958542",
+      "prompt_index": 8
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 166.31,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/aquarium-0.mp4",
+      "timestamp": "2026-02-12T05:43:17.307485",
+      "prompt_index": 8
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 294.2,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-12T05:48:11.544630",
+      "prompt_index": 9
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 191.06,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-12T05:51:22.644232",
+      "prompt_index": 9
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 150.76,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-12T05:53:53.440991",
+      "prompt_index": 9
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 170.5,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-12T05:56:43.967817",
+      "prompt_index": 9
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 294.31,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:01:38.317109",
+      "prompt_index": 10
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 198.27,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:04:56.601130",
+      "prompt_index": 10
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 149.62,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:07:26.253784",
+      "prompt_index": 10
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 169.94,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:10:16.232742",
+      "prompt_index": 10
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 295.13,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:15:11.444510",
+      "prompt_index": 11
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 195.02,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:18:26.503188",
+      "prompt_index": 11
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 151.62,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:20:58.167043",
+      "prompt_index": 11
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 170.33,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-12T06:23:48.523636",
+      "prompt_index": 11
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 294.72,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-12T06:28:43.284109",
+      "prompt_index": 12
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 191.45,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-12T06:31:54.774438",
+      "prompt_index": 12
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 1136, in <module>\n    generate(args)\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 993, in generate\n    video = wan_t2v.generate(\n            ^^^^^^^^^^^^^^^^^\n  File \"/workspace/wan/Wan2.1/teacache_generate.py\", line 116, in t2v_generate\n    self.text_encoder.model.to(self.device)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1174, in to\n    return self._apply(convert)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 780, in _apply\n    module._apply(fn)\n  [Previous line repeated 2 more times]\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 805, in _apply\n    param_applied = fn(param)\n                    ^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1160, in convert\n    return t.to(\n           ^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 59.31 MiB is free. Process 956329 has 14.78 GiB memory in use. Process 956689 has 64.40 GiB memory in use. Of the allocated memory 13.97 GiB is allocated by PyTorch, and 334.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "prompt_index": 12,
+      "timestamp": "2026-02-12T06:33:13.390519"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 171.21,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-12T06:36:04.680089",
+      "prompt_index": 12
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 297.49,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/A person is marching-0.mp4",
+      "timestamp": "2026-02-12T06:41:02.198531",
+      "prompt_index": 13
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 194.35,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/A person is marching-0.mp4",
+      "timestamp": "2026-02-12T06:44:16.550693",
+      "prompt_index": 13
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 167.53,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/A person is marching-0.mp4",
+      "timestamp": "2026-02-12T06:47:04.112918",
+      "prompt_index": 13
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 171.75,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/A person is marching-0.mp4",
+      "timestamp": "2026-02-12T06:49:55.901767",
+      "prompt_index": 13
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 305.98,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-12T06:55:01.891006",
+      "prompt_index": 14
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 194.15,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-12T06:58:16.076558",
+      "prompt_index": 14
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 151.81,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-12T07:00:47.886971",
+      "prompt_index": 14
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 184.03,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-12T07:03:51.923304",
+      "prompt_index": 14
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 314.81,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-12T07:09:06.773610",
+      "prompt_index": 15
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 195.81,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-12T07:12:22.671406",
+      "prompt_index": 15
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 150.77,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-12T07:14:53.472736",
+      "prompt_index": 15
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 175.19,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-02-12T07:17:48.668847",
+      "prompt_index": 15
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 293.95,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-12T07:22:42.654927",
+      "prompt_index": 16
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 193.98,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-12T07:25:56.722846",
+      "prompt_index": 16
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 151.6,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-12T07:28:28.322003",
+      "prompt_index": 16
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 165.93,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-02-12T07:31:14.284912",
+      "prompt_index": 16
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 300.49,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/alley-0.mp4",
+      "timestamp": "2026-02-12T13:56:06.020900",
+      "prompt_index": 6
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 192.72,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/alley-0.mp4",
+      "timestamp": "2026-02-12T13:59:18.781744",
+      "prompt_index": 6
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 152.62,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/alley-0.mp4",
+      "timestamp": "2026-02-12T14:01:51.435558",
+      "prompt_index": 6
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 169.52,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/alley-0.mp4",
+      "timestamp": "2026-02-12T14:04:40.989890",
+      "prompt_index": 6
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 293.99,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/amusement park-0.mp4",
+      "timestamp": "2026-02-12T14:09:35.018232",
+      "prompt_index": 7
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 190.86,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/amusement park-0.mp4",
+      "timestamp": "2026-02-12T14:12:45.913430",
+      "prompt_index": 7
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 152.28,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/amusement park-0.mp4",
+      "timestamp": "2026-02-12T14:15:18.233983",
+      "prompt_index": 7
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "time_seconds": 169.21,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_adaptive/amusement park-0.mp4",
+      "timestamp": "2026-02-12T14:18:07.445064",
+      "prompt_index": 7
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "time_seconds": 293.65,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_baseline/aquarium-0.mp4",
+      "timestamp": "2026-02-12T14:23:01.129776",
+      "prompt_index": 8
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "time_seconds": 195.78,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.1/aquarium-0.mp4",
+      "timestamp": "2026-02-12T14:26:16.946685",
+      "prompt_index": 8
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "time_seconds": 153.49,
+      "video_path": "/workspace/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-12T14:28:50.475927",
+      "prompt_index": 12
+    }
+  ],
+  "completed_keys": [
+    "wan_baseline|a person swimming in ocean|0",
+    "wan_fixed_0.1|a person swimming in ocean|0",
+    "wan_fixed_0.2|a person swimming in ocean|0",
+    "wan_adaptive|a person swimming in ocean|0",
+    "wan_baseline|a person giving a presentation to a room full of colleagues|0",
+    "wan_fixed_0.1|a person giving a presentation to a room full of colleagues|0",
+    "wan_fixed_0.2|a person giving a presentation to a room full of colleagues|0",
+    "wan_adaptive|a person giving a presentation to a room full of colleagues|0",
+    "wan_baseline|a person washing the dishes|0",
+    "wan_fixed_0.1|a person washing the dishes|0",
+    "wan_fixed_0.2|a person washing the dishes|0",
+    "wan_adaptive|a person washing the dishes|0",
+    "wan_baseline|Close up of grapes on a rotating table.|0",
+    "wan_fixed_0.1|Close up of grapes on a rotating table.|0",
+    "wan_fixed_0.2|Close up of grapes on a rotating table.|0",
+    "wan_adaptive|Close up of grapes on a rotating table.|0",
+    "wan_baseline|Turtle swimming in ocean.|0",
+    "wan_fixed_0.1|Turtle swimming in ocean.|0",
+    "wan_fixed_0.2|Turtle swimming in ocean.|0",
+    "wan_adaptive|Turtle swimming in ocean.|0",
+    "wan_baseline|A storm trooper vacuuming the beach.|0",
+    "wan_fixed_0.1|A storm trooper vacuuming the beach.|0",
+    "wan_fixed_0.2|A storm trooper vacuuming the beach.|0",
+    "wan_adaptive|A storm trooper vacuuming the beach.|0",
+    "wan_fixed_0.2|aquarium|0",
+    "wan_adaptive|aquarium|0",
+    "wan_baseline|In a still frame, a stop sign|0",
+    "wan_fixed_0.1|In a still frame, a stop sign|0",
+    "wan_fixed_0.2|In a still frame, a stop sign|0",
+    "wan_adaptive|In a still frame, a stop sign|0",
+    "wan_baseline|a toilet, frozen in time|0",
+    "wan_fixed_0.1|a toilet, frozen in time|0",
+    "wan_fixed_0.2|a toilet, frozen in time|0",
+    "wan_adaptive|a toilet, frozen in time|0",
+    "wan_baseline|a laptop, frozen in time|0",
+    "wan_fixed_0.1|a laptop, frozen in time|0",
+    "wan_fixed_0.2|a laptop, frozen in time|0",
+    "wan_adaptive|a laptop, frozen in time|0",
+    "wan_baseline|A person is riding a bike|0",
+    "wan_fixed_0.1|A person is riding a bike|0",
+    "wan_adaptive|A person is riding a bike|0",
+    "wan_baseline|A person is marching|0",
+    "wan_fixed_0.1|A person is marching|0",
+    "wan_fixed_0.2|A person is marching|0",
+    "wan_adaptive|A person is marching|0",
+    "wan_baseline|A person is roller skating|0",
+    "wan_fixed_0.1|A person is roller skating|0",
+    "wan_fixed_0.2|A person is roller skating|0",
+    "wan_adaptive|A person is roller skating|0",
+    "wan_baseline|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_fixed_0.1|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_fixed_0.2|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_adaptive|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_baseline|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_fixed_0.1|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_fixed_0.2|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_adaptive|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_baseline|alley|0",
+    "wan_fixed_0.1|alley|0",
+    "wan_fixed_0.2|alley|0",
+    "wan_adaptive|alley|0",
+    "wan_baseline|amusement park|0",
+    "wan_fixed_0.1|amusement park|0",
+    "wan_fixed_0.2|amusement park|0",
+    "wan_adaptive|amusement park|0",
+    "wan_baseline|aquarium|0",
+    "wan_fixed_0.1|aquarium|0",
+    "wan_fixed_0.2|A person is riding a bike|0"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "overall_consistency": [
+        0.20998894174893698,
+        [
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/Close up of grapes on a rotating table.-0.mp4",
+                "video_results": 0.22388696670532227
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/Turtle swimming in ocean.-0.mp4",
+                "video_results": 0.23273000121116638
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval/videos/wan_fixed_0.2/A storm trooper vacuuming the beach.-0.mp4",
+                "video_results": 0.17334985733032227
+            }
+        ]
+    ]
+}

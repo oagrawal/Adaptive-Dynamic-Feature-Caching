@@ -1,0 +1,16 @@
+Experiment Results
+============================================================
+
+=== Experiment Config ===
+TeaCache mode: none
+(No caching - baseline)
+
+=== Timing ===
+End-to-end generation time: 1354.35 seconds
+Inference steps: 50
+
+=== Prompt ===
+Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage.
+
+=== Seed ===
+12345

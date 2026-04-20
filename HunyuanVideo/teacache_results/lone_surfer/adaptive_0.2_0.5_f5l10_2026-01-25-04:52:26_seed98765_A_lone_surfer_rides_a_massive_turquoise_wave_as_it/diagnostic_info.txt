@@ -1,0 +1,17 @@
+Experiment Results
+============================================================
+
+=== Experiment Config ===
+TeaCache mode: adaptive
+Thresh low (first 5 + last 10): 0.2
+Thresh high (middle): 0.5
+
+=== Timing ===
+End-to-end generation time: 421.67 seconds
+Inference steps: 50
+
+=== Prompt ===
+A lone surfer rides a massive turquoise wave as it curls and crashes, ocean spray flying against a pink and orange sunset sky.
+
+=== Seed ===
+98765

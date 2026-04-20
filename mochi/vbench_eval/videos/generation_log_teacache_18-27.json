@@ -1,0 +1,97 @@
+{
+  "runs": [
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1024.5,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-02-27T17:08:40.825855"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 974.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-02-27T19:39:56.314749"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 975.3,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-02-27T19:56:11.702351"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1001.3,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a red bicycle-0.mp4",
+      "timestamp": "2026-02-27T20:12:53.049406"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 977.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a green bicycle-0.mp4",
+      "timestamp": "2026-02-27T20:29:10.071295"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 979.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a blue bicycle-0.mp4",
+      "timestamp": "2026-02-27T20:45:29.130897"
+    },
+    {
+      "prompt": "a bicycle on the left of a car, front view",
+      "prompt_index": 24,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 979.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a bicycle on the left of a car, front view-0.mp4",
+      "timestamp": "2026-02-27T21:01:48.196080"
+    },
+    {
+      "prompt": "a car on the right of a motorcycle, front view",
+      "prompt_index": 25,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 975.9,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a car on the right of a motorcycle, front view-0.mp4",
+      "timestamp": "2026-02-27T21:18:04.176751"
+    },
+    {
+      "prompt": "a motorcycle on the left of a bus, front view",
+      "prompt_index": 26,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 987.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a motorcycle on the left of a bus, front view-0.mp4",
+      "timestamp": "2026-02-27T21:34:31.922487"
+    }
+  ],
+  "completed_keys": [
+    "mochi_adaptive_f34s14l16|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_adaptive_f34s14l16|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "mochi_adaptive_f34s14l16|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "mochi_adaptive_f34s14l16|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "mochi_adaptive_f34s14l16|a red bicycle|0",
+    "mochi_adaptive_f34s14l16|a green bicycle|0",
+    "mochi_adaptive_f34s14l16|a blue bicycle|0",
+    "mochi_adaptive_f34s14l16|a bicycle on the left of a car, front view|0",
+    "mochi_adaptive_f34s14l16|a car on the right of a motorcycle, front view|0",
+    "mochi_adaptive_f34s14l16|a motorcycle on the left of a bus, front view|0"
+  ]
+}

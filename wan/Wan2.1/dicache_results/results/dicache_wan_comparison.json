@@ -1,0 +1,107 @@
+{
+  "modes": [
+    "easycache_baseline",
+    "easycache_fixed_0.025",
+    "easycache_fixed_0.050",
+    "easycache_adaptive"
+  ],
+  "rows": [
+    {
+      "mode": "wan_dc_baseline",
+      "speedup": "1.00x",
+      "latency": "224s",
+      "vbench": "0.830562",
+      "quality": "0.855779",
+      "semantic": "0.729695",
+      "psnr": "-",
+      "ssim": "-",
+      "lpips": "-"
+    },
+    {
+      "mode": "wan_dc_fixed_0.05",
+      "speedup": "1.78x",
+      "latency": "126s",
+      "vbench": "0.814998",
+      "quality": "0.836685",
+      "semantic": "0.728246",
+      "psnr": "-",
+      "ssim": "-",
+      "lpips": "-"
+    },
+    {
+      "mode": "wan_dc_fixed_0.10",
+      "speedup": "2.58x",
+      "latency": "87s",
+      "vbench": "0.800670",
+      "quality": "0.828594",
+      "semantic": "0.688974",
+      "psnr": "-",
+      "ssim": "-",
+      "lpips": "-"
+    },
+    {
+      "mode": "wan_dc_fixed_0.15",
+      "speedup": "3.16x",
+      "latency": "71s",
+      "vbench": "0.808088",
+      "quality": "0.819435",
+      "semantic": "0.762701",
+      "psnr": "-",
+      "ssim": "-",
+      "lpips": "-"
+    },
+    {
+      "mode": "wan_dc_fixed_0.20",
+      "speedup": "3.66x",
+      "latency": "61s",
+      "vbench": "0.803570",
+      "quality": "0.843770",
+      "semantic": "0.642769",
+      "psnr": "-",
+      "ssim": "-",
+      "lpips": "-"
+    },
+    {
+      "mode": "wan_dc_fixed_0.25",
+      "speedup": "4.03x",
+      "latency": "55s",
+      "vbench": "0.733145",
+      "quality": "0.788255",
+      "semantic": "0.512707",
+      "psnr": "-",
+      "ssim": "-",
+      "lpips": "-"
+    }
+  ],
+  "timing": {
+    "wan_dc_baseline": {
+      "avg_time": 224.86393939393946,
+      "num_videos": 33
+    },
+    "wan_dc_fixed_0.05": {
+      "avg_time": 126.42939393939395,
+      "num_videos": 33
+    },
+    "wan_dc_fixed_0.10": {
+      "avg_time": 87.04242424242425,
+      "num_videos": 33
+    },
+    "wan_dc_fixed_0.15": {
+      "avg_time": 71.24333333333334,
+      "num_videos": 33
+    },
+    "wan_dc_fixed_0.20": {
+      "avg_time": 61.40030303030304,
+      "num_videos": 33
+    },
+    "wan_dc_fixed_0.25": {
+      "avg_time": 55.86606060606061,
+      "num_videos": 33
+    },
+    "wan_dc_fixed_0.30": {
+      "avg_time": 51.29636363636363,
+      "num_videos": 33
+    }
+  },
+  "fidelity": {}
+}

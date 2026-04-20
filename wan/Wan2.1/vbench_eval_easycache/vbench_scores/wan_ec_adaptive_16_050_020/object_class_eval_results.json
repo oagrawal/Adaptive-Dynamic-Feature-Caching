@@ -1,0 +1,25 @@
+{
+    "object_class": [
+        0.9791666666666666,
+        [
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_adaptive_16_050_020/a person-0.mp4",
+                "video_results": 1.0,
+                "success_frame_count": 16,
+                "frame_count": 16
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_adaptive_16_050_020/a bicycle-0.mp4",
+                "video_results": 1.0,
+                "success_frame_count": 16,
+                "frame_count": 16
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_easycache/videos/wan_ec_adaptive_16_050_020/a car-0.mp4",
+                "video_results": 0.9375,
+                "success_frame_count": 15,
+                "frame_count": 16
+            }
+        ]
+    ]
+}

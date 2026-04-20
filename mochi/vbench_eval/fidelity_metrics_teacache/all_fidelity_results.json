@@ -1,0 +1,70 @@
+{
+  "mochi_fixed_0.04": {
+    "mode": "mochi_fixed_0.04",
+    "baseline": "mochi_diff_baseline",
+    "num_videos": 33,
+    "psnr": {
+      "mean": 21.623163989907713,
+      "std": 4.5029151558632226
+    },
+    "ssim": {
+      "mean": 0.7856674336689176,
+      "std": 0.12129454790903411
+    },
+    "lpips": {
+      "mean": 0.22532581493741888,
+      "std": 0.12867917160293466
+    }
+  },
+  "mochi_fixed_0.12": {
+    "mode": "mochi_fixed_0.12",
+    "baseline": "mochi_diff_baseline",
+    "num_videos": 33,
+    "psnr": {
+      "mean": 17.53301697023885,
+      "std": 3.2461618194507595
+    },
+    "ssim": {
+      "mean": 0.6977358406196167,
+      "std": 0.1273718451125062
+    },
+    "lpips": {
+      "mean": 0.35470729670985124,
+      "std": 0.13449471732619336
+    }
+  },
+  "mochi_adaptive_0.12_0.04": {
+    "mode": "mochi_adaptive_0.12_0.04",
+    "baseline": "mochi_diff_baseline",
+    "num_videos": 33,
+    "psnr": {
+      "mean": 17.673449180624765,
+      "std": 3.690860979365621
+    },
+    "ssim": {
+      "mean": 0.6960107067180491,
+      "std": 0.13487711295581833
+    },
+    "lpips": {
+      "mean": 0.34557538693568196,
+      "std": 0.14374319717466247
+    }
+  },
+  "mochi_adaptive_f34s14l16": {
+    "mode": "mochi_adaptive_f34s14l16",
+    "baseline": "mochi_diff_baseline",
+    "num_videos": 33,
+    "psnr": {
+      "mean": 17.68694069660695,
+      "std": 3.6633816637712115
+    },
+    "ssim": {
+      "mean": 0.6977244572652177,
+      "std": 0.13295645794573924
+    },
+    "lpips": {
+      "mean": 0.3455412077580182,
+      "std": 0.14382270843505776
+    }
+  }
+}

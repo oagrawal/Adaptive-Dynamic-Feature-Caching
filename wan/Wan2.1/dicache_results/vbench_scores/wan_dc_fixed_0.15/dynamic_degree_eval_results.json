@@ -1,0 +1,19 @@
+{
+    "dynamic_degree": [
+        0.6666666666666666,
+        [
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.15/a person swimming in ocean-0.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.15/a person giving a presentation to a room full of colleagues-0.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.15/a person washing the dishes-0.mp4",
+                "video_results": true
+            }
+        ]
+    ]
+}

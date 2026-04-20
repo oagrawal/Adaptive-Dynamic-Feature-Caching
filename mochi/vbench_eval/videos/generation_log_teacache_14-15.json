@@ -1,0 +1,50 @@
+{
+  "runs": [
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2024.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-18T18:16:46.080988"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1570.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-18T18:42:56.470181"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 810.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-18T18:56:26.530793"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1201.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A person is roller skating-0.mp4",
+      "timestamp": "2026-02-18T19:16:27.697579"
+    }
+  ],
+  "completed_keys": [
+    "mochi_diff_baseline|A person is roller skating|0",
+    "mochi_fixed_0.04|A person is roller skating|0",
+    "mochi_fixed_0.12|A person is roller skating|0",
+    "mochi_adaptive_0.12_0.04|A person is roller skating|0",
+    "mochi_diff_baseline|A person is roller skating|0",
+    "mochi_fixed_0.04|A person is roller skating|0",
+    "mochi_fixed_0.12|A person is roller skating|0",
+    "mochi_adaptive_0.12_0.04|A person is roller skating|0"
+  ]
+}

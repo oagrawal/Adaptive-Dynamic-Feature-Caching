@@ -1,0 +1,72 @@
+{
+  "runs": [
+    {
+      "prompt": "a bird and a cat",
+      "prompt_index": 27,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1057.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a bird and a cat-0.mp4",
+      "timestamp": "2026-02-27T17:09:28.099030"
+    },
+    {
+      "prompt": "a cat and a dog",
+      "prompt_index": 28,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 2143.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a cat and a dog-0.mp4",
+      "timestamp": "2026-02-27T17:45:11.984850"
+    },
+    {
+      "prompt": "a dog and a horse",
+      "prompt_index": 29,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 1027.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a dog and a horse-0.mp4",
+      "timestamp": "2026-02-27T18:02:19.084019"
+    },
+    {
+      "prompt": "a person",
+      "prompt_index": 30,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 978.6,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a person-0.mp4",
+      "timestamp": "2026-02-27T18:18:37.728660"
+    },
+    {
+      "prompt": "a bicycle",
+      "prompt_index": 31,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 981.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a bicycle-0.mp4",
+      "timestamp": "2026-02-27T18:34:59.446881"
+    },
+    {
+      "prompt": "a car",
+      "prompt_index": 32,
+      "seed": 0,
+      "mode": "mochi_adaptive_f34s14l16",
+      "time_seconds": 981.9,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/a car-0.mp4",
+      "timestamp": "2026-02-27T18:51:21.336797"
+    }
+  ],
+  "completed_keys": [
+    "mochi_adaptive_f34s14l16|a bird and a cat|0",
+    "mochi_adaptive_f34s14l16|a cat and a dog|0",
+    "mochi_adaptive_f34s14l16|a dog and a horse|0",
+    "mochi_adaptive_f34s14l16|a person|0",
+    "mochi_adaptive_f34s14l16|a bicycle|0",
+    "mochi_adaptive_f34s14l16|a car|0",
+    "mochi_adaptive_f34s14l16|a bird and a cat|0",
+    "mochi_adaptive_f34s14l16|a cat and a dog|0",
+    "mochi_adaptive_f34s14l16|a dog and a horse|0",
+    "mochi_adaptive_f34s14l16|a person|0",
+    "mochi_adaptive_f34s14l16|a bicycle|0",
+    "mochi_adaptive_f34s14l16|a car|0"
+  ]
+}

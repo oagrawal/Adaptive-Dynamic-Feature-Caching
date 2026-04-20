@@ -1,0 +1,19 @@
+{
+    "temporal_style": [
+        0.22498096028963724,
+        [
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+                "video_results": 0.2439199537038803
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+                "video_results": 0.2157631814479828
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+                "video_results": 0.21525974571704865
+            }
+        ]
+    ]
+}

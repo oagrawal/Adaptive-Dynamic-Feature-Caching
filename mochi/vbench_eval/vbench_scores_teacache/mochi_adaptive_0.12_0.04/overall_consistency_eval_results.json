@@ -1,0 +1,19 @@
+{
+    "overall_consistency": [
+        0.2513757348060608,
+        [
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/Close up of grapes on a rotating table.-0.mp4",
+                "video_results": 0.26890772581100464
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/Turtle swimming in ocean.-0.mp4",
+                "video_results": 0.24475739896297455
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A storm trooper vacuuming the beach.-0.mp4",
+                "video_results": 0.24046207964420319
+            }
+        ]
+    ]
+}

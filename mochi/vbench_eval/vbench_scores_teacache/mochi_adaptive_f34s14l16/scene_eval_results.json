@@ -1,0 +1,25 @@
+{
+    "scene": [
+        0.3958333333333333,
+        [
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/alley-0.mp4",
+                "video_results": 0.0,
+                "success_frame_count": 0,
+                "frame_count": 16
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/amusement park-0.mp4",
+                "video_results": 1.0,
+                "success_frame_count": 16,
+                "frame_count": 16
+            },
+            {
+                "video_path": "/nfs/oagrawal/mochi/vbench_eval/videos/mochi_adaptive_f34s14l16/aquarium-0.mp4",
+                "video_results": 0.1875,
+                "success_frame_count": 3,
+                "frame_count": 16
+            }
+        ]
+    ]
+}

@@ -1,0 +1,816 @@
+{
+  "runs": [
+    {
+      "prompt": "aquarium",
+      "prompt_index": 8,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2008.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/aquarium-0.mp4",
+      "timestamp": "2026-02-17T15:35:51.625862"
+    },
+    {
+      "prompt": "aquarium",
+      "prompt_index": 8,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1521.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/aquarium-0.mp4",
+      "timestamp": "2026-02-17T20:45:18.311388"
+    },
+    {
+      "prompt": "aquarium",
+      "prompt_index": 8,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 740.9,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/aquarium-0.mp4",
+      "timestamp": "2026-02-17T22:50:54.590033"
+    },
+    {
+      "prompt": "aquarium",
+      "prompt_index": 8,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 4334.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/aquarium-0.mp4",
+      "timestamp": "2026-02-18T00:03:08.720006"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "prompt_index": 9,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2081.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-18T00:37:49.930085"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "prompt_index": 9,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1598.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-18T01:04:28.105902"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "prompt_index": 9,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 753.4,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-18T01:17:01.515077"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "prompt_index": 9,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1236.2,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-02-18T01:37:37.777602"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "prompt_index": 10,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2036.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T02:11:34.640702"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "prompt_index": 10,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1541.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T02:37:16.388141"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "prompt_index": 10,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 745.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T02:49:41.452503"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "prompt_index": 10,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1202.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T03:09:44.177519"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "prompt_index": 11,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2086.0,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T03:44:30.199496"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "prompt_index": 11,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1548.7,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T04:39:49.640803"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "prompt_index": 11,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 744.3,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T14:29:59.580402"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "prompt_index": 11,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1203.1,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-02-18T14:50:02.699771"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "prompt_index": 12,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "time_seconds": 2025.9,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_diff_baseline/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-18T15:23:48.633957"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "prompt_index": 12,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "time_seconds": 1536.5,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.04/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-18T15:49:25.218661"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "prompt_index": 12,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "time_seconds": 745.3,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_fixed_0.12/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-18T16:01:50.577539"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "prompt_index": 12,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "time_seconds": 1202.8,
+      "video_path": "/workspace/mochi/vbench_eval/videos/mochi_adaptive_0.12_0.04/A person is riding a bike-0.mp4",
+      "timestamp": "2026-02-18T16:21:53.437072"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:54.354637"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:55.024504"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:55.792260"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:56.557595"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:57.220412"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:58.000442"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:58.655210"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:52:59.419117"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:53:00.187154"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:53:00.845489"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:53:01.603760"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T16:53:02.362874"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:29.219856"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:29.852408"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:30.602120"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:31.233835"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:32.024937"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:32.804951"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:33.447868"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:34.179633"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:34.962476"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:35.587063"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:36.373917"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:00:37.113670"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:32.010521"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:32.688216"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:33.474514"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:34.243400"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:34.893242"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:35.672591"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:36.333167"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:37.120999"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:37.887496"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:38.566731"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:39.354457"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:07:40.010017"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:22.907923"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:23.745573"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:24.647363"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:25.428630"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:26.301470"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:27.237871"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:28.046914"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:28.984140"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:29.929927"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:30.756845"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:31.702524"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:09:32.630849"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:45.424400"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:46.093136"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:46.855928"
+    },
+    {
+      "prompt": "A person is marching",
+      "prompt_index": 13,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:47.716796"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:48.399693"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:49.301426"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:49.997741"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "prompt_index": 14,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:50.803441"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_diff_baseline",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:51.601635"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:52.257792"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_fixed_0.12",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:53.049510"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "prompt_index": 15,
+      "seed": 0,
+      "mode": "mochi_adaptive_0.12_0.04",
+      "error": "`enable_model_cpu_offload` requires accelerator, but not found",
+      "timestamp": "2026-02-18T17:12:53.711593"
+    }
+  ],
+  "completed_keys": [
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_fixed_0.04|a laptop, frozen in time|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_fixed_0.04|a laptop, frozen in time|0",
+    "mochi_fixed_0.12|a laptop, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a laptop, frozen in time|0",
+    "mochi_diff_baseline|A person is riding a bike|0",
+    "mochi_fixed_0.04|A person is riding a bike|0",
+    "mochi_fixed_0.12|A person is riding a bike|0",
+    "mochi_adaptive_0.12_0.04|A person is riding a bike|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_fixed_0.04|a laptop, frozen in time|0",
+    "mochi_fixed_0.12|a laptop, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a laptop, frozen in time|0",
+    "mochi_diff_baseline|A person is riding a bike|0",
+    "mochi_fixed_0.04|A person is riding a bike|0",
+    "mochi_fixed_0.12|A person is riding a bike|0",
+    "mochi_adaptive_0.12_0.04|A person is riding a bike|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_fixed_0.04|a laptop, frozen in time|0",
+    "mochi_fixed_0.12|a laptop, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a laptop, frozen in time|0",
+    "mochi_diff_baseline|A person is riding a bike|0",
+    "mochi_fixed_0.04|A person is riding a bike|0",
+    "mochi_fixed_0.12|A person is riding a bike|0",
+    "mochi_adaptive_0.12_0.04|A person is riding a bike|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_fixed_0.04|a laptop, frozen in time|0",
+    "mochi_fixed_0.12|a laptop, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a laptop, frozen in time|0",
+    "mochi_diff_baseline|A person is riding a bike|0",
+    "mochi_fixed_0.04|A person is riding a bike|0",
+    "mochi_fixed_0.12|A person is riding a bike|0",
+    "mochi_adaptive_0.12_0.04|A person is riding a bike|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_fixed_0.04|a laptop, frozen in time|0",
+    "mochi_fixed_0.12|a laptop, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a laptop, frozen in time|0",
+    "mochi_diff_baseline|A person is riding a bike|0",
+    "mochi_fixed_0.04|A person is riding a bike|0",
+    "mochi_fixed_0.12|A person is riding a bike|0",
+    "mochi_adaptive_0.12_0.04|A person is riding a bike|0",
+    "mochi_diff_baseline|aquarium|0",
+    "mochi_fixed_0.04|aquarium|0",
+    "mochi_fixed_0.12|aquarium|0",
+    "mochi_adaptive_0.12_0.04|aquarium|0",
+    "mochi_diff_baseline|In a still frame, a stop sign|0",
+    "mochi_fixed_0.04|In a still frame, a stop sign|0",
+    "mochi_fixed_0.12|In a still frame, a stop sign|0",
+    "mochi_adaptive_0.12_0.04|In a still frame, a stop sign|0",
+    "mochi_diff_baseline|a toilet, frozen in time|0",
+    "mochi_fixed_0.04|a toilet, frozen in time|0",
+    "mochi_fixed_0.12|a toilet, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a toilet, frozen in time|0",
+    "mochi_diff_baseline|a laptop, frozen in time|0",
+    "mochi_fixed_0.04|a laptop, frozen in time|0",
+    "mochi_fixed_0.12|a laptop, frozen in time|0",
+    "mochi_adaptive_0.12_0.04|a laptop, frozen in time|0",
+    "mochi_diff_baseline|A person is riding a bike|0",
+    "mochi_fixed_0.04|A person is riding a bike|0",
+    "mochi_fixed_0.12|A person is riding a bike|0",
+    "mochi_adaptive_0.12_0.04|A person is riding a bike|0"
+  ]
+}
