@@ -1,0 +1,444 @@
+{
+  "modes": [
+    "wan_ec_baseline",
+    "wan_ec_fixed_0.020",
+    "wan_ec_fixed_0.025",
+    "wan_ec_fixed_0.040",
+    "wan_ec_fixed_0.050",
+    "wan_ec_fixed_0.060",
+    "wan_ec_fixed_0.070",
+    "wan_ec_fixed_0.080",
+    "wan_ec_fixed_0.090",
+    "wan_ec_fixed_0.125",
+    "wan_ec_fixed_0.150",
+    "wan_ec_fixed_0.175",
+    "wan_ec_fixed_0.200",
+    "wan_ec_fixed_0.225",
+    "wan_ec_fixed_0.250",
+    "wan_ec_adaptive",
+    "wan_ec_adaptive_16_020040",
+    "wan_ec_adaptive_16_025_020",
+    "wan_ec_adaptive_16_050_020",
+    "wan_ec_adaptive_16_075_020",
+    "wan_ec_adaptive_16_100_020"
+  ],
+  "rows": [
+    {
+      "mode": "Wan baseline",
+      "speedup": "1.00x",
+      "latency": "216s",
+      "vbench": "77.58%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.020",
+      "speedup": "1.73x",
+      "latency": "125s",
+      "vbench": "77.65%",
+      "psnr": "25.58",
+      "ssim": "0.8516",
+      "lpips": "0.0869"
+    },
+    {
+      "mode": "Wan EasyCache 0.025",
+      "speedup": "1.86x",
+      "latency": "117s",
+      "vbench": "77.60%",
+      "psnr": "24.42",
+      "ssim": "0.8221",
+      "lpips": "0.1051"
+    },
+    {
+      "mode": "Wan EasyCache 0.040",
+      "speedup": "2.12x",
+      "latency": "102s",
+      "vbench": "77.80%",
+      "psnr": "22.02",
+      "ssim": "0.7500",
+      "lpips": "0.1485"
+    },
+    {
+      "mode": "Wan EasyCache 0.050",
+      "speedup": "2.28x",
+      "latency": "95s",
+      "vbench": "77.81%",
+      "psnr": "21.16",
+      "ssim": "0.7090",
+      "lpips": "0.1734"
+    },
+    {
+      "mode": "Wan EasyCache 0.060",
+      "speedup": "2.40x",
+      "latency": "90s",
+      "vbench": "77.91%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.070",
+      "speedup": "2.49x",
+      "latency": "87s",
+      "vbench": "77.78%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.080",
+      "speedup": "2.57x",
+      "latency": "84s",
+      "vbench": "77.76%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.090",
+      "speedup": "2.62x",
+      "latency": "83s",
+      "vbench": "77.79%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.125",
+      "speedup": "2.89x",
+      "latency": "75s",
+      "vbench": "77.79%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.150",
+      "speedup": "2.98x",
+      "latency": "73s",
+      "vbench": "77.48%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.175",
+      "speedup": "3.09x",
+      "latency": "70s",
+      "vbench": "77.55%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.200",
+      "speedup": "3.15x",
+      "latency": "69s",
+      "vbench": "75.62%",
+      "psnr": "18.45",
+      "ssim": "0.5685",
+      "lpips": "0.2933"
+    },
+    {
+      "mode": "Wan EasyCache 0.225",
+      "speedup": "3.25x",
+      "latency": "67s",
+      "vbench": "75.39%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache 0.250",
+      "speedup": "3.28x",
+      "latency": "66s",
+      "vbench": "77.33%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache adaptive",
+      "speedup": "2.10x",
+      "latency": "103s",
+      "vbench": "77.46%",
+      "psnr": "23.62",
+      "ssim": "0.7950",
+      "lpips": "0.1234"
+    },
+    {
+      "mode": "Wan EasyCache adaptive 16 (0.02/0.04)",
+      "speedup": "1.92x",
+      "latency": "113s",
+      "vbench": "77.54%",
+      "psnr": "24.90",
+      "ssim": "0.8329",
+      "lpips": "0.0996"
+    },
+    {
+      "mode": "Wan EasyCache adaptive 16 (0.025/0.20)",
+      "speedup": "2.45x",
+      "latency": "88s",
+      "vbench": "77.16%",
+      "psnr": "20.80",
+      "ssim": "0.6821",
+      "lpips": "0.1967"
+    },
+    {
+      "mode": "Wan EasyCache adaptive 16 (0.05/0.20)",
+      "speedup": "2.68x",
+      "latency": "81s",
+      "vbench": "76.95%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache adaptive 16 (0.075/0.20)",
+      "speedup": "2.86x",
+      "latency": "76s",
+      "vbench": "76.90%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    },
+    {
+      "mode": "Wan EasyCache adaptive 16 (0.10/0.20)",
+      "speedup": "2.94x",
+      "latency": "74s",
+      "vbench": "76.96%",
+      "psnr": "\u2014",
+      "ssim": "\u2014",
+      "lpips": "\u2014"
+    }
+  ],
+  "timing": {
+    "wan_ec_adaptive_first16": {
+      "avg_time": 108.82333333333334,
+      "num_videos": 3
+    },
+    "wan_ec_adaptive_16_020040": {
+      "avg_time": 112.72848484848487,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.020": {
+      "avg_time": 125.37272727272727,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.040": {
+      "avg_time": 101.94333333333333,
+      "num_videos": 33
+    },
+    "wan_ec_baseline": {
+      "avg_time": 216.3939393939394,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.025": {
+      "avg_time": 116.61363636363633,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.050": {
+      "avg_time": 95.0539393939394,
+      "num_videos": 33
+    },
+    "wan_ec_adaptive": {
+      "avg_time": 103.13909090909088,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.060": {
+      "avg_time": 90.2757575757576,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.070": {
+      "avg_time": 86.93060606060605,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.080": {
+      "avg_time": 84.25515151515151,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.090": {
+      "avg_time": 82.66333333333333,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.125": {
+      "avg_time": 74.99303030303031,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.150": {
+      "avg_time": 72.59848484848484,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.175": {
+      "avg_time": 69.98393939393941,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.200": {
+      "avg_time": 68.80060606060606,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.225": {
+      "avg_time": 66.5490909090909,
+      "num_videos": 33
+    },
+    "wan_ec_fixed_0.250": {
+      "avg_time": 66.04393939393938,
+      "num_videos": 33
+    },
+    "wan_ec_adaptive_16_025_020": {
+      "avg_time": 88.37575757575755,
+      "num_videos": 33
+    },
+    "wan_ec_adaptive_16_050_020": {
+      "avg_time": 80.75181818181821,
+      "num_videos": 33
+    },
+    "wan_ec_adaptive_16_075_020": {
+      "avg_time": 75.62878787878785,
+      "num_videos": 33
+    },
+    "wan_ec_adaptive_16_100_020": {
+      "avg_time": 73.68969696969695,
+      "num_videos": 33
+    }
+  },
+  "fidelity": {
+    "wan_ec_adaptive": {
+      "mode": "wan_ec_adaptive",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 23.616993850039634,
+        "std": 3.4552496018543626
+      },
+      "ssim": {
+        "mean": 0.7949889735747191,
+        "std": 0.09883791024932495
+      },
+      "lpips": {
+        "mean": 0.12336088584863511,
+        "std": 0.06378690921586774
+      }
+    },
+    "wan_ec_fixed_0.050": {
+      "mode": "wan_ec_fixed_0.050",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 21.159006593672252,
+        "std": 3.2717769378942405
+      },
+      "ssim": {
+        "mean": 0.70900201562789,
+        "std": 0.13168554927746204
+      },
+      "lpips": {
+        "mean": 0.17335309059520448,
+        "std": 0.06822422957783361
+      }
+    },
+    "wan_ec_adaptive_16_020040": {
+      "mode": "wan_ec_adaptive_16_020040",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 24.903060603650232,
+        "std": 3.5722821477318822
+      },
+      "ssim": {
+        "mean": 0.8329463585257412,
+        "std": 0.09219664387327611
+      },
+      "lpips": {
+        "mean": 0.09961864933945738,
+        "std": 0.06045631040861571
+      }
+    },
+    "wan_ec_fixed_0.200": {
+      "mode": "wan_ec_fixed_0.200",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 18.453687027887042,
+        "std": 2.1335054162728717
+      },
+      "ssim": {
+        "mean": 0.5684533944542121,
+        "std": 0.1126055784275834
+      },
+      "lpips": {
+        "mean": 0.2933393606321668,
+        "std": 0.06344392228097226
+      }
+    },
+    "wan_ec_fixed_0.040": {
+      "mode": "wan_ec_fixed_0.040",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 22.016768463005945,
+        "std": 3.2920136499773416
+      },
+      "ssim": {
+        "mean": 0.7499743987468712,
+        "std": 0.11468675888917981
+      },
+      "lpips": {
+        "mean": 0.14848972328238574,
+        "std": 0.06472921836020337
+      }
+    },
+    "wan_ec_fixed_0.020": {
+      "mode": "wan_ec_fixed_0.020",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 25.578161218336444,
+        "std": 3.9402051741189625
+      },
+      "ssim": {
+        "mean": 0.851554343030903,
+        "std": 0.09833247539662991
+      },
+      "lpips": {
+        "mean": 0.08688745368237225,
+        "std": 0.0618649434319662
+      }
+    },
+    "wan_ec_adaptive_16_025_020": {
+      "mode": "wan_ec_adaptive_16_025_020",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 20.799088116416666,
+        "std": 2.513471386800484
+      },
+      "ssim": {
+        "mean": 0.6821232017417498,
+        "std": 0.09910628209951218
+      },
+      "lpips": {
+        "mean": 0.19670814687990312,
+        "std": 0.06739883759888139
+      }
+    },
+    "wan_ec_fixed_0.025": {
+      "mode": "wan_ec_fixed_0.025",
+      "baseline": "wan_ec_baseline",
+      "num_videos": 33,
+      "psnr": {
+        "mean": 24.42299513628646,
+        "std": 3.819094443511052
+      },
+      "ssim": {
+        "mean": 0.8221040357954239,
+        "std": 0.10152352319589786
+      },
+      "lpips": {
+        "mean": 0.10509073323498068,
+        "std": 0.06410591153903379
+      }
+    }
+  }
+}

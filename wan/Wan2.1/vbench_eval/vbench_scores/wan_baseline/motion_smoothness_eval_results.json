@@ -1,0 +1,19 @@
+{
+    "motion_smoothness": [
+        0.9819572515916534,
+        [
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval/videos/wan_baseline/a person swimming in ocean-0.mp4",
+                "video_results": 0.980364629403778
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval/videos/wan_baseline/a person giving a presentation to a room full of colleagues-0.mp4",
+                "video_results": 0.9927297582177236
+            },
+            {
+                "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval/videos/wan_baseline/a person washing the dishes-0.mp4",
+                "video_results": 0.9727773671534586
+            }
+        ]
+    ]
+}
