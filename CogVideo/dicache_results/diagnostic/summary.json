@@ -1,0 +1,44 @@
+[
+  {
+    "mode": "adaptive_hi0.30_lo0.05_mid15_48",
+    "skip_steps": 27,
+    "full_steps": 23,
+    "elapsed_seconds": 493.76
+  },
+  {
+    "mode": "adaptive_hi0.40_lo0.05_mid15_48_force_last1",
+    "skip_steps": 29,
+    "full_steps": 21,
+    "elapsed_seconds": 450.6
+  },
+  {
+    "mode": "adaptive_hi0.40_lo0.05_mid15_48",
+    "skip_steps": 29,
+    "full_steps": 21,
+    "elapsed_seconds": 451.82
+  },
+  {
+    "mode": "baseline_probe",
+    "skip_steps": 0,
+    "full_steps": 50,
+    "elapsed_seconds": 998.21
+  },
+  {
+    "mode": "fixed_0.20",
+    "skip_steps": 27,
+    "full_steps": 23,
+    "elapsed_seconds": 493.71
+  },
+  {
+    "mode": "fixed_0.30",
+    "skip_steps": 31,
+    "full_steps": 19,
+    "elapsed_seconds": 416.26
+  },
+  {
+    "mode": "fixed_0.40",
+    "skip_steps": 33,
+    "full_steps": 17,
+    "elapsed_seconds": 381.66
+  }
+]

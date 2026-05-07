@@ -1,0 +1,42 @@
+[
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 367.199138879776
+    },
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 404.32997727394104
+    },
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 395.42642617225647
+    },
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 1268.3854274749756
+    },
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 318.20444536209106
+    },
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 393.08421659469604
+    },
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 400.9627788066864
+    },
+    {
+        "GPU_Device": "NVIDIA A100 80GB PCIe",
+        "number_prompt": 1,
+        "avg_cost_time": 387.71125078201294
+    }
+]

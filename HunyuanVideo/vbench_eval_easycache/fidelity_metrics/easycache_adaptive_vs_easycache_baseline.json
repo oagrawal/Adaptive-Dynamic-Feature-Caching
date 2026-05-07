@@ -1,0 +1,17 @@
+{
+  "mode": "easycache_adaptive",
+  "baseline": "easycache_baseline",
+  "num_videos": 33,
+  "psnr": {
+    "mean": 30.428260209604893,
+    "std": 2.2521020423206743
+  },
+  "ssim": {
+    "mean": 0.887759425474123,
+    "std": 0.043343793730889944
+  },
+  "lpips": {
+    "mean": 0.10070915938312805,
+    "std": 0.03166101019930111
+  }
+}

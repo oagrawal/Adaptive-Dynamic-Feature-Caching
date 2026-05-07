@@ -1,0 +1,222 @@
+% ============================================================
+% APPENDIX — paste between \section*{References} and
+%             \section*{NeurIPS Paper Checklist}
+%
+% In neurips_2025.tex, find the line:
+%   \section*{NeurIPS Paper Checklist}
+% and paste the entire block below immediately BEFORE it.
+% ============================================================
+
+\appendix
+
+\section{Detailed Per-Combo Results}
+\label{sec:appendix-detailed}
+
+All configurations evaluated for each method $\times$ model combination are listed
+below, sorted by increasing speedup. \textbf{Bold} rows are adaptive modes.
+Fidelity metrics (PSNR, SSIM, LPIPS) are computed against the uncached baseline.
+$\tau$ denotes the caching threshold for all methods (cache-reuse residual for
+TeaCache/EasyCache; feature-difference score for DiCache).
+Subscripts $\ell$/$h$ mark the low/high threshold in adaptive modes.
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{TeaCache on HunyuanVideo: all evaluated configurations}
+\label{tab:app-tc-hv}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.1$) & 864s & 1.57$\times$ & 24.69 & 0.819 & 0.187 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.25$)} & 654s & 2.08$\times$ & 24.47 & 0.814 & 0.194 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.2$)} & 652s & 2.09$\times$ & 23.85 & 0.796 & 0.215 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.3$)} & 628s & 2.16$\times$ & 24.41 & 0.813 & 0.196 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.3$)} & 554s & 2.45$\times$ & 24.04 & 0.802 & 0.209 \\
+  Fixed ($\tau=0.2$) & 542s & 2.51$\times$ & 21.71 & 0.755 & 0.276 \\
+  \textbf{Adaptive ($\tau_\ell=0.2$, $\tau_h=0.3$)} & 483s & 2.81$\times$ & 21.66 & 0.754 & 0.281 \\
+  Fixed ($\tau=0.3$) & 424s & 3.20$\times$ & 19.98 & 0.693 & 0.353 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{TeaCache on Wan~2.1: all evaluated configurations}
+\label{tab:app-tc-wan}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.05$) & 150s & 1.42$\times$ & 24.93 & 0.845 & 0.083 \\
+  Fixed ($\tau=0.1$) & 113s & 1.88$\times$ & 19.92 & 0.678 & 0.197 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.2$)} & 108s & 1.96$\times$ & 22.10 & 0.757 & 0.150 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.25$)} & 105s & 2.03$\times$ & 21.69 & 0.739 & 0.164 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.2$)} & 94s & 2.26$\times$ & 19.56 & 0.657 & 0.222 \\
+  Fixed ($\tau=0.15$) & 89s & 2.38$\times$ & 18.42 & 0.609 & 0.262 \\
+  Fixed ($\tau=0.2$) & 74s & 2.86$\times$ & 17.10 & 0.538 & 0.335 \\
+  Fixed ($\tau=0.25$) & 70s & 3.02$\times$ & 16.94 & 0.527 & 0.354 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{TeaCache on CogVideo X~1.5: all evaluated configurations}
+\label{tab:app-tc-cog}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.1$) & 723s & 1.41$\times$ & 37.32 & 0.958 & 0.029 \\
+  Fixed ($\tau=0.2$) & 582s & 1.75$\times$ & 34.35 & 0.945 & 0.042 \\
+  Fixed ($\tau=0.22$) & 579s & 1.76$\times$ & 25.28 & 0.845 & 0.152 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.3$)} & 545s & 1.87$\times$ & 32.02 & 0.930 & 0.058 \\
+  Fixed ($\tau=0.25$) & 536s & 1.90$\times$ & 25.03 & 0.843 & 0.154 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.3$)} & 525s & 1.94$\times$ & 31.74 & 0.929 & 0.059 \\
+  Fixed ($\tau=0.3$) & 465s & 2.19$\times$ & 16.35 & 0.580 & 0.463 \\
+  \textbf{Adap.\ 3-phase ($\tau_1=0.30$, $\tau_2=0.35$)} & 441s & 2.31$\times$ & 16.18 & 0.572 & 0.472 \\
+  \textbf{Adap.\ 3-phase ($\tau_1=0.30$, $\tau_2=0.40$)} & 441s & 2.31$\times$ & 16.08 & 0.568 & 0.479 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{EasyCache on HunyuanVideo: all evaluated configurations}
+\label{tab:app-ec-hv}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.025$) & 659s & 2.06$\times$ & 33.51 & 0.926 & 0.058 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.050$)} & 626s & 2.17$\times$ & 31.18 & 0.905 & 0.085 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.120$)} & 616s & 2.20$\times$ & 28.43 & 0.837 & 0.179 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.075$)} & 596s & 2.28$\times$ & 29.72 & 0.884 & 0.112 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.100$)} & 584s & 2.32$\times$ & 28.67 & 0.859 & 0.141 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.075$)} & 569s & 2.38$\times$ & 30.49 & 0.890 & 0.101 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.090$)} & 569s & 2.38$\times$ & 29.27 & 0.855 & 0.151 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.045$)} & 568s & 2.39$\times$ & 30.62 & 0.894 & 0.094 \\
+  Fixed ($\tau=0.0375$) & 561s & 2.42$\times$ & 30.67 & 0.883 & 0.106 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.050$)} & 561s & 2.42$\times$ & 30.43 & 0.888 & 0.101 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.050$)} & 557s & 2.44$\times$ & 30.08 & 0.887 & 0.102 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.150$)} & 552s & 2.46$\times$ & 27.69 & 0.811 & 0.225 \\
+  Fixed ($\tau=0.040$) & 549s & 2.47$\times$ & 29.98 & 0.872 & 0.122 \\
+  \textbf{Adaptive ($\tau_\ell=0.030$, $\tau_h=0.050$)} & 542s & 2.51$\times$ & 29.63 & 0.876 & 0.113 \\
+  \textbf{Adaptive ($\tau_\ell=0.0375$, $\tau_h=0.050$)} & 537s & 2.53$\times$ & 29.50 & 0.863 & 0.134 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.075$)} & 533s & 2.55$\times$ & 29.08 & 0.865 & 0.132 \\
+  Fixed ($\tau=0.045$) & 531s & 2.55$\times$ & 28.99 & 0.851 & 0.153 \\
+  \textbf{Adaptive ($\tau_\ell=0.030$, $\tau_h=0.060$)} & 522s & 2.60$\times$ & 28.95 & 0.866 & 0.126 \\
+  Fixed ($\tau=0.050$) & 503s & 2.70$\times$ & 28.17 & 0.833 & 0.183 \\
+  \textbf{Adaptive ($\tau_\ell=0.035$, $\tau_h=0.065$)} & 499s & 2.72$\times$ & 28.37 & 0.853 & 0.144 \\
+  \textbf{Adaptive ($\tau_\ell=0.050$, $\tau_h=0.120$)} & 478s & 2.84$\times$ & 27.08 & 0.803 & 0.243 \\
+  Fixed ($\tau=0.060$) & 473s & 2.87$\times$ & 27.20 & 0.807 & 0.232 \\
+  Fixed ($\tau=0.075$) & 436s & 3.12$\times$ & 25.62 & 0.755 & 0.336 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{EasyCache on Wan~2.1: all evaluated configurations}
+\label{tab:app-ec-wan}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.020$) & 125s & 1.73$\times$ & 25.58 & 0.852 & 0.087 \\
+  Fixed ($\tau=0.025$) & 116s & 1.86$\times$ & 24.42 & 0.822 & 0.105 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.040$)} & 112s & 1.92$\times$ & 24.90 & 0.833 & 0.100 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.050$)} & 103s & 2.10$\times$ & 23.62 & 0.795 & 0.123 \\
+  Fixed ($\tau=0.040$) & 102s & 2.12$\times$ & 22.02 & 0.750 & 0.148 \\
+  Fixed ($\tau=0.050$) & 95s & 2.28$\times$ & 21.16 & 0.709 & 0.173 \\
+  Fixed ($\tau=0.060$) & 90s & 2.40$\times$ & 20.55 & 0.686 & 0.189 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.025$)} & 88s & 2.45$\times$ & 20.80 & 0.682 & 0.197 \\
+  Fixed ($\tau=0.070$) & 87s & 2.49$\times$ & 20.04 & 0.665 & 0.207 \\
+  Fixed ($\tau=0.080$) & 84s & 2.57$\times$ & 19.85 & 0.656 & 0.216 \\
+  Fixed ($\tau=0.090$) & 82s & 2.62$\times$ & 19.64 & 0.642 & 0.223 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.050$)} & 81s & 2.68$\times$ & 19.88 & 0.645 & 0.224 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.075$)} & 76s & 2.86$\times$ & 19.31 & 0.617 & 0.248 \\
+  Fixed ($\tau=0.125$) & 75s & 2.89$\times$ & 19.11 & 0.610 & 0.253 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.1$)} & 74s & 2.93$\times$ & 19.13 & 0.605 & 0.257 \\
+  Fixed ($\tau=0.150$) & 72s & 2.98$\times$ & 18.83 & 0.589 & 0.269 \\
+  Fixed ($\tau=0.175$) & 70s & 3.09$\times$ & 18.70 & 0.581 & 0.280 \\
+  Fixed ($\tau=0.200$) & 69s & 3.15$\times$ & 18.45 & 0.568 & 0.293 \\
+  Fixed ($\tau=0.225$) & 66s & 3.25$\times$ & 18.29 & 0.550 & 0.306 \\
+  Fixed ($\tau=0.250$) & 66s & 3.28$\times$ & 18.26 & 0.548 & 0.310 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{DiCache on HunyuanVideo: all evaluated configurations}
+\label{tab:app-dc-hv}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.05$) & 659s & 1.92$\times$ & 30.96 & 0.904 & 0.088 \\
+  Fixed ($\tau=0.07$) & 626s & 2.02$\times$ & 27.95 & 0.858 & 0.140 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.10$)} & 620s & 2.04$\times$ & 29.42 & 0.888 & 0.105 \\
+  Fixed ($\tau=0.08$) & 570s & 2.22$\times$ & 20.21 & 0.729 & 0.322 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.15$)} & 567s & 2.23$\times$ & 28.19 & 0.874 & 0.123 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.25$)} & 529s & 2.39$\times$ & 26.66 & 0.852 & 0.155 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.30$)} & 529s & 2.39$\times$ & 26.15 & 0.844 & 0.169 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.35$)} & 506s & 2.50$\times$ & 25.55 & 0.832 & 0.195 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.40$)} & 502s & 2.52$\times$ & 25.20 & 0.824 & 0.206 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.20$)} & 465s & 2.72$\times$ & 27.08 & 0.859 & 0.144 \\
+  Fixed ($\tau=0.10$) & 419s & 3.02$\times$ & 20.15 & 0.720 & 0.328 \\
+  Fixed ($\tau=0.15$) & 347s & 3.65$\times$ & 20.18 & 0.719 & 0.330 \\
+  \textbf{Adaptive ($\tau_\ell=0.10$, $\tau_h=0.30$)} & 327s & 3.87$\times$ & 20.23 & 0.724 & 0.338 \\
+  Fixed ($\tau=0.20$) & 286s & 4.42$\times$ & 20.11 & 0.716 & 0.340 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.40$)} & 275s & 4.60$\times$ & 19.83 & 0.707 & 0.380 \\
+  Fixed ($\tau=0.25$) & 250s & 5.05$\times$ & 19.79 & 0.704 & 0.364 \\
+  Fixed ($\tau=0.30$) & 226s & 5.59$\times$ & 18.97 & 0.686 & 0.410 \\
+  Fixed ($\tau=0.35$) & 202s & 6.25$\times$ & 18.73 & 0.680 & 0.431 \\
+  Fixed ($\tau=0.40$) & 186s & 6.79$\times$ & 17.85 & 0.660 & 0.488 \\
+  Fixed ($\tau=0.60$) & 164s & 7.69$\times$ & 16.30 & 0.620 & 0.641 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{DiCache on Wan~2.1: all evaluated configurations}
+\label{tab:app-dc-wan}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.05$) & 126s & 1.78$\times$ & 13.83 & 0.380 & 0.479 \\
+  Fixed ($\tau=0.07$) & 99s & 2.27$\times$ & 13.41 & 0.356 & 0.508 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.225$)} & 98s & 2.28$\times$ & 13.45 & 0.371 & 0.508 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.25$)} & 98s & 2.29$\times$ & 13.38 & 0.369 & 0.520 \\
+  Fixed ($\tau=0.08$) & 92s & 2.44$\times$ & 12.91 & 0.333 & 0.538 \\
+  Fixed ($\tau=0.10$) & 87s & 2.58$\times$ & 12.55 & 0.313 & 0.556 \\
+  \textbf{Adaptive ($\tau_\ell=0.07$, $\tau_h=0.225$)} & 82s & 2.73$\times$ & 13.29 & 0.355 & 0.541 \\
+  \textbf{Adaptive ($\tau_\ell=0.07$, $\tau_h=0.25$)} & 81s & 2.76$\times$ & 13.30 & 0.356 & 0.546 \\
+  \textbf{Adaptive ($\tau_\ell=0.10$, $\tau_h=0.225$)} & 78s & 2.89$\times$ & 12.59 & 0.316 & 0.581 \\
+  \textbf{Adaptive ($\tau_\ell=0.10$, $\tau_h=0.25$)} & 76s & 2.94$\times$ & 12.54 & 0.314 & 0.593 \\
+  Fixed ($\tau=0.15$) & 71s & 3.16$\times$ & 12.16 & 0.293 & 0.583 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.225$)} & 67s & 3.33$\times$ & 12.20 & 0.294 & 0.599 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.25$)} & 66s & 3.39$\times$ & 12.22 & 0.293 & 0.605 \\
+  Fixed ($\tau=0.20$) & 61s & 3.66$\times$ & 11.75 & 0.282 & 0.636 \\
+  Fixed ($\tau=0.225$) & 56s & 3.97$\times$ & 11.79 & 0.282 & 0.644 \\
+  Fixed ($\tau=0.25$) & 56s & 4.03$\times$ & 11.70 & 0.284 & 0.658 \\
+\bottomrule
+\end{tabular}
+\end{table}

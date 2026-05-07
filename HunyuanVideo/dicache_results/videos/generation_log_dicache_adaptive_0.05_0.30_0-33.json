@@ -1,0 +1,600 @@
+{
+  "runs": [
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 532.41,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a person swimming in ocean-0.mp4",
+      "prompt_index": 0,
+      "timestamp": "2026-04-29T23:51:35.834512",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 541.35,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a person giving a presentation to a room full of colleagues-0.mp4",
+      "prompt_index": 1,
+      "timestamp": "2026-04-30T00:00:38.802483",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 537.27,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a person washing the dishes-0.mp4",
+      "prompt_index": 2,
+      "timestamp": "2026-04-30T00:09:37.890881",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 525.23,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/Close up of grapes on a rotating table.-0.mp4",
+      "prompt_index": 3,
+      "timestamp": "2026-04-30T00:18:24.938787",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 536.7,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/Turtle swimming in ocean.-0.mp4",
+      "prompt_index": 4,
+      "timestamp": "2026-04-30T00:27:23.671524",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 525.08,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A storm trooper vacuuming the beach.-0.mp4",
+      "prompt_index": 5,
+      "timestamp": "2026-04-30T00:36:10.603695",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 533.94,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/alley-0.mp4",
+      "prompt_index": 6,
+      "timestamp": "2026-04-30T00:45:06.216681",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 511.53,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/amusement park-0.mp4",
+      "prompt_index": 7,
+      "timestamp": "2026-04-30T00:53:39.740623",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 522.03,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/aquarium-0.mp4",
+      "prompt_index": 8,
+      "timestamp": "2026-04-30T01:02:23.625818",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 537.71,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/In a still frame, a stop sign-0.mp4",
+      "prompt_index": 9,
+      "timestamp": "2026-04-30T01:11:22.852620",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 500.22,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a toilet, frozen in time-0.mp4",
+      "prompt_index": 10,
+      "timestamp": "2026-04-30T01:19:44.582065",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 523.4,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a laptop, frozen in time-0.mp4",
+      "prompt_index": 11,
+      "timestamp": "2026-04-30T01:28:29.503390",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 524.7,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A person is riding a bike-0.mp4",
+      "prompt_index": 12,
+      "timestamp": "2026-04-30T01:37:16.113410",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 533.75,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A person is marching-0.mp4",
+      "prompt_index": 13,
+      "timestamp": "2026-04-30T01:46:11.725450",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 533.42,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A person is roller skating-0.mp4",
+      "prompt_index": 14,
+      "timestamp": "2026-04-30T01:55:06.907905",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 536.91,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "prompt_index": 15,
+      "timestamp": "2026-04-30T02:04:05.732799",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 544.88,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "prompt_index": 16,
+      "timestamp": "2026-04-30T02:13:12.634172",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 546.76,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "prompt_index": 17,
+      "timestamp": "2026-04-30T02:22:21.382111",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 541.28,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "prompt_index": 18,
+      "timestamp": "2026-04-30T02:31:24.576357",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 537.8,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "prompt_index": 19,
+      "timestamp": "2026-04-30T02:40:24.215092",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 537.81,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "prompt_index": 20,
+      "timestamp": "2026-04-30T02:49:23.873303",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a red bicycle",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 524.06,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a red bicycle-0.mp4",
+      "prompt_index": 21,
+      "timestamp": "2026-04-30T02:58:09.757263",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a green bicycle",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 524.72,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a green bicycle-0.mp4",
+      "prompt_index": 22,
+      "timestamp": "2026-04-30T03:06:56.185053",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a blue bicycle",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 525.32,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a blue bicycle-0.mp4",
+      "prompt_index": 23,
+      "timestamp": "2026-04-30T03:15:43.038267",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a bicycle on the left of a car, front view",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 526.37,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a bicycle on the left of a car, front view-0.mp4",
+      "prompt_index": 24,
+      "timestamp": "2026-04-30T03:24:30.921776",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a car on the right of a motorcycle, front view",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 538.46,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a car on the right of a motorcycle, front view-0.mp4",
+      "prompt_index": 25,
+      "timestamp": "2026-04-30T03:33:30.944778",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a motorcycle on the left of a bus, front view",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 538.87,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a motorcycle on the left of a bus, front view-0.mp4",
+      "prompt_index": 26,
+      "timestamp": "2026-04-30T03:42:31.464557",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a bird and a cat",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 522.66,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a bird and a cat-0.mp4",
+      "prompt_index": 27,
+      "timestamp": "2026-04-30T03:51:15.884781",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a cat and a dog",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 511.14,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a cat and a dog-0.mp4",
+      "prompt_index": 28,
+      "timestamp": "2026-04-30T03:59:48.893565",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a dog and a horse",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 536.0,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a dog and a horse-0.mp4",
+      "prompt_index": 29,
+      "timestamp": "2026-04-30T04:08:46.768193",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a person",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 525.15,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a person-0.mp4",
+      "prompt_index": 30,
+      "timestamp": "2026-04-30T04:17:33.639833",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a bicycle",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 500.13,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a bicycle-0.mp4",
+      "prompt_index": 31,
+      "timestamp": "2026-04-30T04:25:55.740891",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    },
+    {
+      "prompt": "a car",
+      "seed": 0,
+      "mode": "dicache_adaptive_0.05_0.30",
+      "time_seconds": 526.38,
+      "video_path": "dicache_results/videos/dicache_adaptive_0.05_0.30/a car-0.mp4",
+      "prompt_index": 32,
+      "timestamp": "2026-04-30T04:34:43.925820",
+      "ret_ratio": 0.0,
+      "config": {
+        "type": "adaptive",
+        "thresh_low": 0.05,
+        "thresh_high": 0.3,
+        "stable_start": 8,
+        "stable_end": 40
+      }
+    }
+  ],
+  "completed_keys": [
+    "dicache_adaptive_0.05_0.30|a person swimming in ocean|0",
+    "dicache_adaptive_0.05_0.30|a person giving a presentation to a room full of colleagues|0",
+    "dicache_adaptive_0.05_0.30|a person washing the dishes|0",
+    "dicache_adaptive_0.05_0.30|Close up of grapes on a rotating table.|0",
+    "dicache_adaptive_0.05_0.30|Turtle swimming in ocean.|0",
+    "dicache_adaptive_0.05_0.30|A storm trooper vacuuming the beach.|0",
+    "dicache_adaptive_0.05_0.30|alley|0",
+    "dicache_adaptive_0.05_0.30|amusement park|0",
+    "dicache_adaptive_0.05_0.30|aquarium|0",
+    "dicache_adaptive_0.05_0.30|In a still frame, a stop sign|0",
+    "dicache_adaptive_0.05_0.30|a toilet, frozen in time|0",
+    "dicache_adaptive_0.05_0.30|a laptop, frozen in time|0",
+    "dicache_adaptive_0.05_0.30|A person is riding a bike|0",
+    "dicache_adaptive_0.05_0.30|A person is marching|0",
+    "dicache_adaptive_0.05_0.30|A person is roller skating|0",
+    "dicache_adaptive_0.05_0.30|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "dicache_adaptive_0.05_0.30|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "dicache_adaptive_0.05_0.30|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "dicache_adaptive_0.05_0.30|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "dicache_adaptive_0.05_0.30|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "dicache_adaptive_0.05_0.30|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "dicache_adaptive_0.05_0.30|a red bicycle|0",
+    "dicache_adaptive_0.05_0.30|a green bicycle|0",
+    "dicache_adaptive_0.05_0.30|a blue bicycle|0",
+    "dicache_adaptive_0.05_0.30|a bicycle on the left of a car, front view|0",
+    "dicache_adaptive_0.05_0.30|a car on the right of a motorcycle, front view|0",
+    "dicache_adaptive_0.05_0.30|a motorcycle on the left of a bus, front view|0",
+    "dicache_adaptive_0.05_0.30|a bird and a cat|0",
+    "dicache_adaptive_0.05_0.30|a cat and a dog|0",
+    "dicache_adaptive_0.05_0.30|a dog and a horse|0",
+    "dicache_adaptive_0.05_0.30|a person|0",
+    "dicache_adaptive_0.05_0.30|a bicycle|0",
+    "dicache_adaptive_0.05_0.30|a car|0"
+  ]
+}

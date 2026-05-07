@@ -1,0 +1,358 @@
+{
+  "runs": [
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 0,
+      "time_seconds": 99.81,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-04-21T11:21:26.007825"
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 0,
+      "time_seconds": 93.58,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-04-21T11:23:02.981097"
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 0,
+      "time_seconds": 81.89,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-04-21T11:24:28.189516"
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 0,
+      "time_seconds": 86.21,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a person swimming in ocean-0.mp4",
+      "timestamp": "2026-04-21T11:25:57.414703"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 1,
+      "time_seconds": 96.56,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-04-21T11:27:36.622658"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 1,
+      "time_seconds": 89.24,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-04-21T11:29:08.312568"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 1,
+      "time_seconds": 82.0,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-04-21T11:30:33.001821"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 1,
+      "time_seconds": 82.08,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a person giving a presentation to a room full of colleagues-0.mp4",
+      "timestamp": "2026-04-21T11:31:57.708943"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 2,
+      "time_seconds": 100.97,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a person washing the dishes-0.mp4",
+      "timestamp": "2026-04-21T11:33:41.219542"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 2,
+      "time_seconds": 92.91,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a person washing the dishes-0.mp4",
+      "timestamp": "2026-04-21T11:35:16.597600"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 2,
+      "time_seconds": 81.77,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a person washing the dishes-0.mp4",
+      "timestamp": "2026-04-21T11:36:40.805906"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 2,
+      "time_seconds": 81.75,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a person washing the dishes-0.mp4",
+      "timestamp": "2026-04-21T11:38:05.195110"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 3,
+      "time_seconds": 100.99,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-04-21T11:39:48.922859"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 3,
+      "time_seconds": 92.61,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-04-21T11:41:24.276303"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 3,
+      "time_seconds": 81.84,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-04-21T11:42:48.625288"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 3,
+      "time_seconds": 81.57,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/Close up of grapes on a rotating table.-0.mp4",
+      "timestamp": "2026-04-21T11:44:13.030822"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 4,
+      "time_seconds": 97.0,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-04-21T11:45:53.348063"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 4,
+      "time_seconds": 92.88,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-04-21T11:47:29.489994"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 4,
+      "time_seconds": 78.3,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-04-21T11:48:51.144620"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 4,
+      "time_seconds": 77.98,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/Turtle swimming in ocean.-0.mp4",
+      "timestamp": "2026-04-21T11:50:12.473215"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 5,
+      "time_seconds": 97.36,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-04-21T11:51:52.561941"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 5,
+      "time_seconds": 92.78,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-04-21T11:53:28.279479"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 5,
+      "time_seconds": 78.82,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-04-21T11:54:50.212514"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 5,
+      "time_seconds": 78.7,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/A storm trooper vacuuming the beach.-0.mp4",
+      "timestamp": "2026-04-21T11:56:11.776727"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 6,
+      "time_seconds": 106.07,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/alley-0.mp4",
+      "timestamp": "2026-04-21T11:58:00.856946"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 6,
+      "time_seconds": 89.58,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/alley-0.mp4",
+      "timestamp": "2026-04-21T11:59:33.554126"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 6,
+      "time_seconds": 78.73,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/alley-0.mp4",
+      "timestamp": "2026-04-21T12:00:55.716733"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 6,
+      "time_seconds": 81.73,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/alley-0.mp4",
+      "timestamp": "2026-04-21T12:02:20.966994"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 7,
+      "time_seconds": 100.48,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/amusement park-0.mp4",
+      "timestamp": "2026-04-21T12:04:04.531867"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 7,
+      "time_seconds": 107.53,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/amusement park-0.mp4",
+      "timestamp": "2026-04-21T12:05:55.613870"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 7,
+      "time_seconds": 82.12,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/amusement park-0.mp4",
+      "timestamp": "2026-04-21T12:07:21.232655"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 7,
+      "time_seconds": 82.09,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/amusement park-0.mp4",
+      "timestamp": "2026-04-21T12:08:46.850007"
+    }
+  ],
+  "completed_keys": [
+    "wan_dc_fixed_0.07|a person swimming in ocean|0",
+    "wan_dc_fixed_0.08|a person swimming in ocean|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a person swimming in ocean|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a person swimming in ocean|0",
+    "wan_dc_fixed_0.07|a person giving a presentation to a room full of colleagues|0",
+    "wan_dc_fixed_0.08|a person giving a presentation to a room full of colleagues|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a person giving a presentation to a room full of colleagues|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a person giving a presentation to a room full of colleagues|0",
+    "wan_dc_fixed_0.07|a person washing the dishes|0",
+    "wan_dc_fixed_0.08|a person washing the dishes|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a person washing the dishes|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a person washing the dishes|0",
+    "wan_dc_fixed_0.07|Close up of grapes on a rotating table.|0",
+    "wan_dc_fixed_0.08|Close up of grapes on a rotating table.|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|Close up of grapes on a rotating table.|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|Close up of grapes on a rotating table.|0",
+    "wan_dc_fixed_0.07|Turtle swimming in ocean.|0",
+    "wan_dc_fixed_0.08|Turtle swimming in ocean.|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|Turtle swimming in ocean.|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|Turtle swimming in ocean.|0",
+    "wan_dc_fixed_0.07|A storm trooper vacuuming the beach.|0",
+    "wan_dc_fixed_0.08|A storm trooper vacuuming the beach.|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|A storm trooper vacuuming the beach.|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|A storm trooper vacuuming the beach.|0",
+    "wan_dc_fixed_0.07|alley|0",
+    "wan_dc_fixed_0.08|alley|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|alley|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|alley|0",
+    "wan_dc_fixed_0.07|amusement park|0",
+    "wan_dc_fixed_0.08|amusement park|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|amusement park|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|amusement park|0"
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "runs": [
+    {
+      "prompt": "a car on the right of a motorcycle, front view",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 25,
+      "time_seconds": 97.19,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a car on the right of a motorcycle, front view-0.mp4",
+      "timestamp": "2026-04-21T11:21:22.653927"
+    },
+    {
+      "prompt": "a car on the right of a motorcycle, front view",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 25,
+      "time_seconds": 94.22,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a car on the right of a motorcycle, front view-0.mp4",
+      "timestamp": "2026-04-21T11:22:59.429540"
+    },
+    {
+      "prompt": "a car on the right of a motorcycle, front view",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 25,
+      "time_seconds": 82.82,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a car on the right of a motorcycle, front view-0.mp4",
+      "timestamp": "2026-04-21T11:24:25.372476"
+    },
+    {
+      "prompt": "a car on the right of a motorcycle, front view",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 25,
+      "time_seconds": 83.36,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a car on the right of a motorcycle, front view-0.mp4",
+      "timestamp": "2026-04-21T11:25:51.801798"
+    },
+    {
+      "prompt": "a motorcycle on the left of a bus, front view",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 26,
+      "time_seconds": 102.31,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a motorcycle on the left of a bus, front view-0.mp4",
+      "timestamp": "2026-04-21T11:27:37.033296"
+    },
+    {
+      "prompt": "a motorcycle on the left of a bus, front view",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 26,
+      "time_seconds": 89.9,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a motorcycle on the left of a bus, front view-0.mp4",
+      "timestamp": "2026-04-21T11:29:09.864065"
+    },
+    {
+      "prompt": "a motorcycle on the left of a bus, front view",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 26,
+      "time_seconds": 84.19,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a motorcycle on the left of a bus, front view-0.mp4",
+      "timestamp": "2026-04-21T11:30:36.638603"
+    },
+    {
+      "prompt": "a motorcycle on the left of a bus, front view",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 26,
+      "time_seconds": 82.11,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a motorcycle on the left of a bus, front view-0.mp4",
+      "timestamp": "2026-04-21T11:32:01.456531"
+    },
+    {
+      "prompt": "a bird and a cat",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 27,
+      "time_seconds": 96.87,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a bird and a cat-0.mp4",
+      "timestamp": "2026-04-21T11:33:41.109896"
+    },
+    {
+      "prompt": "a bird and a cat",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 27,
+      "time_seconds": 89.55,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a bird and a cat-0.mp4",
+      "timestamp": "2026-04-21T11:35:13.040274"
+    },
+    {
+      "prompt": "a bird and a cat",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 27,
+      "time_seconds": 82.86,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a bird and a cat-0.mp4",
+      "timestamp": "2026-04-21T11:36:38.497767"
+    },
+    {
+      "prompt": "a bird and a cat",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 27,
+      "time_seconds": 82.27,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a bird and a cat-0.mp4",
+      "timestamp": "2026-04-21T11:38:03.484817"
+    },
+    {
+      "prompt": "a cat and a dog",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 28,
+      "time_seconds": 97.22,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a cat and a dog-0.mp4",
+      "timestamp": "2026-04-21T11:39:43.337770"
+    },
+    {
+      "prompt": "a cat and a dog",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 28,
+      "time_seconds": 93.28,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a cat and a dog-0.mp4",
+      "timestamp": "2026-04-21T11:41:19.392835"
+    },
+    {
+      "prompt": "a cat and a dog",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 28,
+      "time_seconds": 82.82,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a cat and a dog-0.mp4",
+      "timestamp": "2026-04-21T11:42:45.138068"
+    },
+    {
+      "prompt": "a cat and a dog",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 28,
+      "time_seconds": 83.04,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a cat and a dog-0.mp4",
+      "timestamp": "2026-04-21T11:44:11.058941"
+    },
+    {
+      "prompt": "a dog and a horse",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 29,
+      "time_seconds": 101.01,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a dog and a horse-0.mp4",
+      "timestamp": "2026-04-21T11:45:54.978645"
+    },
+    {
+      "prompt": "a dog and a horse",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 29,
+      "time_seconds": 96.6,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a dog and a horse-0.mp4",
+      "timestamp": "2026-04-21T11:47:34.216716"
+    },
+    {
+      "prompt": "a dog and a horse",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 29,
+      "time_seconds": 82.1,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a dog and a horse-0.mp4",
+      "timestamp": "2026-04-21T11:48:59.207435"
+    },
+    {
+      "prompt": "a dog and a horse",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 29,
+      "time_seconds": 83.8,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a dog and a horse-0.mp4",
+      "timestamp": "2026-04-21T11:50:25.939141"
+    },
+    {
+      "prompt": "a person",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 30,
+      "time_seconds": 97.31,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a person-0.mp4",
+      "timestamp": "2026-04-21T11:52:05.795457"
+    },
+    {
+      "prompt": "a person",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 30,
+      "time_seconds": 89.66,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a person-0.mp4",
+      "timestamp": "2026-04-21T11:53:37.699505"
+    },
+    {
+      "prompt": "a person",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 30,
+      "time_seconds": 78.89,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a person-0.mp4",
+      "timestamp": "2026-04-21T11:54:58.880555"
+    },
+    {
+      "prompt": "a person",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 30,
+      "time_seconds": 81.74,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a person-0.mp4",
+      "timestamp": "2026-04-21T11:56:23.285127"
+    },
+    {
+      "prompt": "a bicycle",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 31,
+      "time_seconds": 97.48,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a bicycle-0.mp4",
+      "timestamp": "2026-04-21T11:58:03.615196"
+    },
+    {
+      "prompt": "a bicycle",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 31,
+      "time_seconds": 89.35,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a bicycle-0.mp4",
+      "timestamp": "2026-04-21T11:59:36.057161"
+    },
+    {
+      "prompt": "a bicycle",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 31,
+      "time_seconds": 79.48,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a bicycle-0.mp4",
+      "timestamp": "2026-04-21T12:00:58.734002"
+    },
+    {
+      "prompt": "a bicycle",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 31,
+      "time_seconds": 82.89,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a bicycle-0.mp4",
+      "timestamp": "2026-04-21T12:02:24.801767"
+    },
+    {
+      "prompt": "a car",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.07",
+      "prompt_index": 32,
+      "time_seconds": 97.55,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.07/a car-0.mp4",
+      "timestamp": "2026-04-21T12:04:05.415060"
+    },
+    {
+      "prompt": "a car",
+      "seed": 0,
+      "mode": "wan_dc_fixed_0.08",
+      "prompt_index": 32,
+      "time_seconds": 90.42,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_fixed_0.08/a car-0.mp4",
+      "timestamp": "2026-04-21T12:05:39.029026"
+    },
+    {
+      "prompt": "a car",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.25_lo0.07",
+      "prompt_index": 32,
+      "time_seconds": 82.6,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.25_lo0.07/a car-0.mp4",
+      "timestamp": "2026-04-21T12:07:04.742248"
+    },
+    {
+      "prompt": "a car",
+      "seed": 0,
+      "mode": "wan_dc_adaptive_hi0.225_lo0.07",
+      "prompt_index": 32,
+      "time_seconds": 82.61,
+      "dit_time_seconds": null,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/dicache_results/videos/wan_dc_adaptive_hi0.225_lo0.07/a car-0.mp4",
+      "timestamp": "2026-04-21T12:08:30.352128"
+    }
+  ],
+  "completed_keys": [
+    "wan_dc_fixed_0.07|a car on the right of a motorcycle, front view|0",
+    "wan_dc_fixed_0.08|a car on the right of a motorcycle, front view|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a car on the right of a motorcycle, front view|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a car on the right of a motorcycle, front view|0",
+    "wan_dc_fixed_0.07|a motorcycle on the left of a bus, front view|0",
+    "wan_dc_fixed_0.08|a motorcycle on the left of a bus, front view|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a motorcycle on the left of a bus, front view|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a motorcycle on the left of a bus, front view|0",
+    "wan_dc_fixed_0.07|a bird and a cat|0",
+    "wan_dc_fixed_0.08|a bird and a cat|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a bird and a cat|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a bird and a cat|0",
+    "wan_dc_fixed_0.07|a cat and a dog|0",
+    "wan_dc_fixed_0.08|a cat and a dog|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a cat and a dog|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a cat and a dog|0",
+    "wan_dc_fixed_0.07|a dog and a horse|0",
+    "wan_dc_fixed_0.08|a dog and a horse|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a dog and a horse|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a dog and a horse|0",
+    "wan_dc_fixed_0.07|a person|0",
+    "wan_dc_fixed_0.08|a person|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a person|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a person|0",
+    "wan_dc_fixed_0.07|a bicycle|0",
+    "wan_dc_fixed_0.08|a bicycle|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a bicycle|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a bicycle|0",
+    "wan_dc_fixed_0.07|a car|0",
+    "wan_dc_fixed_0.08|a car|0",
+    "wan_dc_adaptive_hi0.25_lo0.07|a car|0",
+    "wan_dc_adaptive_hi0.225_lo0.07|a car|0"
+  ]
+}

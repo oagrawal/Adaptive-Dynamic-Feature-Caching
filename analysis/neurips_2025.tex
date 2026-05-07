@@ -1,0 +1,921 @@
+% \documentclass{article}
+\documentclass[draft]{article}
+
+\PassOptionsToPackage{numbers}{natbib}
+\PassOptionsToPackage{final}{hyperref}
+\usepackage{neurips_2025}
+\input{header.tex}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\title{\system: Adaptive Caching for vIDeo generation}
+
+\author{%
+  Om Agrawal \\
+  The University of Texas at Austin \\
+  \And
+  Saurabh Agarwal \\
+  The University of Texas at Austin \\
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+
+\section{Introduction}
+
+Video generation models~\cite{zheng2024opensora, ma2024latte, brooks2024sora, wang2025wan, hong2023cogvideo, kong2024hunyuanvideo} are becoming increasingly powerful; however, their inference speed poses a significant impediment to their wide adoption~\cite{li2024snapfusion}. The
+core inference loop of these video generation models~\cite{zheng2024opensora, ma2024latte, brooks2024sora, wang2025wan, hong2023cogvideo, kong2024hunyuanvideo} involves a  computationally expensive diffusion backbone, which runs a sequential denoising procedure~\cite{liu2025teacache, zhou2025easycache} making it a significant bottleneck.
+% leading to high usage training framework 
+
+
+To alleviate this bottleneck, several approaches have been proposed~\cite{lu2022dpmsolver, li2024svdquant, liu2025teacache}.
+These generation-accelerating approaches can be classified into two categories: \emph{training-based}~\cite{meng2023distillation, sauer2024adversarial, wang2023videolcm, chen2025qdit, ma2024learningtocache, li2024svdquant} and \emph{training-free}~\cite{zhang2025spargeattn, xi2025sparsevideogen, ren2025grouping, lu2022dpmsolver, liu2025teacache} acceleration strategies.
+Due to the significant overhead~\cite{bu2025dicache, zhou2025easycache, liu2025teacache} associated with training-based approaches, which generally entail significant compute, data, and cost, training-free acceleration methods have become significantly appealing. Among training-free methods, caching methods, due to their lightweight computation requirements, are being rapidly deployed. Caching methods leverage similarity between intermediate states and reuse them to reduce computational redundancy. Caching strategies have rapidly evolved from early uniform caching strategies that used fixed intervals to sophisticated methods~\cite{kahatapitiya2024adacache, liu2025teacache, zhou2025easycache, liu2025taylorseers, bu2025dicache} which determine caching strategy based on the similarity predicted at each step, thus adapting caching to the behavior of the diffusion process.
+
+% Early uniform caching strategies used fixed intervals for when to cache, which don't fully utilize the diffusion process's varying behavior and instead treat all timesteps as the same, leading to suboptimal speedups and degraded quality. Later, dynamic caching strategies like TeaCache, EasyCache, and DiCache determine when to cache based on how similar the predicted output will be at each step, adapting the caching schedule to the behavior of the diffusion process.
+% 
+
+\saurabh{Is it fair to say all ?}
+Several of these dynamic caching strategies - TeaCache, EasyCache, and DiCache- share a common structure: they use an accumulated drift metric, wherein these methods accumulate the 
+estimated change in model output. If this accumlated drift metric  
+% . At each step, they add their estimate of how much the model output just changed. If this 
+accumulated drift is below a user-provided threshold, they skip the expensive model run and reuse the previous output with some correction. If the accumulated drift exceeds the threshold, they run the full model and reset the accumulated drift to zero.
+
+% One of the fundamental challenges in using these dynamic caching methods is choi 
+Choosing this threshold presents a seemingly inherent tradeoff between output quality and inference latency. A high threshold caches more aggressively, yielding faster generation but lower quality. A low threshold caches conservatively, preserving quality but sacrificing speed.
+
+This raises a fundamental question: \textit{is this tradeoff between output quality and inference latency actually fundamental?}. In this work, we show that it is not. It is instead an artifact of using a fixed threshold throughout the sequential denoising procedure. When the threshold is chosen adaptively, both output quality and inference latency can be improved relative to any fixed-threshold dynamic caching method.
+
+
+We attribute the power of adaptive threshold schemes to the existence of critical steps in the sequential denoising procedure. By avoiding aggressive caching during these critical steps, our method mitigates the quality loss that fixed-threshold dynamic caching methods typically exhibit. This means one can design an adaptive scheme that identifies critical steps and adjusts the threshold accordingly.
+
+
+Based on these findings, we propose \system, a simple but powerful adaptive threshold caching mechanism that generalizes across different dynamic caching methods and models, while imposing low computational overhead. \system examines the second derivative of the mrespective method's metric to detect critical steps and adjust thresholds dynamically, improving performance without sacrificing output quality.
+
+
+Our experiments show that [solution name] achieves improved inference latency while maintaining output quality on video generation tasks. In particular, [solution name] achieves [results].
+We summarize our contributions below:
+\begin{itemize}
+    \item We identify the existence of critical steps in the sequential denoising procedure and show that video generation caching methods must account for them.
+
+    \item We design [solution name], an adaptive threshold dynamic caching mechanism that switches between low and high thresholds based on the second derivative of each method's metric. This signals critical steps in the denoising process, enabling significant performance improvements without sacrificing output quality.
+
+    \item We provide empirical evaluation across several dynamic caching methods (TeaCache, EasyCache, DiCache) and several diffusion models (HunyuanVideo, Wan2.1, CogVideo).
+
+\end{itemize}
+
+
+\section{Related Work}
+
+\paragraph{Diffusion Model.}
+Diffusion models have demonstrated impressive capability to generate content with high quality and diversity. Early solutions like Stable Diffusion~\cite{rombach2022ldm} and SDXL~\cite{podell2023sdxl} achieved high quality image generation with the U-Net architecture. These solutions also inspired video generation models~\cite{guo2023animatediff, chen2024videocrafter2, blattmann2023svd}. Despite these successes, the U-Net architecture has limited scalability, which hinders training and deployment of large scale models with better quality. To overcome this, recent diffusion models have widely adopted the Diffusion Transformer as their backbone for better scalability and flexibility~\cite{esser2024scaling, blackforestlabs2024flux, chen2023pixart, peebles2023scalable}.
+
+\paragraph{Diffusion Model Acceleration.}
+Despite the achievements diffusion models have made, their inference speed remains slow, especially as model capacity and complexity increase. This poses a challenge for practical applications. To address this challenge, several acceleration methods have emerged. These include efficient attention~\cite{dao2022flashattention, li2024svdquant}, sparse attention~\cite{xi2025sparsevideogen, ren2025grouping}, model distillation~\cite{meng2023distillation, sauer2024adversarial, wang2023videolcm}, model quantization~\cite{li2024svdquant}, improved SDE or ODE solvers~\cite{lu2022dpmsolver}, and caching-based feature reuse strategies, which we discuss in detail below.
+
+\paragraph{Caching based feature reuse strategies.}
+Caching methods have gained attention recently due to their lightweight nature. DeepCache~\cite{xu2018deepcache} and Faster Diffusion~\cite{li2023fasterdiffusion} reuse U-Net features across timesteps to reduce computational redundancy. FORA~\cite{selvaraju2024fora} and $\Delta$-DiT~\cite{chen2024deltadit} extend this idea to transformer-based architectures. PAB~\cite{zhao2024pab} broadcasts attention features to later timesteps in a pyramid-style method based on various block characteristics. AdaCache~\cite{kahatapitiya2024adacache} modifies residual reuse methods based on content complexity. FasterCache~\cite{lv2024fastercache} proposes to cache for both the conditional and unconditional branch of Classifier Free Guidance~\cite{ho2022cfg}. TeaCache~\cite{liu2025teacache} uses a calibrated polynomial estimator to predict output changes based on input changes. EasyCache~\cite{zhou2025easycache} replaces this polynomial function with a transformation law observed empirically. DiCache~\cite{bu2025dicache} uses shallow features as lightweight probes, using feature variation to trigger recomputation and linear interpolation for multi-step cache fusion.
+
+Unlike prior methods that propose new signals or architectures for deciding when to cache, our approach is signal-agnostic and complementary to existing works such as TeaCache, EasyCache, and DiCache. We identify a shared limitation across these methods, specifically the use of a single fixed threshold, and propose a lightweight framework that uses the rate of change of the existing signal to dynamically switch between a low and high threshold, achieving a better quality-speed tradeoff without modifying the underlying caching mechanism.
+
+\section{Method}
+
+\subsection{Preliminaries}
+
+\paragraph{Denoising Diffusion Models.}
+At inference time, diffusion models generate content through several sequential denoising steps. The core idea is to start with random noise and iteratively refine it until it approximates a sample from the target distribution. During training (the forward diffusion process), Gaussian noise is incrementally added over $T$ steps to a sample datapoint $x_0$ from a data distribution:
+\begin{equation}
+    x_t = \sqrt{\alpha_t} \, x_{t-1} + \sqrt{1 - \alpha_t} \, z_t, \quad t = 1, \ldots, T
+\end{equation}
+where $\alpha_t \in [0, 1]$ governs the noise level and $z_t \sim \mathcal{N}(0, 1)$ represents Gaussian noise. As $t$ increases, $x_t$ becomes progressively noisier, ultimately representing a normal distribution at $t = T$. The reverse diffusion process, which is what we perform at inference time, is designed to reconstruct the original sample from the noise:
+\begin{equation}
+    p_\theta(x_{t-1} \mid x_t) = \mathcal{N}\!\left(x_{t-1};\, \mu_\theta(x_t, t),\, \Sigma_\theta(x_t, t)\right)
+\end{equation}
+where $\mu_\theta$ and $\Sigma_\theta$ are learned parameters defining the mean and covariance.
+
+\paragraph{The Fixed Threshold of Dynamic Feature Caching Methods.}
+Many recent dynamic caching-based feature reuse strategies make caching decisions based on the diffusion process's state at runtime. Methods like TeaCache, EasyCache, and DiCache share a common algorithmic skeleton: a running accumulated drift variable is initialized to zero, an estimate of output change is added at each step, and this accumulated value is compared against a fixed threshold $\tau$. When the accumulated drift is below $\tau$, the expensive model forward pass is skipped and the previous output is reused with some correction. When the accumulated drift exceeds $\tau$, the full model is run and the accumulator is reset. The methods differ in how they estimate drift and how they reconstruct the output on skipped steps, which we delve into below.
+
+\paragraph{TeaCache}
+TeaCache estimates drift using the L1 distance between consecutive values of the Timestep Embedding Modulated Noisy Input (TEMNI), a combination of the text embedding, timestep embedding, and current noisy input. Rather than measuring how much the model output changed, which would require running the model, TeaCache measures how much the model's inputs changed, exploiting the empirical observation that large input changes correlate with large output changes. On skipped steps, TeaCache reuses the previous output with a stored residual correction. 
+
+\paragraph{EasyCache}
+EasyCache estimates drift using the model's transformation rate $k$, defined as the ratio of output change to input change at the most recently computed step. The authors observe that $k$ is unstable early in the denoising process but quickly stabilizes, reflecting the model settling into a roughly linear input-output regime. Under this regime, EasyCache estimates the current step's output change as $k \times \Delta\text{input} / \|v_{t-1}\|$, where $\Delta\text{input}$ is the current input change, $\|v_{t-1}\|$ is the magnitude of the previous output, and $k$ is the transformation rate of the last fully computed step. This normalized estimate is accumulated against $\tau$. On skipped steps, EasyCache reconstructs the output as the current input plus the offset $\Delta = \text{output} - \text{input}$ from the last fully computed step, which is justified because a stable $k$ implies the model's additive contribution is approximately constant. 
+           
+\paragraph{DiCache}
+DiCache replaces the input-level proxy used by TeaCache and EasyCache with a feature-level proxy. At each step, DiCache runs only the first few transformer blocks of the model as a shallow probe and measures how much those features changed. Because these early layers are cheap to compute, this provides a direct estimate of whether the full model's output would change significantly, without paying the cost of a full forward pass. On skipped steps, DiCache uses the trajectory of shallow probe features across multiple recent steps to interpolate a better estimate of the current deep output.
+
+Despite these differences, all three methods share a critical limitation: the fixed user-provided threshold is held constant throughout the entire denoising process. This means the caching schedule cannot respond to the diffusion process's varying dynamics. Our work identifies this fixed threshold as the source of the quality-latency tradeoff observed in prior methods, and proposes an adaptive and modular threshold mechanism on top of methods like TeaCache, EasyCache, and DiCache that modulates $\tau$ based on the local rate of change of each method's metric, enabling more aggressive caching in stable regions and more conservative caching at critical steps.
+
+\subsection{Analysis}
+
+Preliminary analysis of the $\Delta$TEMNI metric from Tea Cache reveals two critical properties of caching signals. First, we observe that while these metrics remain relatively consistent across diverse prompts, as illustrated in Figure~\ref{fig:compare_prompts}, they vary significantly between different models. Second, the structural behavior of these signals is model-dependent, as shown in Figure~\ref{fig:compare_models}; specifically, Hunyuan Video and Wan 2.1 exhibit a characteristic U-shaped pattern, whereas CogVideo and Mochi demonstrate a distinctively different distribution. Based on these observations, the experimental section evaluates the validity of our proposed solution across all four models (Hunyuan Video, Wan 2.1, CogVideo, and Mochi) to ensure robustness against these varying signal patterns.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//media/compare_across_prompts.png}
+    \caption{Comparison of caching metric consistency across diverse prompts.}
+    \label{fig:compare_prompts}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//media/compare_across_models.png}
+    \caption{Analysis of structural patterns in caching signals across different models.}
+    \label{fig:compare_models}
+\end{figure}
+
+\subsection{Adaptive Threshold Caching}
+
+
+\textbf{[SOLUTION NAME]} extends the single-threshold framework of methods like TeaCache, EasyCache, and DiCache with a dual-threshold strategy. Rather than applying a single fixed threshold $\tau$, we maintain two thresholds: a high threshold $\tau_{\text{high}}$ and a low threshold $\tau_{\text{low}}$. The active threshold is selected based on the rate of change of the underlying signal of dynamic caching method ($\Delta$TEMNI for TeaCache, $k \times \Delta\text{input} / \|v_{t-1}\|$ for EasyCache, and $\Delta$probe features for DiCache) 
+
+When the rate of change is within [$-\delta$, $\delta$], indicating a stable phase of the diffusion process, we apply $\tau_{\text{high}}$, permitting more aggressive caching. When the rate of change escapes this [$-\delta$, $\delta$] safe zone, indicating a more dynamic and quality-critical phase, we apply $\tau_{\text{low}}$, restricting caching to preserve output fidelity. 
+
+This reflects the key observation that certain parts of the diffusion process are more important to preserve than others, and that the diffusion process cannot be treated as uniform throughout.
+
+\begin{algorithm}[t]
+\caption{Adaptive Threshold Caching}
+\label{alg:adaptive_threshold}
+\begin{algorithmic}[1]
+\Require Sampling steps $T$, base method $\mathcal{M}$, low threshold $\tau_{\text{low}}$, high threshold $\tau_{\text{high}}$, stability bound $\delta$
+\State Initialize accumulated drift $\Sigma \leftarrow 0$, previous signal $s_{\text{prev}} \leftarrow \text{None}$
+\For{$t = T$ \textbf{to} $0$}
+    \If{$\mathcal{M}.\text{warmup}(t)$}
+        \State $y_t \leftarrow f_\theta(x_t, t, c)$; \; $\mathcal{M}.\text{update}(y_t)$ \hfill \textit{// run full model during warmup}
+    \Else
+        \State $s_t \leftarrow \mathcal{M}.\text{signal}(x_t, t, c)$ \hfill \textit{// compute drift signal via $\mathcal{M}$}
+        \State $\Sigma \leftarrow \Sigma + s_t$
+        \If{$|s_t - s_{\text{prev}}| \leq \delta$}
+            \State $\tau \leftarrow \tau_{\text{high}}$ \hfill \textit{// stable phase: cache aggressively}
+        \Else
+            \State $\tau \leftarrow \tau_{\text{low}}$ \hfill \textit{// dynamic phase: cache conservatively}
+        \EndIf
+        \If{$\Sigma \leq \tau$}
+            \State $y_t \leftarrow \mathcal{M}.\text{reuse}(x_t, t)$ \hfill \textit{// skip full model; reconstruct via $\mathcal{M}$}
+        \Else
+            \State $y_t \leftarrow f_\theta(x_t, t, c)$; \; $\mathcal{M}.\text{update}(y_t)$; \; $\Sigma \leftarrow 0$ \hfill \textit{// run full model, reset}
+        \EndIf
+        \State $s_{\text{prev}} \leftarrow s_t$
+    \EndIf
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+
+\section{Experiments}
+
+\subsection{Experimental Setup}
+
+\paragraph{Base models.}
+We evaluate on 3 open-source video generation diffusion models: HunyuanVideo T2V 720P, Wan 2.1 T2V 1.3B, and CogVideo X 1.5-5B.
+
+\paragraph{Compared methods.}
+We apply our adaptive threshold framework on top of three base caching methods: TeaCache (evaluated on HunyuanVideo, Wan 2.1, CogVideo), EasyCache (evaluated on HunyuanVideo, Wan 2.1), and DiCache (evaluated on HunyuanVideo, Wan 2.1). For each method--model combination, we compare a no-caching baseline, multiple fixed-threshold variants spanning a low-to-high range, and our adaptive dual-threshold variant \textbf{[SOLUTION NAME]}.
+
+\paragraph{Evaluation metrics.}
+Following TeaCache, we evaluate along two dimensions: inference efficiency and visual quality. For inference efficiency, we report inference latency. For visual quality, we use LPIPS, PSNR, and SSIM. LPIPS, PSNR, and SSIM compare cached-method outputs against the no-caching baseline.
+
+\paragraph{Implementation details.}
+All experiments were carried out on NVIDIA A100 80GB PCIe GPUs with PyTorch. We selected 33 prompts from VBench's prompt set, 3 prompts for each of 11 dimension groups, covering all 16 VBench dimensions (some dimensions share prompts). For each model, we generated $33 \times 4 = 132$ videos, using a fixed seed throughout.
+
+\subsection{Main Results}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Quantitative evaluation of caching methods across video generation models. For each method and model, rows show: baseline (no caching), fixed low threshold, fixed high threshold, and our adaptive method (best Pareto-optimal configuration). The fixed thresholds shown correspond to the lo/hi thresholds used by the adaptive mode. Fidelity metrics (PSNR, SSIM, LPIPS) are computed against the uncached baseline; ``---'' entries indicate the self-referential baseline. $\uparrow$~=~higher is better; $\downarrow$~=~lower is better.}
+\label{tab:main_results}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lllccccc}
+\toprule
+\textbf{Method} & \textbf{Model} & \textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+
+\multirow{12}{*}{\textbf{TeaCache}}
+  & \multirow{4}{*}{HunyuanVideo}
+    & Baseline          & 1359s & 1.00$\times$ & ---   & ---   & ---   \\
+  & & Fixed (lo, 0.1)   & 864s  & 1.57$\times$ & 24.69 & 0.819 & 0.187 \\
+  & & Fixed (hi, 0.3)   & 424s  & 3.20$\times$ & 19.98 & 0.693 & 0.353 \\
+  & & Adaptive          & 628s  & 2.16$\times$ & 24.41 & 0.813 & 0.196 \\
+\cmidrule{2-8}
+  & \multirow{4}{*}{Wan 2.1}
+    & Baseline          & 212s  & 1.00$\times$ & ---   & ---   & ---   \\
+  & & Fixed (lo, 0.05)  & 150s & 1.42$\times$ & 24.93 & 0.845 & 0.083 \\
+  & & Fixed (hi, 0.2)   & 74s   & 2.86$\times$ & 17.10 & 0.538 & 0.335 \\
+  & & Adaptive          & 108s  & 1.96$\times$ & 22.10 & 0.757 & 0.150 \\
+\cmidrule{2-8}
+  & \multirow{4}{*}{CogVideo X 1.5}
+    & Baseline          & 1019s & 1.00$\times$ & ---   & ---   & ---   \\
+  & & Fixed (lo, 0.1)   & 723s  & 1.41$\times$ & 37.32 & 0.958 & 0.030 \\
+  & & Fixed (hi, 0.3)   & 465s  & 2.19$\times$ & 16.35 & 0.580 & 0.463 \\
+  & & Adaptive          & 545s  & 1.87$\times$ & 32.02 & 0.930 & 0.058 \\
+\midrule
+
+\multirow{8}{*}{\textbf{EasyCache}}
+  & \multirow{4}{*}{HunyuanVideo}
+    & Baseline          & 1357s & 1.00$\times$ & ---   & ---   & ---   \\
+  & & Fixed (lo, 0.025) & 659s  & 2.06$\times$ & 33.51 & 0.926 & 0.058 \\
+  & & Fixed (hi, 0.045) & 531s  & 2.55$\times$ & 28.99 & 0.851 & 0.153 \\
+  & & Adaptive          & 568s  & 2.39$\times$ & 30.62 & 0.894 & 0.094 \\
+\cmidrule{2-8}
+  & \multirow{4}{*}{Wan 2.1}
+    & Baseline          & 216s  & 1.00$\times$ & ---   & ---   & ---   \\
+  & & Fixed (lo, 0.020) & 125s  & 1.73$\times$ & 25.58 & 0.852 & 0.087 \\
+  & & Fixed (hi, 0.040) & 102s  & 2.12$\times$ & 22.02 & 0.750 & 0.149 \\
+  & & Adaptive          & 113s  & 1.92$\times$ & 24.90 & 0.833 & 0.100 \\
+\midrule
+
+\multirow{8}{*}{\textbf{DiCache}}
+  & \multirow{4}{*}{HunyuanVideo}
+    & Baseline          & 1265s & 1.00$\times$ & ---   & ---   & ---   \\
+  & & Fixed (lo, 0.05)  & 659s  & 1.92$\times$ & 30.96 & 0.904 & 0.088 \\
+  & & Fixed (hi, 0.10)  & 419s  & 3.02$\times$ & 20.15 & 0.720 & 0.328 \\
+  & & Adaptive          & 620s  & 2.04$\times$ & 29.42 & 0.888 & 0.105 \\
+\cmidrule{2-8}
+  & \multirow{4}{*}{Wan 2.1}
+    & Baseline          & 224s  & 1.00$\times$ & ---   & ---   & ---   \\
+  & & Fixed (lo, 0.07)  & 99s   & 2.27$\times$ & 13.41 & 0.356 & 0.508 \\
+  & & Fixed (hi, 0.225) & 56s   & 3.97$\times$ & 11.79 & 0.282 & 0.644 \\
+  & & Adaptive          & 82s   & 2.73$\times$ & 13.29 & 0.355 & 0.541 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:main_results} shows our quantitative evaluation of inference efficiency and visual quality.
+
+
+
+
+Here are pareto plots, showing that our adaptive modes expand the pareto frontier from fixed modes.
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//pareto_plots/pareto_hv_teacache.png}
+    \caption{TeaCache on HunyuanVideo. Our adaptive thresholding logic expands the Pareto frontier on fidelity metrics compared to fixed-threshold modes.}
+    \label{fig:pareto-hv-teacache}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//pareto_plots/pareto_wan_teacache.png}
+    \caption{TeaCache on Wan~2.1. Our adaptive thresholding logic expands the Pareto frontier on fidelity metrics compared to fixed-threshold modes.}
+    \label{fig:pareto-wan-teacache}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//pareto_plots/pareto_cog_teacache.png}
+    \caption{TeaCache on CogVideo. Our adaptive thresholding logic expands the Pareto frontier on fidelity metrics compared to fixed-threshold modes.}
+    \label{fig:pareto-cog-teacache}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//pareto_plots/pareto_hv_easycache.png}
+    \caption{EasyCache on HunyuanVideo. Our adaptive thresholding logic expands the Pareto frontier on fidelity metrics compared to fixed-threshold modes.}
+    \label{fig:pareto-hv-easycache}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//pareto_plots/pareto_wan_easycache.png}
+    \caption{EasyCache on Wan~2.1. Our adaptive thresholding logic expands the Pareto frontier on fidelity metrics compared to fixed-threshold modes.}
+    \label{fig:pareto-wan-easycache}
+\end{figure}
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//pareto_plots/imagpareto_hv_dicache.png}
+    \caption{DiCache on HunyuanVideo. Our adaptive thresholding logic expands the Pareto frontier on fidelity metrics compared to fixed-threshold modes.}
+    \label{fig:pareto-hv-dicache}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Styles//pareto_plots/pareto_wan_dicache.png}
+    \caption{DiCache on Wan~2.1. Our adaptive thresholding logic expands the Pareto frontier on fidelity metrics compared to fixed-threshold modes.}
+    \label{fig:pareto-wan-dicache}
+\end{figure}
+
+\section{Conclusion}
+
+We proposed \textbf{[SOLUTION NAME]}, a dynamic dual-threshold caching method for accelerating video diffusion model inference. By applying a high caching threshold during stable phases of the diffusion process and a low threshold during quality-critical phases (identified via the rate of change of the accumulated TEMNI delta), our method improves the Pareto frontier in the video quality vs.\ generation speed space over fixed-threshold TeaCache. Experiments across four open-source video generation models confirm that \textbf{[SOLUTION NAME]} achieves near-low-threshold visual quality with substantially higher inference speedup.
+
+
+\begin{ack}
+% Acknowledgments (omitted in anonymized submission).
+\end{ack}
+
+\section*{References}
+
+\begin{thebibliography}{99}                                                             
+\small
+
+\bibitem{rombach2022ldm}
+Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj\"{o}rn Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock In \textit{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp. 10684--10695, 2022.
+
+\bibitem{podell2023sdxl}
+Dustin Podell, Zion English, Kyle Lacey, Andreas Blattmann, Tim Dockhorn, Jonas M\"{u}ller, Joe Penna, and Robin Rombach.
+\newblock Sdxl: Improving latent diffusion models for high-resolution image synthesis.
+\newblock \textit{arXiv preprint arXiv:2307.01952}, 2023.
+
+\bibitem{guo2023animatediff}
+Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Maneesh Agrawala, Dahua Lin, and Bo Dai.
+\newblock Animatediff: Animate your personalized text-to-image diffusion models without specific tuning.
+\newblock \textit{arXiv preprint arXiv:2307.04725}, 2023.
+
+\bibitem{chen2024videocrafter2}
+Haoxin Chen, Yong Zhang, Xiaodong Cun, Menghan Xia, Xintao Wang, Chao Weng, and Ying Shan.
+\newblock Videocrafter2: Overcoming data limitations for high-quality video diffusion models.
+\newblock In \textit{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp. 7310--7320, 2024.
+
+\bibitem{blattmann2023svd}
+Andreas Blattmann, Tim Dockhorn, Sumith Kulal, Daniel Mendelevitch, Maciej Kilian, Dominik Lorenz, Yam Levi, Zion English, Vikram Voleti, Adam Letts, et al.
+\newblock Stable video diffusion: Scaling latent video diffusion models to large datasets.
+\newblock \textit{arXiv preprint arXiv:2311.15127}, 2023.
+
+\bibitem{esser2024scaling}
+Patrick Esser, Sumith Kulal, Andreas Blattmann, Rahim Entezari, Jonas M\"{u}ller, Harry Saini, Yam Levi, Dominik Lorenz, Axel Sauer, Frederic Boesel, et al.
+\newblock Scaling rectified flow transformers for high-resolution image synthesis.
+\newblock In \textit{Forty-first International Conference on Machine Learning}, 2024.
+
+\bibitem{blackforestlabs2024flux}
+Black Forest Labs.
+\newblock Flux.
+\newblock \url{https://github.com/black-forest-labs/flux}, 2024.
+
+\bibitem{chen2023pixart}
+Junsong Chen, Jincheng Yu, Chongjian Ge, Lewei Yao, Enze Xie, Yue Wu, Zhongdao Wang, James Kwok, Ping Luo, Huchuan Lu, et al.
+\newblock Pixart-$\alpha$: Fast training of diffusion transformer for photorealistic text-to-image synthesis.
+\newblock \textit{arXiv preprint arXiv:2310.00426}, 2023.
+
+\bibitem{peebles2023scalable}
+William Peebles and Saining Xie.
+\newblock Scalable diffusion models with transformers.
+\newblock In \textit{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pp. 4195--4205, 2023.
+
+\bibitem{dao2022flashattention}
+Tri Dao, Dan Fu, Stefano Ermon, Atri Rudra, and Christopher R\'{e}.
+\newblock Flashattention: Fast and memory-efficient exact attention with io-awareness.
+\newblock \textit{Advances in Neural Information Processing Systems}, 35:16344--16359, 2022.
+
+\bibitem{li2024svdquant}
+Muyang Li, Yujun Lin, Zhekai Zhang, Tianle Cai, Xiuyu Li, Junxian Guo, Enze Xie, Chenlin Meng, Jun-Yan Zhu, and Song Han.
+\newblock Svdquant: Absorbing outliers by low-rank components for 4-bit diffusion models.
+\newblock \textit{arXiv preprint arXiv:2411.05007}, 2024.
+
+\bibitem{xi2025sparsevideogen}
+Haocheng Xi, Shuo Yang, Yilong Zhao, Chenfeng Xu, Muyang Li, Xiuyu Li, Yujun Lin, Han Cai, Jintao Zhang, Dacheng Li, et al.
+\newblock Sparse videogen: Accelerating video diffusion transformers with spatial-temporal sparsity.
+\newblock \textit{arXiv preprint arXiv:2502.01776}, 2025.
+
+\bibitem{ren2025grouping}
+Sucheng Ren, Qihang Yu, Ju He, Alan Yuille, and Liang-Chieh Chen.
+\newblock Grouping first, attending smartly: Training-free acceleration for diffusion transformers.
+\newblock \textit{arXiv preprint arXiv:2505.14687}, 2025.
+
+\bibitem{meng2023distillation}
+Chenlin Meng, Robin Rombach, Ruiqi Gao, Diederik Kingma, Stefano Ermon, Jonathan Ho, and Tim Salimans.
+\newblock On distillation of guided diffusion models.
+\newblock In \textit{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pp. 14297--14306, 2023.
+
+\bibitem{sauer2024adversarial}
+Axel Sauer, Dominik Lorenz, Andreas Blattmann, and Robin Rombach.
+\newblock Adversarial diffusion distillation.
+\newblock In \textit{European Conference on Computer Vision}, pp. 87--103. Springer, 2024.
+
+\bibitem{wang2023videolcm}
+Xiang Wang, Shiwei Zhang, Han Zhang, Yu Liu, Yingya Zhang, Changxin Gao, and Nong Sang.
+\newblock Videolcm: Video latent consistency model.
+\newblock \textit{arXiv preprint arXiv:2312.09109}, 2023.
+
+\bibitem{lu2022dpmsolver}
+Cheng Lu, Yuhao Zhou, Fan Bao, Jianfei Chen, Chongxuan Li, and Jun Zhu.
+\newblock Dpm-solver: A fast ode solver for diffusion probabilistic model sampling in around 10 steps.
+\newblock \textit{Advances in Neural Information Processing Systems}, 35:5775--5787, 2022.
+
+\bibitem{xu2018deepcache}
+Mengwei Xu, Mengze Zhu, Yunxin Liu, Felix Xiaozhu Lin, and Xuanzhe Liu.
+\newblock Deepcache: Principled cache for mobile deep vision.
+\newblock In \textit{Proceedings of the 24th Annual International Conference on Mobile Computing and Networking}, pp. 129--144, 2018.
+
+\bibitem{li2023fasterdiffusion}
+Senmao Li, Taihang Hu, Fahad Shahbaz Khan, Linxuan Li, Shiqi Yang, Yaxing Wang, Ming-Ming Cheng, and Jian Yang.
+\newblock Faster diffusion: Rethinking the role of unet encoder in diffusion models.
+\newblock \textit{CoRR}, 2023.
+
+\bibitem{selvaraju2024fora}
+Pratheba Selvaraju, Tianyu Ding, Tianyi Chen, Ilya Zharkov, and Luming Liang.
+\newblock Fora: Fast-forward caching in diffusion transformer acceleration.
+\newblock \textit{arXiv preprint arXiv:2407.01425}, 2024.
+
+\bibitem{chen2024deltadit}
+Pengtao Chen, Mingzhu Shen, Peng Ye, Jianjian Cao, Chongjun Tu, Christos-Savvas Bouganis, Yiren Zhao, and Tao Chen.
+\newblock $\Delta$-dit: A training-free acceleration method tailored for diffusion transformers.
+\newblock \textit{arXiv preprint arXiv:2406.01125}, 2024.
+
+\bibitem{zhao2024pab}
+Xuanlei Zhao, Xiaolong Jin, Kai Wang, and Yang You.
+\newblock Real-time video generation with pyramid attention broadcast.
+\newblock \textit{arXiv preprint arXiv:2408.12588}, 2024.
+
+\bibitem{kahatapitiya2024adacache}
+Kumara Kahatapitiya, Haozhe Liu, Sen He, Ding Liu, Menglin Jia, Chenyang Zhang, Michael S. Ryoo, and Tian Xie.
+\newblock Adaptive caching for faster video generation with diffusion transformers.
+\newblock \textit{arXiv preprint arXiv:2411.02397}, 2024.
+
+\bibitem{lv2024fastercache}
+Zhengyao Lv, Chenyang Si, Junhao Song, Zhenyu Yang, Yu Qiao, Ziwei Liu, and Kwan-Yee K. Wong.
+\newblock Fastercache: Training-free video diffusion model acceleration with high quality.
+\newblock \textit{arXiv preprint arXiv:2410.19355}, 2024.
+
+\bibitem{ho2022cfg}
+Jonathan Ho and Tim Salimans.
+\newblock Classifier-free diffusion guidance.
+\newblock \textit{arXiv preprint arXiv:2207.12598}, 2022.
+
+\bibitem{liu2025teacache}
+Feng Liu, Shiwei Zhang, Xiaofeng Wang, Yujie Wei, Haonan Qiu, Yuzhong Zhao, Yingya Zhang, Qixiang Ye, and Fang Wan.
+\newblock Timestep embedding tells: It's time to cache for video diffusion model.
+\newblock In \textit{Proceedings of the Computer Vision and Pattern Recognition Conference}, pp. 7353--7363, 2025.
+
+\bibitem{zhou2025easycache}
+Xin Zhou, Dingkang Liang, Kaijin Chen, Tianrui Feng, Xiwu Chen, Hongkai Lin, Yikang Ding, Feiyang Tan, Hengshuang Zhao, and Xiang Bai.
+\newblock Less is enough: Training-free video diffusion acceleration via runtime-adaptive caching.
+\newblock \textit{arXiv preprint arXiv:2507.02860}, 2025.
+
+\bibitem{bu2025dicache}
+J. Bu, P. Ling, Y. Zhou, Y. Wang, Y. Zang, D. Lin, and J. Wang.
+\newblock Dicache: Let diffusion model determine its own cache.
+\newblock \textit{arXiv preprint arXiv:2508.17356}, 2025.
+
+\bibitem{zheng2024opensora}
+Zangwei Zheng, Xiangyu Peng, Tianji Yang, Chenhui Shen, Shenggui Li, Hongxin Liu, Yukun Zhou, Tianyi Li, and Yang You.
+\newblock Open-sora: Democratizing efficient video production for all.
+\newblock \textit{arXiv preprint arXiv:2412.20404}, 2024.
+
+\bibitem{ma2024latte}
+Xin Ma, Yaohui Wang, Gengyun Jia, Xinyuan Chen, Ziwei Liu, Yuan-Fang Li, Cunjian Chen, and Yu Qiao.
+\newblock Latte: Latent diffusion transformer for video generation.
+\newblock \textit{Transactions on Machine Learning Research}, 2024.
+
+\bibitem{brooks2024sora}
+Tim Brooks et al.
+\newblock Video generation models as world simulators.
+\newblock \textit{OpenAI Blog}, 1:8, 2024.
+
+\bibitem{wang2025wan}
+Ang Wang et al.
+\newblock Wan: Open and advanced large-scale video generative models.
+\newblock \textit{arXiv preprint arXiv:2503.20314}, 2025.
+
+\bibitem{hong2023cogvideo}
+Wenyi Hong, Ming Ding, Wendi Zheng, Xinghao Liu, and Jie Tang.
+\newblock Cogvideo: Large-scale pretraining for text-to-video generation via transformers.
+\newblock In \textit{Proceedings of the International Conference on Learning Representations}, 2023.
+
+\bibitem{kong2024hunyuanvideo}
+Weijie Kong et al.
+\newblock Hunyuanvideo: A systematic framework for large video generative models.
+\newblock \textit{arXiv preprint arXiv:2412.03603}, 2024.
+
+\bibitem{li2024snapfusion}
+Yanyu Li, Huan Wang, Qing Jin, Ju Hu, Pavlo Chemerys, Yun Fu, Yanzhi Wang, Sergey Tulyakov, and Jian Ren.
+\newblock Snapfusion: Text-to-image diffusion model on mobile devices within two seconds.
+\newblock \textit{Advances in Neural Information Processing Systems}, 36, 2024.
+
+\bibitem{chen2025qdit}
+Lei Chen, Yuan Meng, Chen Tang, Xinzhu Ma, Jingyan Jiang, Xin Wang, Zhi Wang, and Wenwu Zhu.
+\newblock Q-dit: Accurate post-training quantization for diffusion transformers.
+\newblock In \textit{Proceedings of the Computer Vision and Pattern Recognition Conference}, pp. 28306--28315, 2025.
+
+\bibitem{ma2024learningtocache}
+Xinyin Ma, Gongfan Fang, Michael Bi Mi, and Xinchao Wang.
+\newblock Learning-to-cache: Accelerating diffusion transformer via layer caching.
+\newblock \textit{Advances in Neural Information Processing Systems}, 37:133282--133304, 2024.
+
+\bibitem{zhang2025spargeattn}
+Jintao Zhang, Chendong Xiang, Haofeng Huang, Jia Wei, Haocheng Xi, Jun Zhu, and Jianfei Chen.
+\newblock Spargeattn: Accurate sparse attention accelerating any model inference.
+\newblock \textit{arXiv preprint arXiv:2502.18137}, 2025.
+
+\bibitem{liu2025taylorseers}
+Jiacheng Liu, Chang Zou, Yuanhuiyi Lyu, Junjie Chen, and Linfeng Zhang.
+\newblock From reusing to forecasting: Accelerating diffusion models with taylorseers.
+\newblock \textit{arXiv preprint arXiv:2503.06923}, 2025.
+
+\end{thebibliography}                                                                    
+
+% ============================================================
+% APPENDIX — paste between \section*{References} and
+%             \section*{NeurIPS Paper Checklist}
+%
+% In neurips_2025.tex, find the line:
+%   \section*{NeurIPS Paper Checklist}
+% and paste the entire block below immediately BEFORE it.
+% ============================================================
+
+\appendix
+
+\section{Detailed Per-Combo Results}
+\label{sec:appendix-detailed}
+
+All configurations evaluated for each method $\times$ model combination are listed
+below, sorted by increasing speedup. \textbf{Bold} rows are adaptive modes.
+Fidelity metrics (PSNR, SSIM, LPIPS) are computed against the uncached baseline.
+$\tau$ denotes the caching threshold for all methods (cache-reuse residual for
+TeaCache/EasyCache; feature-difference score for DiCache).
+Subscripts $\ell$/$h$ mark the low/high threshold in adaptive modes.
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{TeaCache on HunyuanVideo: all evaluated configurations}
+\label{tab:app-tc-hv}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.1$) & 864s & 1.57$\times$ & 24.69 & 0.819 & 0.187 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.25$)} & 654s & 2.08$\times$ & 24.47 & 0.814 & 0.194 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.2$)} & 652s & 2.09$\times$ & 23.85 & 0.796 & 0.215 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.3$)} & 628s & 2.16$\times$ & 24.41 & 0.813 & 0.196 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.3$)} & 554s & 2.45$\times$ & 24.04 & 0.802 & 0.209 \\
+  Fixed ($\tau=0.2$) & 542s & 2.51$\times$ & 21.71 & 0.755 & 0.276 \\
+  \textbf{Adaptive ($\tau_\ell=0.2$, $\tau_h=0.3$)} & 483s & 2.81$\times$ & 21.66 & 0.754 & 0.281 \\
+  Fixed ($\tau=0.3$) & 424s & 3.20$\times$ & 19.98 & 0.693 & 0.353 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{TeaCache on Wan~2.1: all evaluated configurations}
+\label{tab:app-tc-wan}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.05$) & 150s & 1.42$\times$ & 24.93 & 0.845 & 0.083 \\
+  Fixed ($\tau=0.1$) & 113s & 1.88$\times$ & 19.92 & 0.678 & 0.197 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.2$)} & 108s & 1.96$\times$ & 22.10 & 0.757 & 0.150 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.25$)} & 105s & 2.03$\times$ & 21.69 & 0.739 & 0.164 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.2$)} & 94s & 2.26$\times$ & 19.56 & 0.657 & 0.222 \\
+  Fixed ($\tau=0.15$) & 89s & 2.38$\times$ & 18.42 & 0.609 & 0.262 \\
+  Fixed ($\tau=0.2$) & 74s & 2.86$\times$ & 17.10 & 0.538 & 0.335 \\
+  Fixed ($\tau=0.25$) & 70s & 3.02$\times$ & 16.94 & 0.527 & 0.354 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{TeaCache on CogVideo X~1.5: all evaluated configurations}
+\label{tab:app-tc-cog}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.1$) & 723s & 1.41$\times$ & 37.32 & 0.958 & 0.029 \\
+  Fixed ($\tau=0.2$) & 582s & 1.75$\times$ & 34.35 & 0.945 & 0.042 \\
+  Fixed ($\tau=0.22$) & 579s & 1.76$\times$ & 25.28 & 0.845 & 0.152 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.3$)} & 545s & 1.87$\times$ & 32.02 & 0.930 & 0.058 \\
+  Fixed ($\tau=0.25$) & 536s & 1.90$\times$ & 25.03 & 0.843 & 0.154 \\
+  \textbf{Adaptive ($\tau_\ell=0.1$, $\tau_h=0.3$)} & 525s & 1.94$\times$ & 31.74 & 0.929 & 0.059 \\
+  Fixed ($\tau=0.3$) & 465s & 2.19$\times$ & 16.35 & 0.580 & 0.463 \\
+  \textbf{Adap.\ 3-phase ($\tau_1=0.30$, $\tau_2=0.35$)} & 441s & 2.31$\times$ & 16.18 & 0.572 & 0.472 \\
+  \textbf{Adap.\ 3-phase ($\tau_1=0.30$, $\tau_2=0.40$)} & 441s & 2.31$\times$ & 16.08 & 0.568 & 0.479 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{EasyCache on HunyuanVideo: all evaluated configurations}
+\label{tab:app-ec-hv}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.025$) & 659s & 2.06$\times$ & 33.51 & 0.926 & 0.058 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.050$)} & 626s & 2.17$\times$ & 31.18 & 0.905 & 0.085 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.120$)} & 616s & 2.20$\times$ & 28.43 & 0.837 & 0.179 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.075$)} & 596s & 2.28$\times$ & 29.72 & 0.884 & 0.112 \\
+  \textbf{Adaptive ($\tau_\ell=0.010$, $\tau_h=0.100$)} & 584s & 2.32$\times$ & 28.67 & 0.859 & 0.141 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.075$)} & 569s & 2.38$\times$ & 30.49 & 0.890 & 0.101 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.090$)} & 569s & 2.38$\times$ & 29.27 & 0.855 & 0.151 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.045$)} & 568s & 2.39$\times$ & 30.62 & 0.894 & 0.094 \\
+  Fixed ($\tau=0.0375$) & 561s & 2.42$\times$ & 30.67 & 0.883 & 0.106 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.050$)} & 561s & 2.42$\times$ & 30.43 & 0.888 & 0.101 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.050$)} & 557s & 2.44$\times$ & 30.08 & 0.887 & 0.102 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.150$)} & 552s & 2.46$\times$ & 27.69 & 0.811 & 0.225 \\
+  Fixed ($\tau=0.040$) & 549s & 2.47$\times$ & 29.98 & 0.872 & 0.122 \\
+  \textbf{Adaptive ($\tau_\ell=0.030$, $\tau_h=0.050$)} & 542s & 2.51$\times$ & 29.63 & 0.876 & 0.113 \\
+  \textbf{Adaptive ($\tau_\ell=0.0375$, $\tau_h=0.050$)} & 537s & 2.53$\times$ & 29.50 & 0.863 & 0.134 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.075$)} & 533s & 2.55$\times$ & 29.08 & 0.865 & 0.132 \\
+  Fixed ($\tau=0.045$) & 531s & 2.55$\times$ & 28.99 & 0.851 & 0.153 \\
+  \textbf{Adaptive ($\tau_\ell=0.030$, $\tau_h=0.060$)} & 522s & 2.60$\times$ & 28.95 & 0.866 & 0.126 \\
+  Fixed ($\tau=0.050$) & 503s & 2.70$\times$ & 28.17 & 0.833 & 0.183 \\
+  \textbf{Adaptive ($\tau_\ell=0.035$, $\tau_h=0.065$)} & 499s & 2.72$\times$ & 28.37 & 0.853 & 0.144 \\
+  \textbf{Adaptive ($\tau_\ell=0.050$, $\tau_h=0.120$)} & 478s & 2.84$\times$ & 27.08 & 0.803 & 0.243 \\
+  Fixed ($\tau=0.060$) & 473s & 2.87$\times$ & 27.20 & 0.807 & 0.232 \\
+  Fixed ($\tau=0.075$) & 436s & 3.12$\times$ & 25.62 & 0.755 & 0.336 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{EasyCache on Wan~2.1: all evaluated configurations}
+\label{tab:app-ec-wan}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.020$) & 125s & 1.73$\times$ & 25.58 & 0.852 & 0.087 \\
+  Fixed ($\tau=0.025$) & 116s & 1.86$\times$ & 24.42 & 0.822 & 0.105 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.040$)} & 112s & 1.92$\times$ & 24.90 & 0.833 & 0.100 \\
+  \textbf{Adaptive ($\tau_\ell=0.025$, $\tau_h=0.050$)} & 103s & 2.10$\times$ & 23.62 & 0.795 & 0.123 \\
+  Fixed ($\tau=0.040$) & 102s & 2.12$\times$ & 22.02 & 0.750 & 0.148 \\
+  Fixed ($\tau=0.050$) & 95s & 2.28$\times$ & 21.16 & 0.709 & 0.173 \\
+  Fixed ($\tau=0.060$) & 90s & 2.40$\times$ & 20.55 & 0.686 & 0.189 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.025$)} & 88s & 2.45$\times$ & 20.80 & 0.682 & 0.197 \\
+  Fixed ($\tau=0.070$) & 87s & 2.49$\times$ & 20.04 & 0.665 & 0.207 \\
+  Fixed ($\tau=0.080$) & 84s & 2.57$\times$ & 19.85 & 0.656 & 0.216 \\
+  Fixed ($\tau=0.090$) & 82s & 2.62$\times$ & 19.64 & 0.642 & 0.223 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.050$)} & 81s & 2.68$\times$ & 19.88 & 0.645 & 0.224 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.075$)} & 76s & 2.86$\times$ & 19.31 & 0.617 & 0.248 \\
+  Fixed ($\tau=0.125$) & 75s & 2.89$\times$ & 19.11 & 0.610 & 0.253 \\
+  \textbf{Adaptive ($\tau_\ell=0.020$, $\tau_h=0.1$)} & 74s & 2.93$\times$ & 19.13 & 0.605 & 0.257 \\
+  Fixed ($\tau=0.150$) & 72s & 2.98$\times$ & 18.83 & 0.589 & 0.269 \\
+  Fixed ($\tau=0.175$) & 70s & 3.09$\times$ & 18.70 & 0.581 & 0.280 \\
+  Fixed ($\tau=0.200$) & 69s & 3.15$\times$ & 18.45 & 0.568 & 0.293 \\
+  Fixed ($\tau=0.225$) & 66s & 3.25$\times$ & 18.29 & 0.550 & 0.306 \\
+  Fixed ($\tau=0.250$) & 66s & 3.28$\times$ & 18.26 & 0.548 & 0.310 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{DiCache on HunyuanVideo: all evaluated configurations}
+\label{tab:app-dc-hv}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.05$) & 659s & 1.92$\times$ & 30.96 & 0.904 & 0.088 \\
+  Fixed ($\tau=0.07$) & 626s & 2.02$\times$ & 27.95 & 0.858 & 0.140 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.10$)} & 620s & 2.04$\times$ & 29.42 & 0.888 & 0.105 \\
+  Fixed ($\tau=0.08$) & 570s & 2.22$\times$ & 20.21 & 0.729 & 0.322 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.15$)} & 567s & 2.23$\times$ & 28.19 & 0.874 & 0.123 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.25$)} & 529s & 2.39$\times$ & 26.66 & 0.852 & 0.155 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.30$)} & 529s & 2.39$\times$ & 26.15 & 0.844 & 0.169 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.35$)} & 506s & 2.50$\times$ & 25.55 & 0.832 & 0.195 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.40$)} & 502s & 2.52$\times$ & 25.20 & 0.824 & 0.206 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.20$)} & 465s & 2.72$\times$ & 27.08 & 0.859 & 0.144 \\
+  Fixed ($\tau=0.10$) & 419s & 3.02$\times$ & 20.15 & 0.720 & 0.328 \\
+  Fixed ($\tau=0.15$) & 347s & 3.65$\times$ & 20.18 & 0.719 & 0.330 \\
+  \textbf{Adaptive ($\tau_\ell=0.10$, $\tau_h=0.30$)} & 327s & 3.87$\times$ & 20.23 & 0.724 & 0.338 \\
+  Fixed ($\tau=0.20$) & 286s & 4.42$\times$ & 20.11 & 0.716 & 0.340 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.40$)} & 275s & 4.60$\times$ & 19.83 & 0.707 & 0.380 \\
+  Fixed ($\tau=0.25$) & 250s & 5.05$\times$ & 19.79 & 0.704 & 0.364 \\
+  Fixed ($\tau=0.30$) & 226s & 5.59$\times$ & 18.97 & 0.686 & 0.410 \\
+  Fixed ($\tau=0.35$) & 202s & 6.25$\times$ & 18.73 & 0.680 & 0.431 \\
+  Fixed ($\tau=0.40$) & 186s & 6.79$\times$ & 17.85 & 0.660 & 0.488 \\
+  Fixed ($\tau=0.60$) & 164s & 7.69$\times$ & 16.30 & 0.620 & 0.641 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{DiCache on Wan~2.1: all evaluated configurations}
+\label{tab:app-dc-wan}
+\begin{tabular}{lrrccc}
+\toprule
+\textbf{Mode} & \textbf{Latency} & \textbf{Speedup} & \textbf{PSNR~$\uparrow$} & \textbf{SSIM~$\uparrow$} & \textbf{LPIPS~$\downarrow$} \\
+\midrule
+  Fixed ($\tau=0.05$) & 126s & 1.78$\times$ & 13.83 & 0.380 & 0.479 \\
+  Fixed ($\tau=0.07$) & 99s & 2.27$\times$ & 13.41 & 0.356 & 0.508 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.225$)} & 98s & 2.28$\times$ & 13.45 & 0.371 & 0.508 \\
+  \textbf{Adaptive ($\tau_\ell=0.05$, $\tau_h=0.25$)} & 98s & 2.29$\times$ & 13.38 & 0.369 & 0.520 \\
+  Fixed ($\tau=0.08$) & 92s & 2.44$\times$ & 12.91 & 0.333 & 0.538 \\
+  Fixed ($\tau=0.10$) & 87s & 2.58$\times$ & 12.55 & 0.313 & 0.556 \\
+  \textbf{Adaptive ($\tau_\ell=0.07$, $\tau_h=0.225$)} & 82s & 2.73$\times$ & 13.29 & 0.355 & 0.541 \\
+  \textbf{Adaptive ($\tau_\ell=0.07$, $\tau_h=0.25$)} & 81s & 2.76$\times$ & 13.30 & 0.356 & 0.546 \\
+  \textbf{Adaptive ($\tau_\ell=0.10$, $\tau_h=0.225$)} & 78s & 2.89$\times$ & 12.59 & 0.316 & 0.581 \\
+  \textbf{Adaptive ($\tau_\ell=0.10$, $\tau_h=0.25$)} & 76s & 2.94$\times$ & 12.54 & 0.314 & 0.593 \\
+  Fixed ($\tau=0.15$) & 71s & 3.16$\times$ & 12.16 & 0.293 & 0.583 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.225$)} & 67s & 3.33$\times$ & 12.20 & 0.294 & 0.599 \\
+  \textbf{Adaptive ($\tau_\ell=0.15$, $\tau_h=0.25$)} & 66s & 3.39$\times$ & 12.22 & 0.293 & 0.605 \\
+  Fixed ($\tau=0.20$) & 61s & 3.66$\times$ & 11.75 & 0.282 & 0.636 \\
+  Fixed ($\tau=0.225$) & 56s & 3.97$\times$ & 11.79 & 0.282 & 0.644 \\
+  Fixed ($\tau=0.25$) & 56s & 4.03$\times$ & 11.70 & 0.284 & 0.658 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section*{NeurIPS Paper Checklist}
+
+\begin{enumerate}
+
+\item {\bf Claims}
+    \item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the abstract and introduction do not include the claims made in the paper.
+        \item The abstract and/or introduction should clearly state the claims made, including the contributions made in the paper and important assumptions and limitations.
+        \item The claims made should match theoretical and experimental results, and reflect how much the results can be expected to generalize to other settings.
+        \item It is fine to include aspirational goals as motivation as long as it is clear that these goals are not attained by the paper.
+    \end{itemize}
+
+\item {\bf Limitations}
+    \item[] Question: Does the paper discuss the limitations of the work performed by the authors?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper has no limitation while the answer No means that the paper has limitations, but those are not discussed in the paper.
+        \item The authors are encouraged to create a separate "Limitations" section in their paper.
+    \end{itemize}
+
+\item {\bf Theory assumptions and proofs}
+    \item[] Question: For each theoretical result, does the paper provide the full set of assumptions and a complete (and correct) proof?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not include theoretical results.
+    \end{itemize}
+
+\item {\bf Experimental result reproducibility}
+    \item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper to the extent that it affects the main claims and/or conclusions of the paper (regardless of whether the code and data are provided or not)?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not include experiments.
+    \end{itemize}
+
+\item {\bf Open access to data and code}
+    \item[] Question: Does the paper provide open access to the data and code, with sufficient instructions to faithfully reproduce the main experimental results, as described in supplemental material?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that paper does not include experiments requiring code.
+    \end{itemize}
+
+\item {\bf Experimental setting/details}
+    \item[] Question: Does the paper specify all the training and test details (e.g., data splits, hyperparameters, how they were chosen, type of optimizer, etc.) necessary to understand the results?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not include experiments.
+    \end{itemize}
+
+\item {\bf Experiment statistical significance}
+    \item[] Question: Does the paper report error bars suitably and correctly defined or other appropriate information about the statistical significance of the experiments?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not include experiments.
+    \end{itemize}
+
+\item {\bf Experiments compute resources}
+    \item[] Question: For each experiment, does the paper provide sufficient information on the computer resources (type of compute workers, memory, time of execution) needed to reproduce the experiments?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not include experiments.
+    \end{itemize}
+
+\item {\bf Code of ethics}
+    \item[] Question: Does the research conducted in the paper conform, in every respect, with the NeurIPS Code of Ethics \url{https://neurips.cc/public/EthicsGuidelines}?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the authors have not reviewed the NeurIPS Code of Ethics.
+    \end{itemize}
+
+\item {\bf Broader impacts}
+    \item[] Question: Does the paper discuss both potential positive societal impacts and negative societal impacts of the work performed?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that there is no societal impact of the work performed.
+    \end{itemize}
+
+\item {\bf Safeguards}
+    \item[] Question: Does the paper describe safeguards that have been put in place for responsible release of data or models that have a high risk for misuse (e.g., pretrained language models, image generators, or scraped datasets)?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper poses no such risks.
+    \end{itemize}
+
+\item {\bf Licenses for existing assets}
+    \item[] Question: Are the creators or original owners of assets (e.g., code, data, models), used in the paper, properly credited and are the license and terms of use explicitly mentioned and properly respected?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not use existing assets.
+    \end{itemize}
+
+\item {\bf New assets}
+    \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not release new assets.
+    \end{itemize}
+
+\item {\bf Crowdsourcing and research with human subjects}
+    \item[] Question: For crowdsourcing experiments and research with human subjects, does the paper include the full text of instructions given to participants and screenshots, if applicable, as well as details about compensation (if any)?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not involve crowdsourcing nor research with human subjects.
+    \end{itemize}
+
+\item {\bf Institutional review board (IRB) approvals or equivalent for research with human subjects}
+    \item[] Question: Does the paper describe potential risks incurred by study participants, whether such risks were disclosed to the subjects, and whether Institutional Review Board (IRB) approvals (or an equivalent approval/review based on the requirements of your country or institution) were obtained?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the paper does not involve crowdsourcing nor research with human subjects.
+    \end{itemize}
+
+\item {\bf Declaration of LLM usage}
+    \item[] Question: Does the paper describe the usage of LLMs if it is an important, original, or non-standard component of the core methods in this research?
+    \item[] Answer: \answerTODO{}
+    \item[] Justification: \justificationTODO{}
+    \item[] Guidelines:
+    \begin{itemize}
+        \item The answer NA means that the core method development in this research does not involve LLMs as any important, original, or non-standard components.
+    \end{itemize}
+
+\end{enumerate}
+
+\end{document}

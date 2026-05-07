@@ -28,6 +28,8 @@ speedups = {
     "cog_dc_adaptive_hi0.30_lo0.05_late": 1.74,
     "cog_dc_adaptive_hi0.35_lo0.10_late": 1.93,
     "cog_dc_adaptive_hi0.25_lo0.10_early": 2.09,
+    "cog_dc_adaptive_hi0.40_lo0.225_mid15_48": 2.47,
+    "cog_dc_adaptive_hi0.45_lo0.25_mid15_48": 2.59,
 }
 
 # Scan fidelity metrics

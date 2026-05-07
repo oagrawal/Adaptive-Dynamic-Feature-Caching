@@ -1,0 +1,326 @@
+{
+  "runs": [
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 588.9,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-05-03T01:52:20.133459"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 539.1,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-05-03T02:01:19.272457"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 442.9,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-05-03T02:08:42.163030"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "prompt_index": 16,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 442.8,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-05-03T02:16:05.000574"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 578.1,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-05-03T02:25:43.164707"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 539.5,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-05-03T02:34:42.656896"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 443.3,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-05-03T02:42:05.940136"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "prompt_index": 17,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 443.2,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "timestamp": "2026-05-03T02:49:29.133180"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 578.3,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-05-03T02:59:07.432908"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 539.3,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-05-03T03:08:06.723569"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 443.5,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-05-03T03:15:30.267825"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "prompt_index": 18,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 443.2,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "timestamp": "2026-05-03T03:22:53.517865"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 578.6,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-05-03T03:32:32.137662"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 539.7,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-05-03T03:41:31.861499"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 442.9,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-05-03T03:48:54.799877"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "prompt_index": 19,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 442.8,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "timestamp": "2026-05-03T03:56:17.653969"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 578.6,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-05-03T04:05:56.285957"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 539.7,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-05-03T04:14:56.048788"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 442.8,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-05-03T04:22:18.875188"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "prompt_index": 20,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 442.7,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "timestamp": "2026-05-03T04:29:41.659572"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 579.2,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/a red bicycle-0.mp4",
+      "timestamp": "2026-05-03T04:39:20.901720"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 540.1,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/a red bicycle-0.mp4",
+      "timestamp": "2026-05-03T04:48:20.996349"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 443.4,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/a red bicycle-0.mp4",
+      "timestamp": "2026-05-03T04:55:44.427170"
+    },
+    {
+      "prompt": "a red bicycle",
+      "prompt_index": 21,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 443.3,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/a red bicycle-0.mp4",
+      "timestamp": "2026-05-03T05:03:07.770961"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 579.1,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/a green bicycle-0.mp4",
+      "timestamp": "2026-05-03T05:12:46.923567"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 539.9,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/a green bicycle-0.mp4",
+      "timestamp": "2026-05-03T05:21:46.801397"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 443.1,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/a green bicycle-0.mp4",
+      "timestamp": "2026-05-03T05:29:09.865476"
+    },
+    {
+      "prompt": "a green bicycle",
+      "prompt_index": 22,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 443.4,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/a green bicycle-0.mp4",
+      "timestamp": "2026-05-03T05:36:33.267659"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.22",
+      "time_seconds": 578.9,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.22/a blue bicycle-0.mp4",
+      "timestamp": "2026-05-03T05:46:12.216016"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "cogvideo_fixed_0.25",
+      "time_seconds": 540.2,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_fixed_0.25/a blue bicycle-0.mp4",
+      "timestamp": "2026-05-03T05:55:12.404593"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.35_48",
+      "time_seconds": 443.0,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.35_48/a blue bicycle-0.mp4",
+      "timestamp": "2026-05-03T06:02:35.430536"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "prompt_index": 23,
+      "seed": 0,
+      "mode": "cogvideo_adaptive3_0.30_17_0.40_48",
+      "time_seconds": 444.7,
+      "video_path": "/nfs/oagrawal/CogVideo/vbench_eval_teacache/videos/cogvideo_adaptive3_0.30_17_0.40_48/a blue bicycle-0.mp4",
+      "timestamp": "2026-05-03T06:10:00.186488"
+    }
+  ],
+  "completed_keys": [
+    "cogvideo_fixed_0.22|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "cogvideo_fixed_0.25|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "cogvideo_fixed_0.22|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "cogvideo_fixed_0.25|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "cogvideo_fixed_0.22|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "cogvideo_fixed_0.25|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "cogvideo_fixed_0.22|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "cogvideo_fixed_0.25|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "cogvideo_fixed_0.22|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "cogvideo_fixed_0.25|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "cogvideo_fixed_0.22|a red bicycle|0",
+    "cogvideo_fixed_0.25|a red bicycle|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|a red bicycle|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|a red bicycle|0",
+    "cogvideo_fixed_0.22|a green bicycle|0",
+    "cogvideo_fixed_0.25|a green bicycle|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|a green bicycle|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|a green bicycle|0",
+    "cogvideo_fixed_0.22|a blue bicycle|0",
+    "cogvideo_fixed_0.25|a blue bicycle|0",
+    "cogvideo_adaptive3_0.30_17_0.35_48|a blue bicycle|0",
+    "cogvideo_adaptive3_0.30_17_0.40_48|a blue bicycle|0"
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "runs": [
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 627.68,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "prompt_index": 16,
+      "timestamp": "2026-04-29T23:11:00.360860"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 547.71,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "prompt_index": 16,
+      "timestamp": "2026-04-29T23:20:11.146897"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 475.01,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "prompt_index": 16,
+      "timestamp": "2026-04-29T23:28:09.614994"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 652.52,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "prompt_index": 16,
+      "timestamp": "2026-04-29T23:39:05.706326"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 626.68,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "prompt_index": 17,
+      "timestamp": "2026-04-29T23:49:35.403459"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 553.36,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "prompt_index": 17,
+      "timestamp": "2026-04-29T23:58:51.832871"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 479.95,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "prompt_index": 17,
+      "timestamp": "2026-04-30T00:06:55.522928"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 656.45,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "prompt_index": 17,
+      "timestamp": "2026-04-30T00:17:55.323426"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 629.15,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "prompt_index": 18,
+      "timestamp": "2026-04-30T00:28:27.087012"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 553.57,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "prompt_index": 18,
+      "timestamp": "2026-04-30T00:37:44.309793"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 482.84,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "prompt_index": 18,
+      "timestamp": "2026-04-30T00:45:50.085950"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 654.46,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "prompt_index": 18,
+      "timestamp": "2026-04-30T00:56:48.105967"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 628.8,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "prompt_index": 19,
+      "timestamp": "2026-04-30T01:07:20.243083"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 556.98,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "prompt_index": 19,
+      "timestamp": "2026-04-30T01:16:40.304983"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 483.86,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "prompt_index": 19,
+      "timestamp": "2026-04-30T01:24:46.835752"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 653.46,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "prompt_index": 19,
+      "timestamp": "2026-04-30T01:35:43.404406"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 627.91,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "prompt_index": 20,
+      "timestamp": "2026-04-30T01:46:13.900786"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 557.15,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "prompt_index": 20,
+      "timestamp": "2026-04-30T01:55:34.388373"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 481.89,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "prompt_index": 20,
+      "timestamp": "2026-04-30T02:03:39.848272"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 654.1,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "prompt_index": 20,
+      "timestamp": "2026-04-30T02:14:37.691282"
+    },
+    {
+      "prompt": "a red bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 626.77,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a red bicycle-0.mp4",
+      "prompt_index": 21,
+      "timestamp": "2026-04-30T02:25:07.603371"
+    },
+    {
+      "prompt": "a red bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 557.55,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a red bicycle-0.mp4",
+      "prompt_index": 21,
+      "timestamp": "2026-04-30T02:34:27.972382"
+    },
+    {
+      "prompt": "a red bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 480.25,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a red bicycle-0.mp4",
+      "prompt_index": 21,
+      "timestamp": "2026-04-30T02:42:31.306980"
+    },
+    {
+      "prompt": "a red bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 657.18,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a red bicycle-0.mp4",
+      "prompt_index": 21,
+      "timestamp": "2026-04-30T02:53:31.177398"
+    },
+    {
+      "prompt": "a green bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 623.64,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a green bicycle-0.mp4",
+      "prompt_index": 22,
+      "timestamp": "2026-04-30T03:03:58.216906"
+    },
+    {
+      "prompt": "a green bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 554.51,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a green bicycle-0.mp4",
+      "prompt_index": 22,
+      "timestamp": "2026-04-30T03:13:15.608503"
+    },
+    {
+      "prompt": "a green bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 484.81,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a green bicycle-0.mp4",
+      "prompt_index": 22,
+      "timestamp": "2026-04-30T03:21:23.723194"
+    },
+    {
+      "prompt": "a green bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 649.73,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a green bicycle-0.mp4",
+      "prompt_index": 22,
+      "timestamp": "2026-04-30T03:32:16.706386"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 633.28,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a blue bicycle-0.mp4",
+      "prompt_index": 23,
+      "timestamp": "2026-04-30T03:42:52.692938"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 555.21,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a blue bicycle-0.mp4",
+      "prompt_index": 23,
+      "timestamp": "2026-04-30T03:52:11.102923"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 484.87,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a blue bicycle-0.mp4",
+      "prompt_index": 23,
+      "timestamp": "2026-04-30T04:00:19.312303"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 651.23,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a blue bicycle-0.mp4",
+      "prompt_index": 23,
+      "timestamp": "2026-04-30T04:11:13.467033"
+    }
+  ],
+  "completed_keys": [
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a red bicycle|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a red bicycle|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a red bicycle|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a red bicycle|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a green bicycle|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a green bicycle|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a green bicycle|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a green bicycle|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a blue bicycle|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a blue bicycle|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a blue bicycle|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a blue bicycle|0"
+  ]
+}

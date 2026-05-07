@@ -52,7 +52,7 @@ Details: `analysis/hyperparam_audit.md` (verified 2026-04-20, all trusted combos
 - **Baselines**: Hunyuan 50 steps 544×960 129f 24fps · Wan 50 steps 832×480 81f 16fps (T2V-1.3B) · CogVideo 50 steps 1360×768 81f 16fps (5B) · Mochi 64 steps 848×480 163f 30fps
 - **VBench transformers**: 4.33.2 for eval, restore 4.46.3 for generation.
 
-## Fidelity state (as of 2026-04-20)
+## Fidelity state (as of 2026-04-27)
 
 Primary metric is PSNR/SSIM/LPIPS (Pareto curves). Script: `CogVideo/dicache_results/metrics/eval_with_json.py`. Output: `{model}/{eval_dir}/fidelity_metrics/{mode}_vs_baseline.json`.
 
@@ -62,18 +62,17 @@ Primary metric is PSNR/SSIM/LPIPS (Pareto curves). Script: `CogVideo/dicache_res
 | TeaCache × Wan | 4 | 0 — **needs compute** | 0 |
 | TeaCache × CogVideo | 6 | 6 ✓ | 0 — **needs plot** |
 | TeaCache × Mochi | 5 | 0 — **needs compute** | 0 |
-| EasyCache × HV | 8 | 0 — **needs compute** | 0 |
+| EasyCache × HV | 7 | 7 ✓ | 3 ✓ |
 | EasyCache × Wan | 22 | 21 ✓ (1 partial mode) | 0 — **needs plot** |
 | EasyCache × CogVideo (updated_exp) | 16 | 0 — deferred (suspect impl) | 1 |
 | DiCache × HV | 13 | 12 ✓ | 0 — **needs plot** |
 | DiCache × Wan | 14 | 13 ✓ | 7 ✓ |
 | DiCache × CogVideo | 25 | 23 ✓ | 4 ✓ (suspect frontier) |
-| DiCache + EasyCache × Mochi | — | — | — (Mochi = TC only) |
 
 ## Latency / speedup data (needed for Pareto plots)
 
 All combos have generation log JSONs with `time_seconds` per prompt except:
-- **HV EasyCache**: text logs at `HunyuanVideo/vbench_eval_easycache/logs/ec_gpu*.log` — extract timing from `[N/33] Generating:` timestamp deltas.
+- **HV EasyCache**: text logs at `HunyuanVideo/vbench_eval_easycache/logs/ec_gpu*_redo.log` — timing extracted via `grep "Success, time:"`. Speedups already recorded in `vbench_eval_easycache/plot_pareto_fidelity_hv_easycache.py`.
 - **HV DiCache**: text logs at `HunyuanVideo/dicache_results/logs/*.log` — each log has `time: <seconds>` per video; also see `dicache_results/results/` CSV.
 
 Generation log JSON paths: `{model}/{eval_dir}/videos/generation_log*.json` (HV/Wan/Mochi/Cog TeaCache) or `{model}/{eval_dir}/generation_log_gpu*.json` (Cog DiCache/EasyCache).

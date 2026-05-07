@@ -76,9 +76,12 @@ def teacache_forward(
         if self.enable_teacache:
             no_cache_mode = self.rel_l1_thresh == 0
             adaptive_switch = getattr(self, "adaptive_rel_l1_switch_step", None)
+            adaptive_switch_2 = getattr(self, "adaptive_rel_l1_switch_step_2", None)
             if adaptive_switch is not None:
                 if self.cnt < adaptive_switch:
                     current_thresh = getattr(self, "adaptive_rel_l1_thresh_1", self.rel_l1_thresh)
+                elif adaptive_switch_2 is not None and self.cnt >= adaptive_switch_2:
+                    current_thresh = getattr(self, "adaptive_rel_l1_thresh_3", self.rel_l1_thresh)
                 else:
                     current_thresh = getattr(self, "adaptive_rel_l1_thresh_2", self.rel_l1_thresh)
             else:
@@ -246,10 +249,14 @@ def run_generation(
     cls.adaptive_rel_l1_switch_step = None
     cls.adaptive_rel_l1_thresh_1 = None
     cls.adaptive_rel_l1_thresh_2 = None
+    cls.adaptive_rel_l1_switch_step_2 = None
+    cls.adaptive_rel_l1_thresh_3 = None
     if adaptive_schedule is not None:
         cls.adaptive_rel_l1_switch_step = adaptive_schedule.get("switch_step")
         cls.adaptive_rel_l1_thresh_1 = adaptive_schedule.get("thresh1", rel_l1_thresh)
         cls.adaptive_rel_l1_thresh_2 = adaptive_schedule.get("thresh2", rel_l1_thresh)
+        cls.adaptive_rel_l1_switch_step_2 = adaptive_schedule.get("switch_step_2")
+        cls.adaptive_rel_l1_thresh_3 = adaptive_schedule.get("thresh3", rel_l1_thresh)
     if rel_l1_thresh == 0:
         pipe.transformer.__class__.delta_TEMNI = []
 

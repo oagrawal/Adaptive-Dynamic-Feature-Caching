@@ -1,0 +1,336 @@
+{
+  "runs": [
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1354.82,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a person swimming in ocean-0.mp4",
+      "prompt_index": 0,
+      "timestamp": "2026-04-29T09:55:42.127067"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1354.3,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a person giving a presentation to a room full of colleagues-0.mp4",
+      "prompt_index": 1,
+      "timestamp": "2026-04-29T10:18:19.491579"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1354.35,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a person washing the dishes-0.mp4",
+      "prompt_index": 2,
+      "timestamp": "2026-04-29T10:40:56.237344"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1361.63,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/Close up of grapes on a rotating table.-0.mp4",
+      "prompt_index": 3,
+      "timestamp": "2026-04-29T11:03:40.649078"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1362.56,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/Turtle swimming in ocean.-0.mp4",
+      "prompt_index": 4,
+      "timestamp": "2026-04-29T11:26:26.035554"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1361.5,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A storm trooper vacuuming the beach.-0.mp4",
+      "prompt_index": 5,
+      "timestamp": "2026-04-29T11:49:10.846171"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1360.22,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/alley-0.mp4",
+      "prompt_index": 6,
+      "timestamp": "2026-04-29T12:11:54.185783"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1362.2,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/amusement park-0.mp4",
+      "prompt_index": 7,
+      "timestamp": "2026-04-29T12:34:39.384392"
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1356.02,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/aquarium-0.mp4",
+      "prompt_index": 8,
+      "timestamp": "2026-04-29T12:57:18.669914"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1364.7,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/In a still frame, a stop sign-0.mp4",
+      "prompt_index": 9,
+      "timestamp": "2026-04-29T13:20:06.003238"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1359.18,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a toilet, frozen in time-0.mp4",
+      "prompt_index": 10,
+      "timestamp": "2026-04-29T13:42:47.920511"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1362.62,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a laptop, frozen in time-0.mp4",
+      "prompt_index": 11,
+      "timestamp": "2026-04-29T14:05:33.253978"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1356.91,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A person is riding a bike-0.mp4",
+      "prompt_index": 12,
+      "timestamp": "2026-04-29T14:28:13.388040"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1355.61,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A person is marching-0.mp4",
+      "prompt_index": 13,
+      "timestamp": "2026-04-29T14:50:52.482631"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1357.78,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A person is roller skating-0.mp4",
+      "prompt_index": 14,
+      "timestamp": "2026-04-29T15:13:33.147315"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1360.84,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "prompt_index": 15,
+      "timestamp": "2026-04-29T15:36:17.491239"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1359.39,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "prompt_index": 16,
+      "timestamp": "2026-04-29T15:59:00.399562"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom out",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1369.39,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand, zoom out-0.mp4",
+      "prompt_index": 17,
+      "timestamp": "2026-04-29T16:21:53.147812"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1368.91,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style-0.mp4",
+      "prompt_index": 18,
+      "timestamp": "2026-04-29T16:44:45.073929"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, oil painting",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1371.02,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand, oil painting-0.mp4",
+      "prompt_index": 19,
+      "timestamp": "2026-04-29T17:07:38.942401"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1368.98,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo-0.mp4",
+      "prompt_index": 20,
+      "timestamp": "2026-04-29T17:30:30.463466"
+    },
+    {
+      "prompt": "a red bicycle",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1367.75,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a red bicycle-0.mp4",
+      "prompt_index": 21,
+      "timestamp": "2026-04-29T17:53:21.437354"
+    },
+    {
+      "prompt": "a green bicycle",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1368.36,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a green bicycle-0.mp4",
+      "prompt_index": 22,
+      "timestamp": "2026-04-29T18:16:13.004115"
+    },
+    {
+      "prompt": "a blue bicycle",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1369.56,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a blue bicycle-0.mp4",
+      "prompt_index": 23,
+      "timestamp": "2026-04-29T18:39:04.971510"
+    },
+    {
+      "prompt": "a bicycle on the left of a car, front view",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1372.21,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a bicycle on the left of a car, front view-0.mp4",
+      "prompt_index": 24,
+      "timestamp": "2026-04-29T19:02:00.299207"
+    },
+    {
+      "prompt": "a car on the right of a motorcycle, front view",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1372.25,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a car on the right of a motorcycle, front view-0.mp4",
+      "prompt_index": 25,
+      "timestamp": "2026-04-29T19:24:55.260270"
+    },
+    {
+      "prompt": "a motorcycle on the left of a bus, front view",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1371.98,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a motorcycle on the left of a bus, front view-0.mp4",
+      "prompt_index": 26,
+      "timestamp": "2026-04-29T19:47:49.399733"
+    },
+    {
+      "prompt": "a bird and a cat",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1366.24,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a bird and a cat-0.mp4",
+      "prompt_index": 27,
+      "timestamp": "2026-04-29T20:10:38.321446"
+    },
+    {
+      "prompt": "a cat and a dog",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1366.0,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a cat and a dog-0.mp4",
+      "prompt_index": 28,
+      "timestamp": "2026-04-29T20:33:27.245968"
+    },
+    {
+      "prompt": "a dog and a horse",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1366.35,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a dog and a horse-0.mp4",
+      "prompt_index": 29,
+      "timestamp": "2026-04-29T20:56:16.911603"
+    },
+    {
+      "prompt": "a person",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1366.11,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a person-0.mp4",
+      "prompt_index": 30,
+      "timestamp": "2026-04-29T21:19:05.727370"
+    },
+    {
+      "prompt": "a bicycle",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1367.09,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a bicycle-0.mp4",
+      "prompt_index": 31,
+      "timestamp": "2026-04-29T21:41:56.011407"
+    },
+    {
+      "prompt": "a car",
+      "seed": 0,
+      "mode": "hunyuan_fixed_0.05",
+      "time_seconds": 1366.77,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_fixed_0.05/a car-0.mp4",
+      "prompt_index": 32,
+      "timestamp": "2026-04-29T22:04:45.788136"
+    }
+  ],
+  "completed_keys": [
+    "hunyuan_fixed_0.05|a person swimming in ocean|0",
+    "hunyuan_fixed_0.05|a person giving a presentation to a room full of colleagues|0",
+    "hunyuan_fixed_0.05|a person washing the dishes|0",
+    "hunyuan_fixed_0.05|Close up of grapes on a rotating table.|0",
+    "hunyuan_fixed_0.05|Turtle swimming in ocean.|0",
+    "hunyuan_fixed_0.05|A storm trooper vacuuming the beach.|0",
+    "hunyuan_fixed_0.05|alley|0",
+    "hunyuan_fixed_0.05|amusement park|0",
+    "hunyuan_fixed_0.05|aquarium|0",
+    "hunyuan_fixed_0.05|In a still frame, a stop sign|0",
+    "hunyuan_fixed_0.05|a toilet, frozen in time|0",
+    "hunyuan_fixed_0.05|a laptop, frozen in time|0",
+    "hunyuan_fixed_0.05|A person is riding a bike|0",
+    "hunyuan_fixed_0.05|A person is marching|0",
+    "hunyuan_fixed_0.05|A person is roller skating|0",
+    "hunyuan_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "hunyuan_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "hunyuan_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand, zoom out|0",
+    "hunyuan_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand, Van Gogh style|0",
+    "hunyuan_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand, oil painting|0",
+    "hunyuan_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand by Hokusai, in the style of Ukiyo|0",
+    "hunyuan_fixed_0.05|a red bicycle|0",
+    "hunyuan_fixed_0.05|a green bicycle|0",
+    "hunyuan_fixed_0.05|a blue bicycle|0",
+    "hunyuan_fixed_0.05|a bicycle on the left of a car, front view|0",
+    "hunyuan_fixed_0.05|a car on the right of a motorcycle, front view|0",
+    "hunyuan_fixed_0.05|a motorcycle on the left of a bus, front view|0",
+    "hunyuan_fixed_0.05|a bird and a cat|0",
+    "hunyuan_fixed_0.05|a cat and a dog|0",
+    "hunyuan_fixed_0.05|a dog and a horse|0",
+    "hunyuan_fixed_0.05|a person|0",
+    "hunyuan_fixed_0.05|a bicycle|0",
+    "hunyuan_fixed_0.05|a car|0"
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "runs": [
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 622.19,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a person swimming in ocean-0.mp4",
+      "prompt_index": 0,
+      "timestamp": "2026-04-29T23:10:27.522671"
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 558.44,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a person swimming in ocean-0.mp4",
+      "prompt_index": 0,
+      "timestamp": "2026-04-29T23:19:49.513484"
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 490.58,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a person swimming in ocean-0.mp4",
+      "prompt_index": 0,
+      "timestamp": "2026-04-29T23:28:03.816411"
+    },
+    {
+      "prompt": "a person swimming in ocean",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 654.92,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a person swimming in ocean-0.mp4",
+      "prompt_index": 0,
+      "timestamp": "2026-04-29T23:39:02.456982"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 624.14,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a person giving a presentation to a room full of colleagues-0.mp4",
+      "prompt_index": 1,
+      "timestamp": "2026-04-29T23:49:29.601428"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 559.12,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a person giving a presentation to a room full of colleagues-0.mp4",
+      "prompt_index": 1,
+      "timestamp": "2026-04-29T23:58:52.014171"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 480.05,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a person giving a presentation to a room full of colleagues-0.mp4",
+      "prompt_index": 1,
+      "timestamp": "2026-04-30T00:06:54.564117"
+    },
+    {
+      "prompt": "a person giving a presentation to a room full of colleagues",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 656.95,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a person giving a presentation to a room full of colleagues-0.mp4",
+      "prompt_index": 1,
+      "timestamp": "2026-04-30T00:17:54.965517"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 625.29,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a person washing the dishes-0.mp4",
+      "prompt_index": 2,
+      "timestamp": "2026-04-30T00:28:23.275797"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 557.61,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a person washing the dishes-0.mp4",
+      "prompt_index": 2,
+      "timestamp": "2026-04-30T00:37:44.223105"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 480.96,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a person washing the dishes-0.mp4",
+      "prompt_index": 2,
+      "timestamp": "2026-04-30T00:45:48.498375"
+    },
+    {
+      "prompt": "a person washing the dishes",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 656.85,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a person washing the dishes-0.mp4",
+      "prompt_index": 2,
+      "timestamp": "2026-04-30T00:56:48.686204"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 630.02,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/Close up of grapes on a rotating table.-0.mp4",
+      "prompt_index": 3,
+      "timestamp": "2026-04-30T01:07:21.910371"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 557.24,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/Close up of grapes on a rotating table.-0.mp4",
+      "prompt_index": 3,
+      "timestamp": "2026-04-30T01:16:42.388101"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 486.04,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/Close up of grapes on a rotating table.-0.mp4",
+      "prompt_index": 3,
+      "timestamp": "2026-04-30T01:24:51.609108"
+    },
+    {
+      "prompt": "Close up of grapes on a rotating table.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 652.62,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/Close up of grapes on a rotating table.-0.mp4",
+      "prompt_index": 3,
+      "timestamp": "2026-04-30T01:35:46.995787"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 625.92,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/Turtle swimming in ocean.-0.mp4",
+      "prompt_index": 4,
+      "timestamp": "2026-04-30T01:46:16.171424"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 554.88,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/Turtle swimming in ocean.-0.mp4",
+      "prompt_index": 4,
+      "timestamp": "2026-04-30T01:55:34.678661"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 482.0,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/Turtle swimming in ocean.-0.mp4",
+      "prompt_index": 4,
+      "timestamp": "2026-04-30T02:03:40.192632"
+    },
+    {
+      "prompt": "Turtle swimming in ocean.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 651.78,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/Turtle swimming in ocean.-0.mp4",
+      "prompt_index": 4,
+      "timestamp": "2026-04-30T02:14:35.381908"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 627.02,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A storm trooper vacuuming the beach.-0.mp4",
+      "prompt_index": 5,
+      "timestamp": "2026-04-30T02:25:05.538430"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 555.77,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A storm trooper vacuuming the beach.-0.mp4",
+      "prompt_index": 5,
+      "timestamp": "2026-04-30T02:34:23.871122"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 482.82,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A storm trooper vacuuming the beach.-0.mp4",
+      "prompt_index": 5,
+      "timestamp": "2026-04-30T02:42:30.152692"
+    },
+    {
+      "prompt": "A storm trooper vacuuming the beach.",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 652.3,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A storm trooper vacuuming the beach.-0.mp4",
+      "prompt_index": 5,
+      "timestamp": "2026-04-30T02:53:25.508089"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 626.4,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/alley-0.mp4",
+      "prompt_index": 6,
+      "timestamp": "2026-04-30T03:03:55.280449"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 552.25,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/alley-0.mp4",
+      "prompt_index": 6,
+      "timestamp": "2026-04-30T03:13:10.437708"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 479.38,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/alley-0.mp4",
+      "prompt_index": 6,
+      "timestamp": "2026-04-30T03:21:12.686066"
+    },
+    {
+      "prompt": "alley",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 656.37,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/alley-0.mp4",
+      "prompt_index": 6,
+      "timestamp": "2026-04-30T03:32:12.200485"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 629.09,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/amusement park-0.mp4",
+      "prompt_index": 7,
+      "timestamp": "2026-04-30T03:42:44.396929"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 559.13,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/amusement park-0.mp4",
+      "prompt_index": 7,
+      "timestamp": "2026-04-30T03:52:06.687056"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 483.09,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/amusement park-0.mp4",
+      "prompt_index": 7,
+      "timestamp": "2026-04-30T04:00:13.047247"
+    },
+    {
+      "prompt": "amusement park",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 654.96,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/amusement park-0.mp4",
+      "prompt_index": 7,
+      "timestamp": "2026-04-30T04:11:11.503980"
+    }
+  ],
+  "completed_keys": [
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a person swimming in ocean|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a person swimming in ocean|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a person swimming in ocean|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a person swimming in ocean|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a person giving a presentation to a room full of colleagues|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a person giving a presentation to a room full of colleagues|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a person giving a presentation to a room full of colleagues|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a person giving a presentation to a room full of colleagues|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a person washing the dishes|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a person washing the dishes|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a person washing the dishes|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a person washing the dishes|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|Close up of grapes on a rotating table.|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|Close up of grapes on a rotating table.|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|Close up of grapes on a rotating table.|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|Close up of grapes on a rotating table.|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|Turtle swimming in ocean.|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|Turtle swimming in ocean.|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|Turtle swimming in ocean.|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|Turtle swimming in ocean.|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A storm trooper vacuuming the beach.|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A storm trooper vacuuming the beach.|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A storm trooper vacuuming the beach.|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A storm trooper vacuuming the beach.|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|alley|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|alley|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|alley|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|alley|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|amusement park|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|amusement park|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|amusement park|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|amusement park|0"
+  ]
+}

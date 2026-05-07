@@ -1,0 +1,23 @@
+EasyCache Experiment
+============================================================
+Mode: easycache
+Threshold: 0.04
+ret_steps: 5
+
+=== Timing ===
+End-to-end time:   511.33s
+DiT-only time:     367.20s
+Inference steps:   50
+
+=== k_t Statistics ===
+k_t values recorded: 13
+Mean:  15.5012
+Std:   31.2473
+Min:   0.2052
+Max:   112.3663
+
+=== Prompt ===
+a person swimming in ocean
+
+=== Seed ===
+0

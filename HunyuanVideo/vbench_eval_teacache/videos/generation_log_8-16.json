@@ -1,0 +1,326 @@
+{
+  "runs": [
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 620.57,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/aquarium-0.mp4",
+      "prompt_index": 8,
+      "timestamp": "2026-04-29T23:10:19.383975"
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 552.71,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/aquarium-0.mp4",
+      "prompt_index": 8,
+      "timestamp": "2026-04-29T23:19:35.151459"
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 484.54,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/aquarium-0.mp4",
+      "prompt_index": 8,
+      "timestamp": "2026-04-29T23:27:42.686678"
+    },
+    {
+      "prompt": "aquarium",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 650.35,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/aquarium-0.mp4",
+      "prompt_index": 8,
+      "timestamp": "2026-04-29T23:38:36.103603"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 632.87,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/In a still frame, a stop sign-0.mp4",
+      "prompt_index": 9,
+      "timestamp": "2026-04-29T23:49:11.701163"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 548.89,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/In a still frame, a stop sign-0.mp4",
+      "prompt_index": 9,
+      "timestamp": "2026-04-29T23:58:23.891871"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 482.83,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/In a still frame, a stop sign-0.mp4",
+      "prompt_index": 9,
+      "timestamp": "2026-04-30T00:06:29.378699"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 658.15,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/In a still frame, a stop sign-0.mp4",
+      "prompt_index": 9,
+      "timestamp": "2026-04-30T00:17:30.582913"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 629.64,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a toilet, frozen in time-0.mp4",
+      "prompt_index": 10,
+      "timestamp": "2026-04-30T00:28:02.988973"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 556.43,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a toilet, frozen in time-0.mp4",
+      "prompt_index": 10,
+      "timestamp": "2026-04-30T00:37:21.575065"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 481.45,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a toilet, frozen in time-0.mp4",
+      "prompt_index": 10,
+      "timestamp": "2026-04-30T00:45:25.632786"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 656.99,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a toilet, frozen in time-0.mp4",
+      "prompt_index": 10,
+      "timestamp": "2026-04-30T00:56:25.675079"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 629.52,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/a laptop, frozen in time-0.mp4",
+      "prompt_index": 11,
+      "timestamp": "2026-04-30T01:06:57.435080"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 556.98,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/a laptop, frozen in time-0.mp4",
+      "prompt_index": 11,
+      "timestamp": "2026-04-30T01:16:17.569909"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 483.61,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/a laptop, frozen in time-0.mp4",
+      "prompt_index": 11,
+      "timestamp": "2026-04-30T01:24:23.886094"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 652.37,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/a laptop, frozen in time-0.mp4",
+      "prompt_index": 11,
+      "timestamp": "2026-04-30T01:35:18.891227"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 626.91,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A person is riding a bike-0.mp4",
+      "prompt_index": 12,
+      "timestamp": "2026-04-30T01:45:48.769190"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 548.86,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A person is riding a bike-0.mp4",
+      "prompt_index": 12,
+      "timestamp": "2026-04-30T01:55:01.128436"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 484.01,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A person is riding a bike-0.mp4",
+      "prompt_index": 12,
+      "timestamp": "2026-04-30T02:03:08.171085"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 647.16,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A person is riding a bike-0.mp4",
+      "prompt_index": 12,
+      "timestamp": "2026-04-30T02:13:58.507376"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 627.44,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A person is marching-0.mp4",
+      "prompt_index": 13,
+      "timestamp": "2026-04-30T02:24:29.103963"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 557.79,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A person is marching-0.mp4",
+      "prompt_index": 13,
+      "timestamp": "2026-04-30T02:33:50.068229"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 481.52,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A person is marching-0.mp4",
+      "prompt_index": 13,
+      "timestamp": "2026-04-30T02:41:54.880111"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 653.2,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A person is marching-0.mp4",
+      "prompt_index": 13,
+      "timestamp": "2026-04-30T02:52:51.613002"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 629.63,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A person is roller skating-0.mp4",
+      "prompt_index": 14,
+      "timestamp": "2026-04-30T03:03:24.607217"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 552.35,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A person is roller skating-0.mp4",
+      "prompt_index": 14,
+      "timestamp": "2026-04-30T03:12:40.101969"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 479.77,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A person is roller skating-0.mp4",
+      "prompt_index": 14,
+      "timestamp": "2026-04-30T03:20:42.494266"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 654.74,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A person is roller skating-0.mp4",
+      "prompt_index": 14,
+      "timestamp": "2026-04-30T03:31:40.659689"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.3",
+      "time_seconds": 628.46,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "prompt_index": 15,
+      "timestamp": "2026-04-30T03:42:12.268037"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+      "time_seconds": 549.95,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.15_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "prompt_index": 15,
+      "timestamp": "2026-04-30T03:51:25.220316"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.2_hi0.3",
+      "time_seconds": 481.91,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.2_hi0.3/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "prompt_index": 15,
+      "timestamp": "2026-04-30T03:59:30.560527"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "hunyuan_tc_adaptive_lo0.1_hi0.25",
+      "time_seconds": 650.82,
+      "video_path": "vbench_eval_teacache/videos/hunyuan_tc_adaptive_lo0.1_hi0.25/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "prompt_index": 15,
+      "timestamp": "2026-04-30T04:10:24.815380"
+    }
+  ],
+  "completed_keys": [
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|aquarium|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|aquarium|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|aquarium|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|aquarium|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|In a still frame, a stop sign|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|In a still frame, a stop sign|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|In a still frame, a stop sign|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|In a still frame, a stop sign|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a toilet, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a toilet, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a toilet, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a toilet, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|a laptop, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|a laptop, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|a laptop, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|a laptop, frozen in time|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A person is riding a bike|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A person is riding a bike|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A person is riding a bike|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A person is riding a bike|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A person is marching|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A person is marching|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A person is marching|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A person is marching|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A person is roller skating|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A person is roller skating|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A person is roller skating|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A person is roller skating|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "hunyuan_tc_adaptive_lo0.15_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "hunyuan_tc_adaptive_lo0.2_hi0.3|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "hunyuan_tc_adaptive_lo0.1_hi0.25|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0"
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "runs": [
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 9,
+      "time_seconds": 90.65,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T08:39:42.427303"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 9,
+      "time_seconds": 71.37,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T08:40:55.530693"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 9,
+      "time_seconds": 106.52,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T08:42:43.521649"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 9,
+      "time_seconds": 109.3,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T08:44:34.296871"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 10,
+      "time_seconds": 88.92,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:46:04.612803"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 10,
+      "time_seconds": 70.13,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:47:16.216222"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 10,
+      "time_seconds": 104.95,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:49:02.456822"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 10,
+      "time_seconds": 108.73,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:50:52.824037"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 11,
+      "time_seconds": 91.29,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:52:25.564851"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 11,
+      "time_seconds": 69.98,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:53:36.987966"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 11,
+      "time_seconds": 104.86,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:55:23.244489"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 11,
+      "time_seconds": 108.53,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T08:57:13.199508"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 12,
+      "time_seconds": 89.87,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T08:58:44.989576"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 12,
+      "time_seconds": 70.63,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T08:59:57.567127"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 12,
+      "time_seconds": 104.52,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T09:01:44.070508"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 12,
+      "time_seconds": 108.12,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T09:03:34.061393"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 13,
+      "time_seconds": 89.07,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T09:05:05.114560"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 13,
+      "time_seconds": 70.03,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T09:06:17.128518"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 13,
+      "time_seconds": 104.7,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T09:08:03.604886"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 13,
+      "time_seconds": 108.47,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T09:09:53.877353"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 14,
+      "time_seconds": 89.26,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T09:11:24.932370"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 14,
+      "time_seconds": 70.82,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T09:12:37.679471"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 14,
+      "time_seconds": 104.79,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T09:14:24.300986"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 14,
+      "time_seconds": 108.02,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T09:16:14.112102"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 15,
+      "time_seconds": 89.39,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T09:17:45.392955"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 15,
+      "time_seconds": 70.05,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T09:18:57.300374"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 15,
+      "time_seconds": 104.39,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T09:20:43.479397"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 15,
+      "time_seconds": 108.21,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T09:22:33.529009"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.15",
+      "prompt_index": 16,
+      "time_seconds": 88.92,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.15/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T09:24:04.331727"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.25",
+      "prompt_index": 16,
+      "time_seconds": 70.04,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.25/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T09:25:16.291372"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.25_lo0.05",
+      "prompt_index": 16,
+      "time_seconds": 104.35,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.25_lo0.05/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T09:27:02.440683"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_tc_adaptive_hi0.2_lo0.05",
+      "prompt_index": 16,
+      "time_seconds": 108.42,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_adaptive_hi0.2_lo0.05/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T09:28:52.555146"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 9,
+      "time_seconds": 211.19,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T10:21:43.575619"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 9,
+      "time_seconds": 112.62,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T10:23:37.630876"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 9,
+      "time_seconds": 74.46,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T10:24:53.688786"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 9,
+      "time_seconds": 92.72,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-04-29T10:26:27.862612"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 10,
+      "time_seconds": 211.89,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:30:01.182131"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 10,
+      "time_seconds": 113.35,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:31:56.019677"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 10,
+      "time_seconds": 77.36,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:33:14.975157"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 10,
+      "time_seconds": 98.11,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:34:54.545054"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 11,
+      "time_seconds": 215.64,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:38:31.755291"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 11,
+      "time_seconds": 113.52,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:40:26.947165"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 11,
+      "time_seconds": 76.2,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:41:44.860226"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 11,
+      "time_seconds": 97.06,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-04-29T10:43:23.453354"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 12,
+      "time_seconds": 215.36,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T10:47:01.224748"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 12,
+      "time_seconds": 114.84,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T10:48:58.289571"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 12,
+      "time_seconds": 77.43,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T10:50:17.903413"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 12,
+      "time_seconds": 97.04,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/A person is riding a bike-0.mp4",
+      "timestamp": "2026-04-29T10:51:57.600359"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 13,
+      "time_seconds": 214.06,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T10:55:34.032767"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 13,
+      "time_seconds": 111.94,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T10:57:28.368100"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 13,
+      "time_seconds": 74.54,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T10:58:45.792413"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 13,
+      "time_seconds": 97.46,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/A person is marching-0.mp4",
+      "timestamp": "2026-04-29T11:00:25.660580"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 14,
+      "time_seconds": 213.97,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T11:04:01.714227"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 14,
+      "time_seconds": 114.25,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T11:05:58.302153"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 14,
+      "time_seconds": 74.17,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T11:07:14.484799"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 14,
+      "time_seconds": 93.15,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/A person is roller skating-0.mp4",
+      "timestamp": "2026-04-29T11:08:49.837742"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 15,
+      "time_seconds": 212.34,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T11:12:24.096973"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 15,
+      "time_seconds": 112.48,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T11:14:18.776270"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 15,
+      "time_seconds": 74.13,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T11:15:34.858132"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 15,
+      "time_seconds": 93.55,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-04-29T11:17:10.346180"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_baseline",
+      "prompt_index": 16,
+      "time_seconds": 212.59,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_baseline/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T11:20:45.297404"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_fixed_0.1",
+      "prompt_index": 16,
+      "time_seconds": 112.03,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.1/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T11:22:39.277466"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_fixed_0.2",
+      "prompt_index": 16,
+      "time_seconds": 73.79,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_fixed_0.2/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T11:23:55.048001"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_adaptive",
+      "prompt_index": 16,
+      "time_seconds": 93.11,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_adaptive/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-04-29T11:25:30.312487"
+    },
+    {
+      "prompt": "In a still frame, a stop sign",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 9,
+      "time_seconds": 151.96,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/In a still frame, a stop sign-0.mp4",
+      "timestamp": "2026-05-04T07:31:51.000844"
+    },
+    {
+      "prompt": "a toilet, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 10,
+      "time_seconds": 147.84,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/a toilet, frozen in time-0.mp4",
+      "timestamp": "2026-05-04T07:34:20.189006"
+    },
+    {
+      "prompt": "a laptop, frozen in time",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 11,
+      "time_seconds": 146.41,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/a laptop, frozen in time-0.mp4",
+      "timestamp": "2026-05-04T07:36:47.895551"
+    },
+    {
+      "prompt": "A person is riding a bike",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 12,
+      "time_seconds": 146.8,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/A person is riding a bike-0.mp4",
+      "timestamp": "2026-05-04T07:39:16.453575"
+    },
+    {
+      "prompt": "A person is marching",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 13,
+      "time_seconds": 146.27,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/A person is marching-0.mp4",
+      "timestamp": "2026-05-04T07:41:44.294694"
+    },
+    {
+      "prompt": "A person is roller skating",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 14,
+      "time_seconds": 146.52,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/A person is roller skating-0.mp4",
+      "timestamp": "2026-05-04T07:44:12.486367"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, in super slow motion",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 15,
+      "time_seconds": 146.9,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand, in super slow motion-0.mp4",
+      "timestamp": "2026-05-04T07:46:41.193314"
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, zoom in",
+      "seed": 0,
+      "mode": "wan_tc_fixed_0.05",
+      "prompt_index": 16,
+      "time_seconds": 146.54,
+      "video_path": "/nfs/oagrawal/wan/Wan2.1/vbench_eval_teacache/videos/wan_tc_fixed_0.05/A beautiful coastal beach in spring, waves lapping on sand, zoom in-0.mp4",
+      "timestamp": "2026-05-04T07:49:09.572441"
+    }
+  ],
+  "completed_keys": [
+    "wan_tc_fixed_0.15|In a still frame, a stop sign|0",
+    "wan_tc_fixed_0.25|In a still frame, a stop sign|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|In a still frame, a stop sign|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|In a still frame, a stop sign|0",
+    "wan_tc_fixed_0.15|a toilet, frozen in time|0",
+    "wan_tc_fixed_0.25|a toilet, frozen in time|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|a toilet, frozen in time|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|a toilet, frozen in time|0",
+    "wan_tc_fixed_0.15|a laptop, frozen in time|0",
+    "wan_tc_fixed_0.25|a laptop, frozen in time|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|a laptop, frozen in time|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|a laptop, frozen in time|0",
+    "wan_tc_fixed_0.15|A person is riding a bike|0",
+    "wan_tc_fixed_0.25|A person is riding a bike|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|A person is riding a bike|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|A person is riding a bike|0",
+    "wan_tc_fixed_0.15|A person is marching|0",
+    "wan_tc_fixed_0.25|A person is marching|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|A person is marching|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|A person is marching|0",
+    "wan_tc_fixed_0.15|A person is roller skating|0",
+    "wan_tc_fixed_0.25|A person is roller skating|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|A person is roller skating|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|A person is roller skating|0",
+    "wan_tc_fixed_0.15|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_tc_fixed_0.25|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_tc_fixed_0.15|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_tc_fixed_0.25|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_tc_adaptive_hi0.25_lo0.05|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_tc_adaptive_hi0.2_lo0.05|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_baseline|In a still frame, a stop sign|0",
+    "wan_fixed_0.1|In a still frame, a stop sign|0",
+    "wan_fixed_0.2|In a still frame, a stop sign|0",
+    "wan_adaptive|In a still frame, a stop sign|0",
+    "wan_baseline|a toilet, frozen in time|0",
+    "wan_fixed_0.1|a toilet, frozen in time|0",
+    "wan_fixed_0.2|a toilet, frozen in time|0",
+    "wan_adaptive|a toilet, frozen in time|0",
+    "wan_baseline|a laptop, frozen in time|0",
+    "wan_fixed_0.1|a laptop, frozen in time|0",
+    "wan_fixed_0.2|a laptop, frozen in time|0",
+    "wan_adaptive|a laptop, frozen in time|0",
+    "wan_baseline|A person is riding a bike|0",
+    "wan_fixed_0.1|A person is riding a bike|0",
+    "wan_fixed_0.2|A person is riding a bike|0",
+    "wan_adaptive|A person is riding a bike|0",
+    "wan_baseline|A person is marching|0",
+    "wan_fixed_0.1|A person is marching|0",
+    "wan_fixed_0.2|A person is marching|0",
+    "wan_adaptive|A person is marching|0",
+    "wan_baseline|A person is roller skating|0",
+    "wan_fixed_0.1|A person is roller skating|0",
+    "wan_fixed_0.2|A person is roller skating|0",
+    "wan_adaptive|A person is roller skating|0",
+    "wan_baseline|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_fixed_0.1|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_fixed_0.2|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_adaptive|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_baseline|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_fixed_0.1|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_fixed_0.2|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_adaptive|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0",
+    "wan_tc_fixed_0.05|In a still frame, a stop sign|0",
+    "wan_tc_fixed_0.05|a toilet, frozen in time|0",
+    "wan_tc_fixed_0.05|a laptop, frozen in time|0",
+    "wan_tc_fixed_0.05|A person is riding a bike|0",
+    "wan_tc_fixed_0.05|A person is marching|0",
+    "wan_tc_fixed_0.05|A person is roller skating|0",
+    "wan_tc_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand, in super slow motion|0",
+    "wan_tc_fixed_0.05|A beautiful coastal beach in spring, waves lapping on sand, zoom in|0"
+  ]
+}

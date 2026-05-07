@@ -1,0 +1,17 @@
+{
+  "mode": "hunyuan_tc_adaptive_lo0.15_hi0.3",
+  "baseline": "hunyuan_baseline",
+  "num_videos": 33,
+  "psnr": {
+    "mean": 24.039101834339373,
+    "std": 3.772442606223908
+  },
+  "ssim": {
+    "mean": 0.8015138508606892,
+    "std": 0.07658737634585026
+  },
+  "lpips": {
+    "mean": 0.20928955814607106,
+    "std": 0.09138526392080844
+  }
+}

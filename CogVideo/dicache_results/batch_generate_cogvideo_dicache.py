@@ -142,6 +142,17 @@ def _mode_config(mode_name: str) -> Dict:
         return {"type": "adaptive", "probe_depth": 1,
                 "thresh_low": 0.10, "thresh_high": 0.25,
                 "stable_start": 15, "stable_end": 50}
+
+    # --- Frontier diagnostic follow-up: low threshold raised above 0.20,
+    # high threshold kept in the 0.30-0.50 range. LOW steps 0-14 and 48-49.
+    if mode_name == "cog_dc_adaptive_hi0.40_lo0.225_mid15_48":
+        return {"type": "adaptive", "probe_depth": 1,
+                "thresh_low": 0.225, "thresh_high": 0.40,
+                "stable_start": 15, "stable_end": 48}
+    if mode_name == "cog_dc_adaptive_hi0.45_lo0.25_mid15_48":
+        return {"type": "adaptive", "probe_depth": 1,
+                "thresh_low": 0.25, "thresh_high": 0.45,
+                "stable_start": 15, "stable_end": 48}
                 
     raise ValueError(f"Unknown mode: {mode_name!r}")
 
@@ -191,6 +202,12 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--width", type=int, default=1360)
     parser.add_argument("--num-frames", type=int, default=81)
     parser.add_argument("--fps", type=int, default=16)
+    parser.add_argument(
+        "--log-tag",
+        type=str,
+        default="",
+        help="Optional suffix for generation log names to avoid overwriting prior runs.",
+    )
     return parser.parse_args()
 
 
@@ -312,6 +329,10 @@ def main() -> None:
                 "time_seconds": round(e2e, 2),
                 "video_path": str(out_path),
                 "rel_l1_thresh": float(cfg.get("rel_l1_thresh", 0.0)),
+                "thresh_low": cfg.get("thresh_low"),
+                "thresh_high": cfg.get("thresh_high"),
+                "stable_start": cfg.get("stable_start"),
+                "stable_end": cfg.get("stable_end"),
                 "probe_depth": int(cfg.get("probe_depth", 1)),
             })
             print(
@@ -320,9 +341,10 @@ def main() -> None:
                 flush=True,
             )
 
+    log_suffix = f"_{args.log_tag}" if args.log_tag else ""
     log_path = (
         out_root.parent
-        / f"generation_log_gpu{gpu_id}_p{args.start_idx:02d}-{args.end_idx:02d}_steps{args.steps}.json"
+        / f"generation_log_gpu{gpu_id}_p{args.start_idx:02d}-{args.end_idx:02d}_steps{args.steps}{log_suffix}.json"
     )
     with open(log_path, "w") as f:
         json.dump(log, f, indent=2)

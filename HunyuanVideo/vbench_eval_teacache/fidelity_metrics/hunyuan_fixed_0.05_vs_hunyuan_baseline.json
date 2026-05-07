@@ -1,0 +1,17 @@
+{
+  "mode": "hunyuan_fixed_0.05",
+  "baseline": "hunyuan_baseline",
+  "num_videos": 33,
+  "psnr": {
+    "mean": 100.0,
+    "std": 0.0
+  },
+  "ssim": {
+    "mean": 1.0,
+    "std": 0.0
+  },
+  "lpips": {
+    "mean": 0.0,
+    "std": 0.0
+  }
+}
