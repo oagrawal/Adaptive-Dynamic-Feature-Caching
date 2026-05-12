@@ -293,16 +293,17 @@ def plot_combo(df: pd.DataFrame, title: str, out_path: Path) -> None:
                 zorder=3, label="Adaptive",
             )
 
-        ax.set_xlabel("Speedup (×)", fontsize=11)
-        ax.set_ylabel(ylabel, fontsize=11)
-        ax.set_title(metric.upper(), fontsize=12)
-        ax.legend(loc="upper right", fontsize=9)
+        ax.set_xlabel("Speedup (×)", fontsize=18)
+        ax.set_ylabel(ylabel, fontsize=18)
+        ax.set_title(metric.upper(), fontsize=22)
+        ax.legend(loc="upper right", fontsize=15)
+        ax.tick_params(axis="both", labelsize=16)
         ax.grid(True, linestyle="--", alpha=0.5)
 
         if invert:
             ax.invert_yaxis()
 
-    fig.suptitle(title, fontsize=14, y=1.02)
+    fig.suptitle(title, fontsize=24, y=1.02)
     fig.tight_layout()
     fig.savefig(out_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
